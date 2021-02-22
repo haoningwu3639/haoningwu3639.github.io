@@ -14,7 +14,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: HaoningWu
+      title: HomePage
 
 description: Stylish Jekyll Theme
 author:
