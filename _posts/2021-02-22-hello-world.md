@@ -12,7 +12,6 @@ comments: true
  - Hello everyone, welcome to the personal homepage of HaoningWu! Nice to meet you!
  - My Page: <a href="https://haoningwu3639.github.io" >{https://haoningwu3639.github.io} </a>
 
-
 ### - Self Introdcution
 - Name: Haoning Wu
 - Junior student of SJTU, majoring in EE&AI.
