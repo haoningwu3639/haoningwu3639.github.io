@@ -1,6 +1,6 @@
 Personal HomePage of HaoningWu
 =====
-My Page: https://haoningwu3639.github.io/
+- My Page: https://haoningwu3639.github.io/
 ### Self-Introduction
 - Name: Haoning Wu
 - Junior student of SJTU, majoring in EE&AI.
@@ -11,9 +11,8 @@ My Page: https://haoningwu3639.github.io/
 - Linkedin: Haoning Wu
 - zhihu: Whn丶nnnnn
 
-### Acknowledgement
-Thanks to open source stylish, minimalistic theme for jekyll.  
-Demo: http://dbtek.github.io/dbyll/
+### Acknowledgements
+- Thanks to open source stylish, minimalistic theme for jekyll.
 
 ### License
 - [MIT](http://opensource.org/licenses/MIT)
