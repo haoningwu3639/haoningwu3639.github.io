@@ -4,7 +4,7 @@ Personal HomePage of HaoningWu
 ### Self-Introduction
 - Name: Haoning Wu
 - Junior student of SJTU, majoring in EE&AI.
-- Research direction: Computer Vision.
+- Research direction: Computer Vision, CNN.
 - Research interests: CV, GNN, ML, etc.
 - QQ: 260104166
 - E-mail: whn15698781666@sjtu.edu.cn
