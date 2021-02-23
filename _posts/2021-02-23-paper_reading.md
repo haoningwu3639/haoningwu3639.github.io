@@ -9,9 +9,8 @@ comments: true
 description: Hey! There are some PaperReading Notes written by myself in this article. Come in and click the hyperlinks to learn the details. Welcome to follow my Zhihu account and communicate with me!!!
 ---
 
-### Hey! There are some PaperReading Notes written by myself in this article. Come in and click the hyperlinks to learn the details. Welcome to follow my Zhihu account and communicate with me!!!
+#### - Hey! There are some PaperReading Notes written by myself in this article. Come in and click the hyperlinks to learn the details. Welcome to follow my Zhihu account and communicate with me!!!
 
-#### - Hyperlinks to my PaperReading Notes.
 - [论文阅读：[CVPR 2020 Oral] CycleISP](https://zhuanlan.zhihu.com/p/183698399)
 - [论文阅读：[CVPR 2019] CBDNet](https://zhuanlan.zhihu.com/p/205024389)
 - [论文阅读：[CVPR 2018] 图像感知相似度指标 LPIPS](https://zhuanlan.zhihu.com/p/206470186)
