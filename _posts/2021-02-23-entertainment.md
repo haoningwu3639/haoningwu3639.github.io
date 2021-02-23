@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning Notes
+title: Entertainment Diaries
 categories: [Entertainment]
 tags: [SlackOff]
 date: 2021-02-23
