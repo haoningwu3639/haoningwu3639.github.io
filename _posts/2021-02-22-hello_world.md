@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hello World!
-categories: [general]
-tags: [setup]
+categories: [General]
+tags: [Setup]
 date: 2021-02-22
 fullview: true
 comments: true
