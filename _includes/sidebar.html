@@ -1,7 +1,7 @@
 <!-- sidebar.html -->
 <header class="sidebar-header" role="banner">
 	<a href="{{ site.BASE_PATH }}/">
-		<img src="https://haoningwu3639.github.io/Profile.png" width="200" height="200" class="img-circle" />
+		<img src="https://haoningwu3639.github.io/images/Profile.png" width="200" height="200" class="img-circle" />
 	</a>
 	<h3 class="title">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
@@ -37,8 +37,22 @@
 			</a>
 		</li>
 		{% endif %}
+		{% if site.author.zhihu %}
+		<li>
+			<a class="btn btn-default btn-sm" href="https://www.zhihu.com/people/{{site.author.zhihu }}">
+				<i class="fa fa-zhihu fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 	</ul>
 	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		{% if site.author.wechat %}
+		<li>
+			<a class="btn btn-default btn-sm" href="https://haoningwu3639.github.io/{{ site.author.wechat }}">
+				<i class="fa fa-wechat fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 		{% if site.author.pinterest %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://pinterest.com/{{ site.author.pinterest }}">
