@@ -1336,3 +1336,12 @@
 .fa-plus-square-o:before {
   content: "\f196";
 }
+.fa-weixin:before {
+  content: "\f1d7";
+}
+.fa-zhihu:before {
+  content: "\f63f";
+}
+.fa-qq:before {
+  content: "\f1d6";
+}
