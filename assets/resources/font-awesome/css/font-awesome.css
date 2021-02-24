@@ -6,8 +6,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -609,6 +609,15 @@
 }
 .fa-github-square:before {
   content: "\f092";
+}
+.fa-weixin:before {
+  content: "\f1d7";
+}
+.fa-zhihu:before {
+  content: "\f63f";
+}
+.fa-qq:before {
+  content: "\f1d6";
 }
 .fa-upload:before {
   content: "\f093";
@@ -1336,12 +1345,4 @@
 .fa-plus-square-o:before {
   content: "\f196";
 }
-.fa-weixin:before {
-  content: "\f1d7";
-}
-.fa-zhihu:before {
-  content: "\f63f";
-}
-.fa-qq:before {
-  content: "\f1d6";
-}
+
