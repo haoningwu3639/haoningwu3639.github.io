@@ -8,8 +8,7 @@ fullview: true
 comments: true
 description: Hey! There are some PaperReading Notes written by myself in this article. Come in and click the hyperlinks to learn the details. Welcome to follow my Zhihu account and communicate with me!
 ---
-
-#### - *Hey! There are some PaperReading Notes written by myself in this article. Come in and click the hyperlinks to learn the details. Welcome to follow my Zhihu account and communicate with me!*
+#### - There are some PaperReading Notes written by myself in this article. Come in and click the hyperlinks to learn the details. Welcome to follow my Zhihu account and communicate with me!
 
 - [知乎专栏：论文学习_PaperReading](https://www.zhihu.com/column/c_1277537341150420992)
 - [论文阅读：[CVPR 2020 Oral] CycleISP](https://zhuanlan.zhihu.com/p/183698399)
