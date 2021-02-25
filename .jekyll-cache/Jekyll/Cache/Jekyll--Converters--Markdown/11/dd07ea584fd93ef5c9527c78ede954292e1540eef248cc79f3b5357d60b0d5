@@ -1,0 +1,37 @@
+I"a<h4 id="--preparation">- Preparation:</h4>
+<ul>
+  <li>GitHub帐号</li>
+  <li>建立与username相同命名的page repository:<username>.github.io</username></li>
+  <li>Reference: <a href="https://www.zhihu.com/question/20962496/answer/677815713">如何在 GitHub 上写博客？</a></li>
+</ul>
+
+<h4 id="--beautification">- Beautification:</h4>
+<ul>
+  <li>Choose a theme in GitHub repository settings</li>
+  <li>Other themes: <a href="http://jekyllthemes.org/">Jekyll</a></li>
+  <li>My theme: <a href="https://github.com/dbtek/dbyll">dbyll</a></li>
+</ul>
+
+<h4 id="--update">- Update:</h4>
+<ul>
+  <li>入门git: <a href="https://zhuanlan.zhihu.com/p/21269318">从0开始学习 GitHub 系列之「Git 速成」</a></li>
+  <li>git基本操作:
+    <blockquote>
+      <p>git init        # 初始化git仓库 <br />
+git status      # 查看状态 自学working, staging, local, remote不同分区的区别 <br />
+git add         # 添加修改到staging区 <br />
+git commit -a   # 提交本地所有修改到local仓库 <br />
+git commit -m “commit message”   # 附加信息提交 <br />
+git push origin master   # 将本地版本推送到远程版本(首次需要添加-u参数) <br />
+git pull origin master   # 将远端版本合并到本地版本</p>
+    </blockquote>
+  </li>
+  <li>本地进行jkeyll渲染: <a href="https://blog.csdn.net/diaoxu9717/article/details/101981137">Windows上搭建Jekyll本地测试环境</a></li>
+  <li>下载并安装Ruby和Devkit: <a href="https://rubyinstaller.org/downloads/">Ruby</a></li>
+  <li>jkeyll常用指令:
+    <blockquote>
+
+    </blockquote>
+  </li>
+</ul>
+:ET
