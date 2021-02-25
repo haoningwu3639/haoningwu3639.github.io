@@ -23,17 +23,17 @@
 			</a>
 		</li>
 		{% endif %}
+		{% if site.author.wechat %}
+		<li>
+			<a class="btn btn-default btn-sm" href="https://haoningwu3639.github.io/{{ site.author.wechat }}">
+				<i class="fa fa-weixin fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 		{% if site.author.twitter %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
 				<i class="fa fa-twitter fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
-		{% if site.author.email %}
-		<li>
-			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
@@ -55,10 +55,10 @@
 		{% endif %}
 	</ul>
 	<ul id="contact-list-secondary" class="list-unstyled list-inline">
-		{% if site.author.wechat %}
+		{% if site.author.email %}
 		<li>
-			<a class="btn btn-default btn-sm" href="https://haoningwu3639.github.io/{{ site.author.wechat }}">
-				<i class="fa fa-weixin fa-lg"></i>
+			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
+				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
@@ -83,7 +83,6 @@
 			</a>
 		</li>
 		{% endif %}
-		
 		<li>
 			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
 				<i class="fa fa-rss fa-lg"></i>
