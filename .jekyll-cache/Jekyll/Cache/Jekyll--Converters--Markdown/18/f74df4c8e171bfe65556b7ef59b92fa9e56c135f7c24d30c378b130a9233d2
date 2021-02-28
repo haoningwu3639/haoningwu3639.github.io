@@ -1,0 +1,50 @@
+I"n	<h3 id="--preparation">- Preparation:</h3>
+<ul>
+  <li>GitHub帐号</li>
+  <li>建立与username相同命名的page repository:&lt;username&gt;.github.io</li>
+  <li>Reference: <a href="https://www.zhihu.com/question/20962496/answer/677815713">如何在 GitHub 上写博客？</a></li>
+</ul>
+
+<h3 id="--beautification">- Beautification:</h3>
+<ul>
+  <li>Choose a theme in GitHub repository settings</li>
+  <li>Other themes: <a href="http://jekyllthemes.org/">Jekyll</a></li>
+  <li>My theme: <a href="https://github.com/dbtek/dbyll">dbyll</a></li>
+  <li>icon图标: <a href="https://fontawesome.com/">FontAwesome</a></li>
+  <li>音乐播放器: <a href="https://bend1031.github.io/2019/09/21/Insert-music-code-in-the-blog/">GitHub Pages 博客 插入音乐播放器 APlayer</a></li>
+  <li>APlayer: <a href="https://github.com/DIYgod/APlayer">APlayer</a></li>
+</ul>
+
+<h3 id="--update">- Update:</h3>
+<ul>
+  <li>入门git: <a href="https://zhuanlan.zhihu.com/p/21269318">从0开始学习 GitHub 系列之「Git 速成」</a></li>
+  <li>git基本操作:
+    <blockquote>
+      <p>git init        # 初始化git仓库 <br />
+git status      # 查看状态 自学working, staging, local, remote不同分区的区别 <br />
+git add         # 添加修改到staging区 <br />
+git commit -a   # 提交本地所有修改到local仓库 <br />
+git commit -m “commit message”   # 附加信息提交 <br />
+git push origin master   # 将本地版本推送到远程版本(首次需要添加-u参数) <br />
+git pull origin master   # 将远端版本合并到本地版本</p>
+    </blockquote>
+  </li>
+  <li>本地进行jkeyll渲染: <a href="https://blog.csdn.net/diaoxu9717/article/details/101981137">Windows上搭建Jekyll本地测试环境</a></li>
+  <li>下载并安装Ruby和Devkit: <a href="https://rubyinstaller.org/downloads/">Ruby</a></li>
+  <li>安装Jekyll和bundler:
+    <blockquote>
+      <p>gem install jekyll <br />
+gem install bundler <br />
+bundle install</p>
+    </blockquote>
+  </li>
+  <li>ruby,jkeyll常用指令:
+    <blockquote>
+      <p>ruby -v   # 查看Ruby版本 <br />
+jekyll -v   # 查看Jekyll版本 <br />
+jekyll serve –watch   # 在github.io目录下本地Jekyll渲染,可以在localhost:4000端口查看结果 <br />
+bundle exec jekyll serve   # 如果上一条指令出错则可以安装bundler后使用该指令</p>
+    </blockquote>
+  </li>
+</ul>
+:ET
