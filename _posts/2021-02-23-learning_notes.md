@@ -13,3 +13,4 @@ description: Hey! There are some Learning Notes written by myself in this articl
 
 - [知乎专栏：学习笔记_Learning](https://www.zhihu.com/column/c_1334249553608761344)
 - [学习笔记：[Linux/Windows commands]](https://zhuanlan.zhihu.com/p/345000643)
+- [学习笔记：[Nvidia显卡GPU算力]](https://zhuanlan.zhihu.com/p/353518340)
