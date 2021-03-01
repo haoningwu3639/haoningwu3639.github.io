@@ -25,3 +25,4 @@ description: Hey! There are some PaperReading Notes written by myself in this ar
 - [论文阅读：[IQA & Denoising] OverView](https://zhuanlan.zhihu.com/p/299331841)
 - [论文阅读：[Denoising & Inpainting] OverView_2](https://zhuanlan.zhihu.com/p/344952670)
 - [论文阅读：[Denoising & OpticalFlow] OverView_3](https://zhuanlan.zhihu.com/p/351910865)
+- [论文阅读：[Video Frame Interpolation] OverView_4](https://zhuanlan.zhihu.com/p/353871960)
