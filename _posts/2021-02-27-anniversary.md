@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Waht A Romantic Day
+title: What A Romantic Day
 categories: [Anniversary]
 tags: [Diary]
 date: 2021-02-27
