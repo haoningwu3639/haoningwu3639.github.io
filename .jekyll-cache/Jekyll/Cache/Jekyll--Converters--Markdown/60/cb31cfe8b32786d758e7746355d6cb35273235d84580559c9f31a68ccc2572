@@ -1,0 +1,51 @@
+I"<h3 id="--start-git">- Start Git:</h3>
+<ul>
+  <li><a href="https://zhuanlan.zhihu.com/p/21269318">从0开始学习 GitHub 系列之「Git 速成」</a></li>
+</ul>
+
+<h3 id="--git-basic-operations">- Git Basic Operations:</h3>
+
+<blockquote>
+  <p>git init        # 初始化git仓库 <br />
+git status      # 查看状态 自学working, staging, local, remote不同分区的区别 <br />
+git add         # 添加修改到staging区 <br />
+git commit -a   # 提交本地所有修改到local仓库 <br />
+git commit -m “commit message”   # 附加信息提交 <br />
+git push origin master   # 将本地版本推送到远程版本(首次需要添加-u参数) <br />
+git pull origin master   # 将远端版本合并到本地版本</p>
+</blockquote>
+
+<h3 id="--delete-all-commit-records-in-the-github-repository">- Delete all commit records in the Github Repository:</h3>
+
+<h5 id="1-create-orphan-branch">1. Create orphan branch:</h5>
+
+<blockquote>
+  <p>git checkout –orphan latest_branch</p>
+</blockquote>
+
+<h4 id="2-add-the-required-files-to-the-staging-area">2. Add the required files to the staging area:</h4>
+
+<blockquote>
+  <p>git add -A</p>
+</blockquote>
+
+<h4 id="3-commit">3. Commit</h4>
+
+<blockquote>
+  <p>git commit -m “…”</p>
+  <h4 id="4-delete-the-old-branch">4. Delete the old branch:</h4>
+</blockquote>
+
+<blockquote>
+  <p>git branch -D master</p>
+
+  <h4 id="5-rename-the-latest-branch-to-master">5. Rename the latest branch to master</h4>
+  <p>git branch -m master</p>
+
+  <h4 id="6-push-the-new-repository">6. Push the new repository:</h4>
+</blockquote>
+
+<blockquote>
+  <p>git push -f origin master</p>
+</blockquote>
+:ET

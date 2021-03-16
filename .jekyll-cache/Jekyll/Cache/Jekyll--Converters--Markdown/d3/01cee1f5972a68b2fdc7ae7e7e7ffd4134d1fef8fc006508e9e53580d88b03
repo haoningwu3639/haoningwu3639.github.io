@@ -1,0 +1,79 @@
+I"	<h3 id="--1-start-git">- 1. Start Git:</h3>
+<ul>
+  <li><a href="https://zhuanlan.zhihu.com/p/21269318">从0开始学习 GitHub 系列之「Git 速成」</a></li>
+</ul>
+
+<h3 id="--2-git-basic-operations">- 2. Git Basic Operations:</h3>
+
+<h4 id="--21-initialize-git-repository">- 2.1. Initialize git Repository:</h4>
+<blockquote>
+  <p>git init</p>
+</blockquote>
+
+<h4 id="--22-view-status">- 2.2. View Status:</h4>
+<blockquote>
+  <p>git status</p>
+</blockquote>
+
+<h4 id="--23-add-modifications-to-the-staging-area">- 2.3. Add modifications to the staging area:</h4>
+<blockquote>
+  <p>git add</p>
+</blockquote>
+
+<h4 id="--24-submit-all-local-modifications-to-the-local-repository">- 2.4. Submit all local modifications to the local repository:</h4>
+<blockquote>
+  <p>git commit -a</p>
+</blockquote>
+
+<h4 id="--25-commit-with-additional-message">- 2.5. Commit with additional message:</h4>
+<blockquote>
+  <p>git commit -m “commit message”</p>
+</blockquote>
+
+<h4 id="--26-push-local-version-to-remote-version-add--u-parameter-for-the-first-time">- 2.6. Push local version to remote version (add -u parameter for the first time):</h4>
+<blockquote>
+  <p>git push origin master</p>
+</blockquote>
+
+<h4 id="--27-pull-remote-version-to-local-version">- 2.7. Pull remote version to local version:</h4>
+<blockquote>
+  <p>git pull origin master</p>
+</blockquote>
+
+<h3 id="--3-delete-all-commit-records-in-the-github-repository">- 3. Delete all commit records in the Github Repository:</h3>
+
+<h4 id="--31-create-orphan-branch">- 3.1. Create orphan branch:</h4>
+
+<blockquote>
+  <p>git checkout –orphan latest_branch</p>
+</blockquote>
+
+<h4 id="--32-add-the-required-files-to-the-staging-area">- 3.2. Add the required files to the staging area:</h4>
+
+<blockquote>
+  <p>git add -A</p>
+</blockquote>
+
+<h4 id="--33-commit">- 3.3. Commit</h4>
+
+<blockquote>
+  <p>git commit -m “…”</p>
+</blockquote>
+
+<h4 id="--34-delete-the-old-branch">- 3.4. Delete the old branch:</h4>
+
+<blockquote>
+  <p>git branch -D master</p>
+</blockquote>
+
+<h4 id="--35-rename-the-latest-branch-to-master">- 3.5. Rename the latest branch to master</h4>
+<blockquote>
+  <p>git branch -m master</p>
+</blockquote>
+
+<h4 id="--36-push-the-new-repository">- 3.6. Push the new repository:</h4>
+
+<blockquote>
+  <p>git push -f origin master</p>
+</blockquote>
+:ET
