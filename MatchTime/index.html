@@ -294,7 +294,7 @@
         (b)  Fine-grained Temporal Alignment: We additionally train a multi-modal temporal alignment model on manually aligned data, which further aligns textual commentaries to their best-matching video frames at a fine-grained level.
         </left></p>
       
-        <center><p><img class="center" src="./resources/alignment_statistics.png" width="750px"></p></center>
+        <center><p><img class="center" src="./resources/alignment_statistics.png" width="600px"></p></center>
         <p><left>
           <strong style="font-weight: 900"> Alignment Statistics. </strong>
           We report the temporal offset statistics on 4 manually annotated test videos (comprising a total of 292 samples). 
@@ -317,7 +317,7 @@
       <p>
         <strong> Quantitative Results </strong>
       </p>
-      <center><p><img class="center" src="./resources/quantitative_comparison.png" width="600px"></p></center>
+      <center><p><img class="center" src="./resources/quantitative_comparison.png" width="800px"></p></center>
       <p>
         <strong> Quantitative comparison on Commentary Generation. </strong>
         All variants of baseline methods and our MatchVoice are retrained on both the original unaligned SoccerNet-Caption and our temporally aligned MatchTime training sets, 
@@ -335,13 +335,13 @@
       </p>
       
       <p><strong> Ablation Study Results </strong></p>
-      <p><img class="center" src="./resources/ablation_on_window_size.png" width="800px"></p>
+      <center><p><img class="center" src="./resources/ablation_on_window_size.png" width="600px"></p></center>
       <p>
         <b>Ablation studies on window size. </b>
         Using the visual content within 30s around key frames yields the best commentary performance, and temporal alignment of data leads to a universal performance improvement.
       </p>
 
-      <p><img class="center" src="./resources/ablation_on_alignment_strategy.png" width="800px"></p>
+    <center><p><img class="center" src="./resources/ablation_on_alignment_strategy.png" width="600px"></p></center>
       <p>
         <b>Ablation studies on alignment strategy. </b>
         The quality of temporal alignment is directly reflected in downstream commentary generation tasks: better alignment leads to better commentary generation quality.
