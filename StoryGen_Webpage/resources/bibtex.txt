@@ -1,0 +1,6 @@
+@inproceedings{liu2024intelligent,
+      title     = {Intelligent Grimm -- Open-ended Visual Storytelling via Latent Diffusion Models}, 
+      author    = {Chang Liu, Haoning Wu, Yujie Zhong, Xiaoyun Zhang, Yanfeng Wang, Weidi Xie},
+      booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year      = {2024},
+}
