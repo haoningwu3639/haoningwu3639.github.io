@@ -1,0 +1,8 @@
+@inproceedings{Wu_2023_BMVC,
+author    = {Haoning Wu and Xiaoyun Zhang and Weidi Xie and Ya Zhang and Yan-Feng Wang},
+title     = {Boost Video Frame Interpolation via Motion Adaptation},
+booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023, Aberdeen, UK, November 20-24, 2023},
+publisher = {BMVA},
+year      = {2023},
+url       = {https://papers.bmvc2023.org/0179.pdf}
+}

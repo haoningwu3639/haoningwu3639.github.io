@@ -1,0 +1,370 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<style type="text/css">
+  @font-face {
+   font-family: 'Avenir Book';
+   src: url("./fonts/Avenir_Book.ttf"); /* File to be stored at your site */
+   }
+
+  body {
+    font-family: "Avenir Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:200;
+    font-size:14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  h1 {
+    font-weight:400;
+  }
+  h2 {
+    font-weight:400;
+  }
+
+  p {
+    font-weight:200;
+    line-height: 1.4;
+  }
+
+  code {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    background: #efefef;
+    border: 1px solid #d3d3d3;
+    color: #000000;
+    border-radius: 3px;
+  }
+
+  pre > code {
+    display: block;
+    white-space: pre;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  pre.prettyprint > code {
+    border: none;
+  }
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+  }
+  .image {
+        flex-basis: 40%
+  }
+  .text {
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 0px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+	<title>VFI_Adapter</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
+	<center>
+    <span style="font-size:36px">Boost Video Frame Interpolation via Motion Adaptation</span><br><br>
+	</center>
+
+	<table align="center" width="800px">
+      <tbody><tr>
+              <td align="center" width="160px">
+        <center>
+          <span style="font-size:16px"><a href="https://haoningwu3639.github.io/">Haoning Wu</a><sup>1</sup></span>
+          </center>
+          </td>
+              <td align="center" width="160px">
+        <center>
+          <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang</a><sup>1 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+          </center>
+        </td>
+            <td align="center" width="160px">
+          <center>
+            <span style="font-size:16px"><a href="https://weidixie.github.io/">Weidi Xie</a><sup>1,2</sup></span>
+            </center>
+            </td>
+              <td align="center" width="160px">
+        <center>
+          <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a><sup>1,2</sup></span>
+          </center>
+        </td>
+              <td align="center" width="160px">
+        <center>
+          <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,2 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+          </center>            
+		        
+          </td></tr>
+        </tbody></table><br>
+	
+	  <table align="center" width="700px">
+            <tbody><tr>
+                    <td align="center" width="30px">
+              <center>
+                    <span style="font-size:16px"></span>
+                </center>
+                </td>
+                    <td align="center" width="300px">
+                    <span style="font-size:16px"><sup>1</sup>CMIC, Shanghai Jiao Tong University</span> </left>
+                
+                </td>
+                    <td align="center" width="370px">
+              <center>
+                    <span style="font-size:16px"><sup>2</sup>Shanghai AI Lab</span>
+                </center>
+                </td>
+        </tr></tbody></table>
+        <br>
+        
+        <table align="center" width="700px">
+          <tbody><tr>
+                  <td align="center" width="700px">
+            <center>
+                  <span style="font-size:24px"><strong  style="font-weight: 900">BMVC 2023 Oral</strong></span>
+              </center>
+              </td>
+      </tr></tbody></table>
+	
+	<table align="center" width="700px">
+            <tbody><tr>
+              <td align="center" width="200px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">Code
+                    <a href="https://github.com/haoningwu3639/VFI_Adapter"> [GitHub]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="200px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    Paper <a href="https://arxiv.org/abs/2306.13933/"> [arXiv]</a>
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="200px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    Cite <a href="./resources/bibtex.txt"> [BibTeX]</a>
+                  </span>
+                </center>
+              </td>
+            </tr></tbody>
+      </table>
+      <br>
+      <hr>    
+      <br>
+      <center>
+          <img src="./resources/teaser.png" alt="alt text" style="width: 100%; object-fit: cover; max-width:100%;"></a>
+        </center>
+        <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+          <strong  style="font-weight: 900">High-level idea overview.</strong>
+        (a) To address the generalisation challenge of VFI models due to domain gap on unseen data, 
+        we propose the optimisation-based video frame interpolation. 
+        By performing test-time motion adaptation on our proposed lightweight <i>adapter</i>, 
+        we achieve the generalization of VFI models across different video scenarios and subsequently boost their performance. 
+        (b) Visual comparison on the cases with complex and large-scale motions from DAVIS dataset. 
+        Our method assists VFI models in generalising to diverse scenarios and synthesizing high-quality frames with clearer structures and fewer distortions.
+          
+      </left></p>
+        
+      <center><h2> Abstract </h2> </center>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+      </p><div class="container">
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+            <left>
+              Video frame interpolation (VFI) is a challenging task that aims to generate intermediate frames between two consecutive frames in a video. 
+              Existing learning-based VFI methods have achieved great success, but they still suffer from limited generalization ability due to the limited motion distribution of training datasets. 
+              In this paper, we propose a novel optimization-based VFI method that can adapt to unseen motions at test time. Our method is based on a <i>cycle-consistency adaptation</i> strategy that leverages the motion characteristics among video frames. 
+              We also introduce a lightweight <i>adapter</i> that can be inserted into the motion estimation module of existing pre-trained VFI models to improve the efficiency of adaptation. Extensive experiments on various benchmarks demonstrate that our method can boost the performance of two-frame VFI models, 
+              outperforming the existing state-of-the-art methods, even those that use extra input frames.
+            </left></p>
+        </div>
+      </div>
+
+      <hr>
+      <center> <h2> Architecture </h2> </center>
+      <p><img class="left" src="./resources/method.png" width="800px"></p>
+      <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+        <strong style="font-weight: 900">Proposed <i>cycle-consistency adaptation</i> strategy and plug-in <i>adapter</i> module for efficient test-time adaptation.</strong> 
+        (a) <i>Cycle-consistency adaptation</i> first synthesizes intermediate frames between each two input frames and reuses them 
+        to interpolate the target frame to calculate cycle-loss, which fully utilizes the consistency within video sequences.
+        (b) To improve efficiency, we freeze all the parameters of pre-trained VFI models and solely optimise the proposed plug-in 
+        <i>adapter</i>, which predicts a set of parameters {&alpha;, &beta;} based on the extracted visual features. 
+        The pixel-wise weights &alpha; and biases	&beta; are used for rectifying the estimated flow to fit each video sequence.
+
+         </left></p>
+      
+      <hr>
+
+      <center><h2> Results </h2></center>
+      <p>
+        <b> Quantitative Results </b>
+      </p>
+      <center><p><img class="center" src="./resources/quantitative.png" width="800px"></p></center>
+      <p>
+        <strong style="font-weight: 900">Quantitative (PSNR/SSIM) comparison.</strong> We compare our boosted models to representative state-of-the-art methods on 
+        Vimeo90K, DAVIS and SNU-FILM benchmarks. Both of the optimisation approaches exhibit a substantial improvement in performance. 
+        <strong style="font-weight: 900">Note that</strong> FLAVR and VFIT take <strong>multiple frames</strong> as input, but our boosted models can still outperform them. 
+        <strong style="font-weight: 900"><font style="color: red">RED</font></strong>: best performance, <u><font style="color: blue">BLUE</font></u>: second best performance.
+      </p>
+
+      <p>
+        <b> Qualitative Results </b>
+      </p>
+      <p><img class="center" src="./resources/qualitative.png" width="800px"></p>
+      <p>
+        <strong style="font-weight: 900">Qualitative comparison against the state-of-the-art VFI algorithms.</strong> 
+        We show visualization on Vimeo90K, SNU-FILM and DAVIS benchmarks for comparison. 
+        The patches for careful comparison are marked with <font style="color: red">red</font> in the original images. 
+        Our boosted models can generate higher-quality results with clearer structures and fewer distortions.
+      </p>
+      <hr>
+
+      <center> <h2> Ablation Studies </h2> </center>
+      <center><p><img class="center" src="./resources/ablation1.png" width="700px"></p></center>
+      <p>
+        <strong style="font-weight: 900">Quantitative (PSNR/SSIM) comparison of adaptation strategies.</strong> 
+        The experiments on Vimeo90K dataset have shown that cycle-consistency adaptation steadily boosts VFI models by fully leveraging the inter-frame consistency to learn motion characteristics within the test sequence.
+      </p>
+      <center><p><img class="center" src="./resources/ablation2.png" width="700px"></p></center>
+      <p>
+        <strong style="font-weight: 900">Ablation Study on end-to-end and plug-in adapter adaptation.</strong> 
+        Models boosted by our proposed plug-in adapter require minimal finetuning parameters for adaptation, 
+        resulting in a 2 times improvement in efficiency while maintaining comparable inference efficiency and performance.
+      </p>
+      <center><p><img class="center" src="./resources/motion.png" width="700px"></p></center>
+      <p>
+        <strong style="font-weight: 900">Motion field visualization.</strong> 
+        The VFI model boosted by our proposed motion adaptation can estimate more precise motion fields, thereby producing synthesized frames with higher quality.
+      </p>
+      <hr>
+      
+      <center> <h2> More Visualizations </h2> </center>
+      <center><p><img class="center" src="./resources/supp_figure1.png" width="800px"></p></center>
+      <p>
+        <strong style="font-weight: 900">More visualizations on Vimeo90K benchmark.</strong>
+        The patches for careful comparison are marked with <font style="color: red">red</font> in the original images. 
+      </p>
+      <center><p><img class="center" src="./resources/supp_figure2.png" width="800px"></p></center>
+      <p>
+        <strong style="font-weight: 900">More visualizations on DAVIS benchmark.</strong>
+        The patches for careful comparison are marked with <font style="color: red">red</font> in the original images. 
+      </p>
+      <center><p><img class="center" src="./resources/supp_figure3.png" width="800px"></p></center>
+      <p>
+        <strong style="font-weight: 900">More visualizations on SNU-FILM benchmark.</strong>
+        The patches for careful comparison are marked with <font style="color: red">red</font> in the original images. 
+      </p>
+      <hr>
+
+
+      <center> <h2> Acknowledgements </h2> </center>
+      <p> 
+	      Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+      </p>
+      <br>
+<br>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
