@@ -1,0 +1,6 @@
+@arxiv{rao2024matchtimeautomaticsoccergame,
+  title={MatchTime: Towards Automatic Soccer Game Commentary Generation}, 
+  author={Jiayuan Rao and Haoning Wu and Chang Liu and Yanfeng Wang and Weidi Xie},
+  year={2024},
+  journal={arXiv preprint arXiv:2406.18530},
+}
