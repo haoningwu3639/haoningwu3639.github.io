@@ -188,7 +188,7 @@
             </td>
             <td align="center" width="100px">
             <center>
-              <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/yazhang/">Yan Zhang</a><sup>1,2</sup></span>
+              <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a><sup>1,2</sup></span>
               </center>                
           </td>
             <td align="center" width="130px">
@@ -242,7 +242,7 @@
                 <center>
                   <br>
                   <span style="font-size:20px">Code
-                    <a href="https://github.com/ShaochengShen/"> [GitHub]</a> (Soon)
+                    <a href="https://github.com/ShaochengShen/MegaFusion/"> [GitHub]</a>
                   </span>
                 </center>
               </td>
@@ -277,6 +277,11 @@
           (a) <i>Left</i>: Existing diffusion-based text-to-image models struggle with synthesizing higher-resolution images due to fixed image resolution during training, leading to a noticeable decline in image quality and semantic accuracy.           
           (b) <i>Right</i>: Our proposed tuning-free MegaFusion can effectively and efficiently extend diffusion models (e.g. SDM, SDXL and Floyd) towards generating images at higher resolutions (e.g., 1024×1024, 1920×1080, 2048×1536, and 2048×2048) of arbitrary aspect ratios (e.g., 1:1, 16:9, and 4:3). 
                             We recommend the reader to zoom in for the visualization results.
+
+          <strong> Overview.</strong>
+          (a) <i>Left</i>: Existing diffusion-based text-to-image models fall short in synthesizing higher-resolution images due to the fixed image resolution during training, resulting in a noticeable decline in image quality and semantic deviation. 
+          (b) <i>Right</i>: Our proposed tuning-free <strong>MegaFusion</strong> can effectively and efficiently extend diffusion models (e.g. SDM, SDXL and Floyd) towards generating images at higher resolutions (e.g., 1024×1024, 1920×1080, 2048×1536, and 2048×2048) of arbitrary aspect ratios (e.g., 1:1, 16:9, and 4:3).
+                            We recommend the reader to zoom in for the visualization results.
       </left></p>
         
       <center><h2> Abstract </h2> </center>
@@ -285,13 +290,13 @@
         <div class="text" width="400px"> 
           <p style="text-align:justify; text-justify:inter-ideograph;">
             <left>
-              Diffusion models have emerged as frontrunners in text-to-image generation for their impressive capabilities. 
+              Diffusion models have emerged as frontrunners in text-to-image generation for their impressive capabilities.
               Nonetheless, their fixed image resolution during training often leads to challenges in high-resolution image generation, such as semantic inaccuracies and object replication. 
               This paper introduces <strong>MegaFusion</strong>, a novel approach that extends existing diffusion-based text-to-image generation models towards efficient higher-resolution generation without additional fine-tuning or extra adaptation.
-              Specifically, we employ an innovative truncate and relay strategy to bridge the denoising processes across different resolutions, allowing for high-resolution image generation in a coarse-to-fine manner. 
-              Moreover, by integrating <i>dilated convolutions</i> and <i>noise re-scheduling</i>, we further adapt the model’s receptive field and noise priors for higher resolution.
+              Specifically, we employ an innovative <strong><i>truncate and relay</i></strong> strategy to bridge the denoising processes across different resolutions, allowing for high-resolution image generation in a coarse-to-fine manner.
+              Moreover, by integrating <i>dilated convolutions</i> and <i>noise re-scheduling</i>, we further adapt the model's priors for higher resolution.
               The versatility and efficacy of MegaFusion make it universally applicable to both latent-space and pixel-space diffusion models, along with other derivative models. 
-              Extensive experiments confirm that MegaFusion significantly boosts the capability of existing models to produce images of megapixels and various aspect ratios that maintain accurate semantics and high fidelity, while only requiring about <strong>40%</strong> of the original computational cost.
+              Extensive experiments confirm that MegaFusion significantly boosts the capability of existing models to produce images of megapixels and various aspect ratios, while only requiring about <strong>40%</strong> of the original computational cost.
             </left></p>
         </div>
       </div>
@@ -302,14 +307,15 @@
       <p><img class="center" src="./resources/architecture.png" width="750px"></p>
       <p><left>
         <strong style="font-weight: 900"> Architecture Overview. </strong style="font-weight: 900">
-           (a) The <strong><i>Truncate and Relay</i></strong> strategy in MegaFusion seamlessly connects generation processes across different resolutions to produce higher-resolution images without extra tuning, exemplified by a three-stage pipeline.
+           (a) The <i>Truncate and Relay</i> strategy in <strong>MegaFusion</strong> seamlessly connects generation processes across different resolutions to produce higher-resolution images without extra tuning, exemplified by a three-stage pipeline.
             For pixel-space models, the VAE encoder and decoder can be directly removed. 
             (b) Limited receptive fields lead to quality decline and object replication. 
             <i>Dilated convolutions</i> expand the receptive field at higher resolutions, enabling the model to capture more global information for more accurate semantics and image details. 
-            (c) Noise at identical timesteps affects images of different resolutions differently, deviating from the model’s prior. 
+            (c) Noise at identical timesteps affects images of different resolutions differently, deviating from the model's prior. 
           <i>Noise re-scheduling</i> helps align the noise level of higher-resolution images with that of the original resolution.
       </left></p>
       <hr>
+
 
       <center><h2> Results </h2></center>
       <p>
@@ -319,7 +325,7 @@
       <p>
         <strong> Quantitative comparison. </strong>
         We compare our boosted models on higher-resolution image generation with representative latent-space and pixel-space diffusion models on the MS-COCO dataset.
-        In each unit, we denote the best performance in <strong style="font-weight: 900"><font style="color: red">RED</font></strong> and the second-best performance in <u><font style="color: blue">BLUE</font></u>.
+        Within each unit, we denote the best performance in <strong style="font-weight: 900"><font style="color: red">RED</font></strong> and the second-best performance in <u><font style="color: blue">BLUE</font></u>.
       </p>
 
       <center><p><img class="center" src="./resources/human_evaluation.png" width="650px"></p></center>
@@ -332,7 +338,7 @@
       </p>
       <p><img class="center" src="./resources/qualitative_results_1.png" width="800px"></p>
       <p>
-        <strong> Qualitative results</strong> of applying our MegaFusion to both latent-space and pixel-space diffusion models for higher- resolution image generation on MS-COCO and commonly used prompts from the Internet. 
+        <strong> Qualitative results</strong> of applying our MegaFusion to both latent-space and pixel-space diffusion models for higher-resolution image generation on MS-COCO and commonly used prompts from the Internet. 
         Our method can effectively extend existing diffusion-based models towards synthesizing higher-resolution images of megapixels with correct semantics and details. 
         Please refer to the Appendix for more qualitative results.
       </p>
