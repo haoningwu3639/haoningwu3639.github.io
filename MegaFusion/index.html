@@ -1,0 +1,384 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<style type="text/css">
+  @font-face {
+   font-family: 'Avenir Book';
+   src: url("./fonts/Avenir_Book.ttf"); /* File to be stored at your site */
+   }
+
+  body {
+    font-family: "Avenir Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:200;
+    font-size:14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  h1 {
+    font-weight:400;
+  }
+  h2 {
+    font-weight:400;
+  }
+
+  p {
+    font-weight:200;
+    line-height: 1.4;
+  }
+
+  code {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    background: #efefef;
+    border: 1px solid #d3d3d3;
+    color: #000000;
+    border-radius: 3px;
+  }
+
+  pre > code {
+    display: block;
+    white-space: pre;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  pre.prettyprint > code {
+    border: none;
+  }
+
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+  }
+  .image {
+        flex-basis: 40%
+  }
+  .text {
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 0px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+<link rel="icon" href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏞️</text></svg>">
+	<title>MatchTime</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
+	<center>
+    <span style="font-size:32px">MegaFusion: Extend Diffusion Models towards Higher-resolution Image Generation without Further Tuning</span><br><br>
+	</center>
+
+	<table align="center" width="800px">
+      <tbody><tr>
+              <td align="center" width="105px">
+        <center>
+          <span style="font-size:16px"><a href="https://haoningwu3639.github.io/">Haoning Wu</a><sup>1,2*</sup></span>
+          </center>
+        </td>
+              <td align="center" width="130px">
+          <center>
+            <span style="font-size:16px"><a href="https://github.com/ShaochengShen/">Shaocheng Shen</a><sup>1,3*</sup></span>
+            </center>
+          </td>
+        <td align="center" width="100px">
+          <center>
+            <span style="font-size:16px"><a href="https://qianghu-huber.github.io/qianghuhomepage/">Qiang Hu</a><sup>1</sup></span>
+            </center>
+            </td>
+            <td align="center" width="125px">
+              <center>
+                <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang</a><sup>1 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+                </center>                
+            </td>
+            <td align="center" width="100px">
+            <center>
+              <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/yazhang/">Yan Zhang</a><sup>1,2</sup></span>
+              </center>                
+          </td>
+            <td align="center" width="130px">
+          <center>
+            <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,2 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+            <!-- <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,2</sup></span> -->
+            </center>                
+        </td>
+        </tr>
+        </tbody></table><br>
+	
+	  <table align="center" width="700px">
+            <tbody><tr>
+                    <td align="center" width="0px">
+              <center>
+                    <span style="font-size:16px"></span>
+                </center>
+                </td>
+                    <td align="center" width="350px">
+              <center>
+                    <span style="font-size:16px"><sup>1</sup>Shanghai Jiao Tong University</span>
+                </center>
+                </td>
+                
+                    <td align="center" width="250px">
+              <center>
+                    <span style="font-size:16px"><sup>2</sup>Shanghai AI Laboratory</span>
+                </center>
+                </td>
+
+                <td align="center" width="350px">
+                  <center>
+                        <span style="font-size:16px"><sup>3</sup>Dalian University of Technology</span>
+                    </center>
+                    </td>
+        </tr></tbody></table>
+        <br>
+        
+        <table align="center" width="700px">
+          <tbody><tr>
+                  <td align="center" width="700px">
+            <center>
+                  <span style="font-size:24px"><strong>Under Review</strong></span>
+              </center>
+              </td>
+      </tr></tbody></table>
+	
+	<table align="center" width="700px">
+            <tbody><tr>
+              <td align="center" width="200px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">Code
+                    <a href="https://github.com/ShaochengShen/"> [GitHub]</a> (Soon)
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="200px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    Paper <a href="https://arxiv.org/abs/"> [arXiv]</a> (Soon)
+                  </span>
+                </center>
+              </td>
+
+              <td align="center" width="200px">
+                <center>
+                  <br>
+                  <span style="font-size:20px">
+                    Cite <a href="./resources/bibtex.txt"> [BibTeX]</a> (Soon)
+                  </span>
+                </center>
+              </td>
+            </tr></tbody>
+      </table>
+      <br>
+      <hr>    
+      <br>
+      <center>
+          <img src="./resources/teaser.png" alt="alt text" style="width: 100%; object-fit: cover; max-width:100%;"></a>
+        </center>
+        <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+          <strong> Overview.</strong>
+          (a) <i>Left</i>: Existing diffusion-based text-to-image models struggle with synthesizing higher-resolution images due to fixed image resolution during training, leading to a noticeable decline in image quality and semantic accuracy.           
+          (b) <i>Right</i>: Our proposed tuning-free MegaFusion can effectively and efficiently extend diffusion models (e.g. SDM, SDXL and Floyd) towards generating images at higher resolutions (e.g., 1024×1024, 1920×1080, 2048×1536, and 2048×2048) of arbitrary aspect ratios (e.g., 1:1, 16:9, and 4:3). 
+                            We recommend the reader to zoom in for the visualization results.
+      </left></p>
+        
+      <center><h2> Abstract </h2> </center>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+      </p><div class="container">
+        <div class="text" width="400px"> 
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+            <left>
+              Diffusion models have emerged as frontrunners in text-to-image generation for their impressive capabilities. 
+              Nonetheless, their fixed image resolution during training often leads to challenges in high-resolution image generation, such as semantic inaccuracies and object replication. 
+              This paper introduces <strong>MegaFusion</strong>, a novel approach that extends existing diffusion-based text-to-image generation models towards efficient higher-resolution generation without additional fine-tuning or extra adaptation.
+              Specifically, we employ an innovative truncate and relay strategy to bridge the denoising processes across different resolutions, allowing for high-resolution image generation in a coarse-to-fine manner. 
+              Moreover, by integrating <i>dilated convolutions</i> and <i>noise re-scheduling</i>, we further adapt the model’s receptive field and noise priors for higher resolution.
+              The versatility and efficacy of MegaFusion make it universally applicable to both latent-space and pixel-space diffusion models, along with other derivative models. 
+              Extensive experiments confirm that MegaFusion significantly boosts the capability of existing models to produce images of megapixels and various aspect ratios that maintain accurate semantics and high fidelity, while only requiring about <strong>40%</strong> of the original computational cost.
+            </left></p>
+        </div>
+      </div>
+
+      <hr>
+      
+      <center><h2> MegaFusion Architecture </h2></center>
+      <p><img class="center" src="./resources/architecture.png" width="750px"></p>
+      <p><left>
+        <strong style="font-weight: 900"> Architecture Overview. </strong style="font-weight: 900">
+           (a) The <strong><i>Truncate and Relay</i></strong> strategy in MegaFusion seamlessly connects generation processes across different resolutions to produce higher-resolution images without extra tuning, exemplified by a three-stage pipeline.
+            For pixel-space models, the VAE encoder and decoder can be directly removed. 
+            (b) Limited receptive fields lead to quality decline and object replication. 
+            <i>Dilated convolutions</i> expand the receptive field at higher resolutions, enabling the model to capture more global information for more accurate semantics and image details. 
+            (c) Noise at identical timesteps affects images of different resolutions differently, deviating from the model’s prior. 
+          <i>Noise re-scheduling</i> helps align the noise level of higher-resolution images with that of the original resolution.
+      </left></p>
+      <hr>
+
+      <center><h2> Results </h2></center>
+      <p>
+        <strong> Quantitative Results </strong>
+      </p>
+      <center><p><img class="center" src="./resources/quantitative_results.png" width="800px"></p></center>
+      <p>
+        <strong> Quantitative comparison. </strong>
+        We compare our boosted models on higher-resolution image generation with representative latent-space and pixel-space diffusion models on the MS-COCO dataset.
+        In each unit, we denote the best performance in <strong style="font-weight: 900"><font style="color: red">RED</font></strong> and the second-best performance in <u><font style="color: blue">BLUE</font></u>.
+      </p>
+
+      <center><p><img class="center" src="./resources/human_evaluation.png" width="650px"></p></center>
+      <p>
+        <strong> Human evaluation</strong> with MS-COCO captions and commonly used prompts from the Internet as input.
+      </p>
+
+      <p>
+        <strong> Qualitative Results </strong>
+      </p>
+      <p><img class="center" src="./resources/qualitative_results_1.png" width="800px"></p>
+      <p>
+        <strong> Qualitative results</strong> of applying our MegaFusion to both latent-space and pixel-space diffusion models for higher- resolution image generation on MS-COCO and commonly used prompts from the Internet. 
+        Our method can effectively extend existing diffusion-based models towards synthesizing higher-resolution images of megapixels with correct semantics and details. 
+        Please refer to the Appendix for more qualitative results.
+      </p>
+      
+      <p><img class="center" src="./resources/qualitative_results_2.png" width="800px"></p>
+      <p>
+        <strong> Qualitative results</strong> of incorporating our method to models with extra conditional inputs. 
+        Our proposed MegaFusion can be universally applied across various diffusion models, providing the capability for higher-resolution image generation with better semantics and fidelity. 
+        Please refer to the Appendix for more qualitative results.
+      </p>
+
+      <p><strong> Ablation Study Results </strong></p>
+      <center><p><img class="center" src="./resources/ablation_study_1.png" width="650px"></p></center>
+      <p>
+        <b>Ablation studies on</b> proposed modules in MegaFusion on MS-COCO. 
+        The modules gradually improve the higher-resolution image generation quality of existing diffusion models, especially in comparison with real images.
+      </p>
+
+    <center><p><img class="center" src="./resources/ablation_study_2.png" width="650px"></p></center>
+      <p>
+        <b>Ablation studies on</b> non-parametric Upsampler function Φ on the MS-COCO dataset.
+      </p>
+
+      <hr>
+
+      <center> <h2> More Visualization </h2> </center>
+      
+      <p><img class="center" src="./resources/more_visualization_1.png" width="800px"></p>
+      <p><img class="center" src="./resources/more_visualization_2.png" width="800px"></p>
+      <p>
+        <strong>More qualitative results</strong> of applying our MegaFusion to SDXL model for higher-resolution image generation with various aspect ratios and resolutions.
+      </p>
+
+      <p><img class="center" src="./resources/more_visualization_3.png" width="800px"></p>
+      <p>
+        <strong>Qualitative results</strong> of applying our MegaFusion to ControlNet with canny edges or human poses as extra conditions for higher-resolution image generation with better semantics and fidelity.
+      </p>
+
+      <hr>
+
+      <center> <h2> Acknowledgements </h2> </center>
+      <p> 
+	      Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+      </p>
+      <br>
+<br>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
