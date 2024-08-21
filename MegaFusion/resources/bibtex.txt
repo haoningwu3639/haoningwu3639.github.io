@@ -1,0 +1,6 @@
+@arxiv{wu2024megafusion,
+    title     = {MegaFusion: Extend Diffusion Models towards Higher-resolution Image Generation without Further Tuning}, 
+    author    = {Haoning Wu and Shaocheng Shen and Qiang Hu and Xiaoyun Zhang and Ya Zhang and Yanfeng Wang},
+    year      = {2024},
+    journal   = {arXiv preprint arXiv:2408.11001},
+}
