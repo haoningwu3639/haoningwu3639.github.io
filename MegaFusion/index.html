@@ -166,7 +166,7 @@
 
 	<table align="center" width="800px">
       <tbody><tr>
-              <td align="center" width="105px">
+              <td align="center" width="115px">
         <center>
           <span style="font-size:16px"><a href="https://haoningwu3639.github.io/">Haoning Wu</a><sup>1,2*</sup></span>
           </center>
@@ -181,9 +181,10 @@
             <span style="font-size:16px"><a href="https://qianghu-huber.github.io/qianghuhomepage/">Qiang Hu</a><sup>1</sup></span>
             </center>
             </td>
-            <td align="center" width="125px">
+            <td align="center" width="120px">
               <center>
-                <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang</a><sup>1 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+                <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang</a><sup>1</sup></span>
+                <!-- <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang</a><sup>1 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span> -->
                 </center>                
             </td>
             <td align="center" width="100px">
@@ -191,10 +192,10 @@
               <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a><sup>1,2</sup></span>
               </center>                
           </td>
-            <td align="center" width="130px">
+            <td align="center" width="120px">
           <center>
-            <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,2 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
-            <!-- <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,2</sup></span> -->
+            <!-- <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,2 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span> -->
+            <span style="font-size:16px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,2</sup></span>
             </center>                
         </td>
         </tr>
@@ -290,8 +291,7 @@
         <div class="text" width="400px"> 
           <p style="text-align:justify; text-justify:inter-ideograph;">
             <left>
-              Diffusion models have emerged as frontrunners in text-to-image generation for their impressive capabilities.
-              Nonetheless, their fixed image resolution during training often leads to challenges in high-resolution image generation, such as semantic inaccuracies and object replication. 
+              Diffusion models have emerged as frontrunners in text-to-image generation, however, their fixed image resolution during training often leads to challenges in high-resolution image generation, such as semantic deviations and object replication. 
               This paper introduces <strong>MegaFusion</strong>, a novel approach that extends existing diffusion-based text-to-image generation models towards efficient higher-resolution generation without additional fine-tuning or extra adaptation.
               Specifically, we employ an innovative <strong><i>truncate and relay</i></strong> strategy to bridge the denoising processes across different resolutions, allowing for high-resolution image generation in a coarse-to-fine manner.
               Moreover, by integrating <i>dilated convolutions</i> and <i>noise re-scheduling</i>, we further adapt the model's priors for higher resolution.
@@ -375,6 +375,15 @@
       <p><img class="center" src="./resources/more_visualization_3.png" width="800px"></p>
       <p>
         <strong>Qualitative results</strong> of applying our MegaFusion to ControlNet with canny edges or human poses as extra conditions for higher-resolution image generation with better semantics and fidelity.
+      </p>
+
+      <p><img class="center" src="./resources/more_visualization_4.png" width="800px"></p>
+      <p>
+        <strong>More qualitative results</strong> of applying our MegaFusion to SDXL model for higher-resolution image generation with various <strong>non-standard</strong> aspect ratios and resolutions.
+      </p>
+
+      <p>
+        <center><strong>Welcome to check out our paper for more technical details and visualization results!</strong></center>
       </p>
 
       <hr>
