@@ -1,0 +1,525 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <style type="text/css">
+    @font-face {
+      font-family: 'Avenir Book';
+      src: url("./fonts/Avenir_Book.ttf");
+      /* File to be stored at your site */
+    }
+
+    body {
+      font-family: "Times New Roman", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 200;
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+    }
+
+    h1 {
+      font-weight: 400;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+
+    p {
+      font-weight: 200;
+      line-height: 1.4;
+    }
+
+    code {
+      font-size: 0.8rem;
+      margin: 0 0.2rem;
+      padding: 0.5rem 0.8rem;
+      white-space: nowrap;
+      background: #efefef;
+      border: 1px solid #d3d3d3;
+      color: #000000;
+      border-radius: 3px;
+    }
+
+    pre>code {
+      display: block;
+      white-space: pre;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+    }
+
+    pre.prettyprint>code {
+      border: none;
+    }
+
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .image {
+      flex-basis: 40%
+    }
+
+    .text {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .disclaimerbox {
+      background-color: #eee;
+      border: 1px solid #eeeeee;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      padding: 20px;
+    }
+
+    video.header-vid {
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+    }
+
+    img.header-img {
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+    }
+
+    img.rounded {
+      border: 0px solid #eeeeee;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+
+    }
+
+    a:link,
+    a:visited {
+      color: #1367a7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #208799;
+    }
+
+    td.dl-link {
+      height: 160px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .layered-paper-big {
+      /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+        0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+        /* The top layer shadow */
+        5px 5px 0 0px #fff,
+        /* The second layer */
+        5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+        /* The second layer shadow */
+        10px 10px 0 0px #fff,
+        /* The third layer */
+        10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+        /* The third layer shadow */
+        15px 15px 0 0px #fff,
+        /* The fourth layer */
+        15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+        /* The fourth layer shadow */
+        20px 20px 0 0px #fff,
+        /* The fifth layer */
+        20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+        /* The fifth layer shadow */
+        25px 25px 0 0px #fff,
+        /* The fifth layer */
+        25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+      /* The fifth layer shadow */
+      margin-left: 10px;
+      margin-right: 45px;
+    }
+
+
+    .layered-paper {
+      /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+      box-shadow:
+        0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+        /* The top layer shadow */
+        5px 5px 0 0px #fff,
+        /* The second layer */
+        5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+        /* The second layer shadow */
+        10px 10px 0 0px #fff,
+        /* The third layer */
+        10px 10px 1px 1px rgba(0, 0, 0, 0.35);
+      /* The third layer shadow */
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 30px;
+      margin-bottom: 5px;
+    }
+
+    .vert-cent {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+  </style>
+  <link rel="icon"
+    href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩻</text></svg>">
+  <title>MRGen</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
+  <center>
+    <span
+      style="font-size:50px; color:#4d4d4d; font-family: Varela Round,sans-serif; font-weight: 700; line-height: 65px;">MRGen</span><br>
+    <span style="font-size:36px">Diffusion-based Controllable Data Engine for MRI Segmentation towards Unannotated
+      Modalities</span><br><br>
+  </center>
+
+  <table align="center" width="800px">
+    <tbody>
+      <tr>
+        <td align="center" width="130px">
+          <center>
+            <span style="font-size:20px"><a href="https://haoningwu3639.github.io/">Haoning
+                Wu</a><sup>1,2,3*</sup></span>
+          </center>
+        </td>
+        <td align="center" width="120px">
+          <center>
+            <span style="font-size:20px"><a href="https://zhaoziheng.github.io/">Ziheng Zhao</a><sup>1,2,3*</sup></span>
+          </center>
+        </td>
+        <td align="center" width="110px">
+          <center>
+            <span style="font-size:20px"><a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya
+                Zhang</a><sup>1,3</sup></span>
+          </center>
+        </td>
+        <td align="center" width="120px">
+          <center>
+            <span style="font-size:20px"><a href="https://weidixie.github.io/">Weidi Xie</a><sup>1,3 <img class="round"
+                  style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+          </center>
+        </td>
+        <td align="center" width="130px">
+          <center>
+            <span style="font-size:20px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,3 <img
+                  class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table><br>
+
+  <table align="center" width="800px">
+    <tbody>
+      <tr>
+        <td align="center" width="800px">
+          <center>
+            <span style="font-size:18px"><sup>1</sup>School of Artificial Intelligence, Shanghai Jiao Tong
+              University</span>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" width="500px">
+    <tbody>
+      <tr>
+        <td align="center" width="250px">
+          <center>
+            <span style="font-size:18px"><sup>2</sup>CMIC, Shanghai Jiao Tong
+              University</span>
+          </center>
+        </td>
+        <td align="center" width="150px">
+          <center>
+            <span style="font-size:18px"><sup>3</sup>Shanghai AI Laboratory</span>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <table align="center" width="800px">
+    <tbody>
+      <tr>
+        <td align="center" width="800px">
+          <center>
+            <strong><span style="font-size:32px">Under Review</span></strong>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" width="800px">
+    <tbody>
+      <tr>
+        <td align="center" width="200px">
+          <center>
+            <br>
+            <span style="font-size:20px">Code
+              <a href="https://github.com/haoningwu3639/MRGen/"> [GitHub]</a>
+            </span>
+          </center>
+        </td>
+
+        <td align="center" width="200px">
+          <center>
+            <br>
+            <span style="font-size:20px">
+              Paper <a href="https://arxiv.org/abs/2411.xxxxx/"> [arXiv]</a>
+            </span>
+          </center>
+        </td>
+
+        <td align="center" width="200px">
+          <center>
+            <br>
+            <span style="font-size:20px">
+              Cite <a href="./resources/bibtex.txt"> [BibTeX]</a>
+            </span>
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <hr>
+  <br>
+  <center>
+    <img src="./resources/teaser.png" alt="alt text" style="width: 100%; object-fit: cover; max-width:100%;"></a>
+  </center>
+  <p style="text-align:justify; text-justify:inter-ideograph;">
+    <left>
+      <strong> Motivation and Overview. </strong>
+      <strong><i>Left</i></strong>: The heterogeneity of MRI modalities poses challenges to the generalization of
+      segmentation models.
+      Our proposed data engine, <strong>MRGen</strong>, addresses this by controllably synthesizing training data,
+      enabling segmentation towards mask-unannotated modalities.
+      <strong><i>Right</i></strong>: (a) Previous generative models rely on <strong>mask-annotated data</strong> and are
+      restricted to
+      data augmention <strong>in training modalities</strong>;
+      (b) Image translation typically requires <strong>registered data pairs</strong> (indicated by dashed lines),
+      limited to conversions between specific modalities;
+      (c) MRGen introduces a new paradigm, enabling controllable generation across multiple modalities <strong> without
+        relying on registered data pairs</strong> or <strong>mask-annotated data</strong> from target modalities.
+      Different colors represent distinct modalities.
+    </left>
+  </p>
+
+  <center>
+    <h2> <strong> Abstract </strong> </h2>
+  </center>
+  <p style="text-align:justify; text-justify:inter-ideograph;">
+  </p>
+  <div class="container">
+    <div class="text" width="400px">
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+        <left>
+
+          Medical image segmentation has recently demonstrated impressive progress with deep neural networks, yet the
+          heterogeneous modalities and scarcity of mask annotations limit the development of segmentation models on
+          unannotated modalities.
+          This paper investigates a new paradigm for leveraging generative models in medical applications: controllably
+          synthesizing data for <strong>unannotated modalities</strong>, <strong>without requiring registered data
+            pairs</strong>.
+          Specifically, we make the following contributions in this paper:
+          (i) we collect and curate a large-scale radiology image-text dataset, <strong>MedGen-1M</strong>, comprising
+          modality
+          labels, attributes, region, and organ information, along with a subset of organ mask annotations, to support
+          research in controllable medical image generation;
+          (ii) we propose a diffusion-based data engine, termed <strong>MRGen</strong>, which enables generation
+          conditioned on
+          text prompts and masks, synthesizing MR images for diverse modalities lacking mask annotations, to train
+          segmentation models on unannotated modalities;
+          (iii) we conduct extensive experiments across various modalities, illustrating that our data engine can
+          effectively synthesize training samples and extend MRI segmentation towards unannotated modalities.
+        </left>
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <center>
+    <h2> <strong> MRGen Architecture </strong> </h2>
+  </center>
+  <p><img class="center" src="./resources/architecture.png" width="750px"></p>
+  <p>
+    <left>
+      <strong style="font-weight: 900"> Architecture Overview. </strong style="font-weight: 900">
+      Developing our MRGen involves three key steps:
+      (a) Train an autoencoder on various images from dataset <span
+        style="font-style: normal;">𝒟<sub><i>u</i></sub></span>;
+      (b) Train a text-guided generative model within the latent space, using image-text pairs across diverse modalities
+      from <span style="font-style: normal;">𝒟<sub><i>u</i></sub></span>, featuring <span
+        style="color: #FF0000;">modality</span>, <span style="color: #7030A0;">attributes</span>,
+      <span style="color: #92D050;">region</span>, and <span style="color: #00B0F0;">organs</span> information;
+      (c) Train a mask condition controller jointly on the mask-annotated source-domain dataset <span
+        style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and
+      unannotated target-domain dataset <span style="font-style: normal;">𝒟<sub><i>t</i></sub></span>, enabling
+      controllable
+      generation based on both text prompts
+      and masks.
+    </left>
+  </p>
+  <hr>
+
+  <center>
+    <h2> <strong> Results </strong> </h2>
+  </center>
+  <h3>
+    <center>
+      <strong> Quantitative Results </strong>
+    </center>
+  </h3>
+  <center>
+    <p><img class="center" src="./resources/quantitative_results_generation.png" width="450px"></p>
+  </center>
+  <p>
+    <strong> Quantitative Results (FID) on Generation. </strong>
+    Smaller values indicate better performance.
+    Here, CM., MP., PS., LQ., PR., AM., and ML., denote CHAOS-MRI, MSD-Prostate, PanSeg, LiQA, PROMISE12, AMOS22, and
+    MSD-Liver, respectively.
+  </p>
+
+  <center>
+    <p><img class="center" src="./resources/quantitative_results_segmentation.png" width="800px"></p>
+  </center>
+  <p><strong> Quantitative Results (DSC score) on Segmentation. </strong>
+    Oracle Box denotes the DSC score compared between the perturbed oracle box prompts for SAM2, and the ground truth;
+    <span style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and <span
+      style="font-style: normal;">𝒟<sub><i>t</i></sub></span>
+    denote training with real and manually annotated source-domain and target-domain data respectively.
+    Results are organized by three different cross-modality simulations, where the best results under nnUNet and UMamba
+    are <strong>bolded</strong> respectively, while the second best are <span
+      style="text-decoration: underline;">underlined</span>.
+  </p>
+
+  <h3>
+    <center>
+      <strong> Qualitative Results </strong>
+    </center>
+  </h3>
+
+  <p> <img class="center" src="./resources/qualitative_results_generation.png" width="800px"> </p>
+  <p><strong> Qualitative Results of Controllable Generation. </strong>
+    We present images from the source domain <span style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and the
+    target
+    domain <span style="font-style: normal;">𝒟<sub><i>t</i></sub></span> for reference.
+    Here, <span style="color: #FF0000;">prostate</span>, <span style="color: #FF0000;">liver</span>, <span
+      style="color: #92D050;">right kidney</span>, <span style="color: #00B0F0;">left kidney</span> and <span
+      style="color: #7030A0;">spleen</span> are contoured with different colors.
+  </p>
+
+
+  <p><img class="center" src="./resources/qualitative_results_segmentation.png" width="800px"></p>
+  <p><strong>Qualitative Results of Segmentation towards Unannotated Modalities.</strong>
+    We present reference images from the source-domain training set <span
+      style="font-style: normal;">𝒟<sub><i>s</i></sub></span>, images from the target-domain test set <span
+      style="font-style: normal;">𝒟<sub><i>t</i></sub></span>, and corresponding predictions and ground truth.
+    We visualize <span style="color: #FF0000;">prostate</span> on the middle row, and <span
+      style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, <span
+      style="color: #00B0F0;">left kidney</span> and <span style="color: #FFFF00;">spleen</span> on the upper and lower
+    row with different colors.
+  </p>
+
+  <hr>
+
+  <center>
+    <h2> <strong> Data Statistics </strong> </h2>
+  </center>
+
+  <p><img class="center" src="./resources/data_statistics_1.png" width="800px"></p>
+
+  <p>
+    <strong> Data Statistics of <i>Radiopaedia</i>. </strong>
+    (a) Distribution of slice counts across various modalities in <i>Radiopaedia-MRI</i>;
+    (b) Proportional distribution of slices across different regions in <i>Radiopaedia-CT</i> and
+    <i>Radiopaedia-MRI</i>.
+  </p>
+
+  <p><img class="center" src="./resources/data_statistics_2.png" width="800px"></p>
+  <p>
+    <strong> Details of Segmentation-annotated Datasets in MedGen-1M. </strong>
+    Here, #Vol. represents the number of 3D Volumes, #Slc. denotes the number of 2D slices, and #Slc. w/mask
+    indicates the number of 2D slices with mask annotations.
+    *: AMOS22CT also contains images and mask annotations for the following organs: <i>Gallbladder</i>,
+    <i>Esophagus</i>, <i>Stomach</i>, <i>Aorta</i>, <i>Inferior Vena Cava</i>, <i>Pancreas</i>, <i>Duodenum</i>,
+    <i>Urinary Bladder</i>, and <i>Adrenal Gland</i>.
+  </p>
+
+  <hr>
+
+  <center>
+    <h2> <strong> More Visualization </strong> </h2>
+  </center>
+
+  <p><img class="center" src="./resources/more_qualitative_results_generation.png" width="800px"></p>
+  <p><strong> More Qualitative Results of Controllable Generation. </strong>
+    We present images from the source domain <span style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and the
+    target domain <span style="font-style: normal;">𝒟<sub><i>t</i></sub></span> for reference.
+    Here, specific organs are contoured with distinct colors: <span style="color: #FF0000;">prostate</span> in
+    MSD-Prostate and PROMISE12 datasets, and <span style="color: #FF0000;">pancreas</span> in PanSeg dataset, and <span
+      style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, <span
+      style="color: #00B0F0;">left kidney</span> and <span style="color: #FFFF00;">spleen</span> in other datasets.
+  </p>
+
+  <p><img class="center" src="./resources/more_qualitative_results_segmentation.png" width="800px"></p>
+  <p><strong> More Qualitative Results on Segmentation towards Unannotated Modalities. </strong>
+    We present reference images from the source-domain training set <span
+      style="font-style: normal;">𝒟<sub><i>s</i></sub></span>, images from the target-domain test set <span
+      style="font-style: normal;">𝒟<sub><i>t</i></sub></span>, and corresponding predictions and ground truth.
+    Here, specific organs are highlighted with different colors: <span style="color: #FF0000;">prostate</span> in
+    MSD-Prostate and PROMISE12 datasets, and <span style="color: #FF0000;">pancreas</span> in PanSeg dataset, and <span
+      style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, <span
+      style="color: #00B0F0;">left kidney</span> and <span style="color: #FFFF00;">spleen</span> in other datasets.
+  </p>
+
+  <br>
+
+  <p>
+    <center>
+      <strong>Welcome to check out our paper for more technical details and results!</strong>
+    </center>
+  </p>
+
+  <hr>
+
+  <center>
+    <h2> <strong> Acknowledgements </strong> </h2>
+  </center>
+  <p>
+    Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a
+      href="http://richzhang.github.io/">Richard Zhang</a>.
+  </p>
+  <br>
+  <br>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
