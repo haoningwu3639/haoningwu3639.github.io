@@ -189,9 +189,8 @@
 <body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
   <center>
     <span
-      style="font-size:50px; color:#4d4d4d; font-family: Varela Round,sans-serif; font-weight: 700; line-height: 65px;">MRGen</span><br>
-    <span style="font-size:36px">Diffusion-based Controllable Data Engine for MRI Segmentation towards Unannotated
-      Modalities</span><br><br>
+      style="font-size:36px; color:#4d4d4d; font-family: Varela Round,sans-serif; font-weight: 700; line-height: 65px;">MRGen</span><br>
+    <span style="font-size:28px">Segmentation Data Engine for Underrepresented MRI Modalities</span><br><br>
   </center>
 
   <table align="center" width="800px">
@@ -214,16 +213,16 @@
                 Zhang</a><sup>1,3</sup></span>
           </center>
         </td>
-        <td align="center" width="120px">
-          <center>
-            <span style="font-size:20px"><a href="https://weidixie.github.io/">Weidi Xie</a><sup>1,3 <img class="round"
-                  style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
-          </center>
-        </td>
         <td align="center" width="130px">
           <center>
             <span style="font-size:20px"><a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a><sup>1,3 <img
                   class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
+          </center>
+        </td>
+        <td align="center" width="120px">
+          <center>
+            <span style="font-size:20px"><a href="https://weidixie.github.io/">Weidi Xie</a><sup>1,3 <img class="round"
+                  style="width:20px" src="./resources/corresponding_fig.png"></sup></span>
           </center>
         </td>
       </tr>
@@ -315,18 +314,13 @@
   <p style="text-align:justify; text-justify:inter-ideograph;">
     <left>
       <strong> Motivation and Overview. </strong>
-      <strong><i>Left</i></strong>: The heterogeneity of MRI modalities poses challenges to the generalization of
-      segmentation models.
-      Our proposed data engine, <strong>MRGen</strong>, addresses this by controllably synthesizing training data,
-      enabling segmentation towards mask-unannotated modalities.
-      <strong><i>Right</i></strong>: (a) Previous generative models rely on <strong>mask-annotated data</strong> and are
-      restricted to
-      data augmention <strong>in training modalities</strong>;
-      (b) Image translation typically requires <strong>registered data pairs</strong> (indicated by dashed lines),
-      limited to conversions between specific modalities;
-      (c) MRGen introduces a new paradigm, enabling controllable generation across multiple modalities <strong> without
-        relying on registered data pairs</strong> or <strong>mask-annotated data</strong> from target modalities.
-      Different colors represent distinct modalities.
+      <strong><i>Left</i></strong>: The heterogeneity of MRI modalities challenges the generalization of segmentation models.
+      Our proposed data engine, <strong>MRGen</strong>, overcomes this by controllably synthesizing training data for segmentation models.
+      <strong><i>Right</i></strong>: (a) Prior generative models are restricted to 
+      Previous generative models rely on <strong>mask-annotated data</strong> and are data augmentation for <strong>well-annotated modalities</strong>;
+      (b) Image translation typically requires registered data pairs (dashed lines), and is limited to specific modality conversions;
+      (c) <strong>MRGen</strong> enables controllable generation across diverse modalities, creating data for training segmentation models towards underrepresented modalities. 
+      Distinct colors represent different modalities.
     </left>
   </p>
 
@@ -339,24 +333,17 @@
     <div class="text" width="400px">
       <p style="text-align:justify; text-justify:inter-ideograph;">
         <left>
-
-          Medical image segmentation has recently demonstrated impressive progress with deep neural networks, yet the
-          heterogeneous modalities and scarcity of mask annotations limit the development of segmentation models on
-          unannotated modalities.
-          This paper investigates a new paradigm for leveraging generative models in medical applications: controllably
-          synthesizing data for <strong>unannotated modalities</strong>, <strong>without requiring registered data
-            pairs</strong>.
-          Specifically, we make the following contributions in this paper:
-          (i) we collect and curate a large-scale radiology image-text dataset, <strong>MedGen-1M</strong>, comprising
-          modality
-          labels, attributes, region, and organ information, along with a subset of organ mask annotations, to support
-          research in controllable medical image generation;
-          (ii) we propose a diffusion-based data engine, termed <strong>MRGen</strong>, which enables generation
-          conditioned on
-          text prompts and masks, synthesizing MR images for diverse modalities lacking mask annotations, to train
-          segmentation models on unannotated modalities;
-          (iii) we conduct extensive experiments across various modalities, illustrating that our data engine can
-          effectively synthesize training samples and extend MRI segmentation towards unannotated modalities.
+          Training medical image segmentation models for rare yet clinically significant imaging modalities is challenging due to the scarcity of annotated data, 
+          and manual mask annotations can be costly and labor-intensive to acquire. 
+          This paper investigates <strong>leveraging generative models to synthesize training data, to train segmentation models for underrepresented modalities</strong>, 
+          particularly on annotation-scarce MRI. 
+          Concretely, our contributions are threefold: 
+          (i) we introduce <strong>MRGen-DB</strong>, a large-scale radiology image-text dataset comprising extensive samples with rich metadata, including modality labels, attributes, regions, 
+          and organs information, with a subset having pixelwise mask annotations; 
+          (ii) we present <strong>MRGen</strong>, a diffusion-based data engine for controllable medical image synthesis, conditioned on text prompts and segmentation masks. 
+          MRGen can generate realistic images for diverse MRI modalities lacking mask annotations, facilitating segmentation training in low-source domains; 
+          (iii) extensive experiments across multiple modalities demonstrate that MRGen significantly improves segmentation performance on unannotated modalities by providing high-quality synthetic data. 
+          We believe that our method bridges a critical gap in medical image analysis, extending segmentation capabilities to scenarios that are challenging to acquire manual annotations.
         </left>
       </p>
     </div>
@@ -372,18 +359,12 @@
     <left>
       <strong style="font-weight: 900"> Architecture Overview. </strong style="font-weight: 900">
       Developing our MRGen involves three key steps:
-      (a) Train an autoencoder on various images from dataset <span
-        style="font-style: normal;">𝒟<sub><i>u</i></sub></span>;
-      (b) Train a text-guided generative model within the latent space, using image-text pairs across diverse modalities
-      from <span style="font-style: normal;">𝒟<sub><i>u</i></sub></span>, featuring <span
-        style="color: #FF0000;">modality</span>, <span style="color: #7030A0;">attributes</span>,
+      (a) Train an autoencoder on various images from MRGen-DB dataset;
+      (b) Train a text-guided generative model within the latent space, using image-text pairs across diverse modalities from MRGen-DB, 
+      featuring <span style="color: #FF0000;">modality</span>, <span style="color: #7030A0;">attributes</span>,
       <span style="color: #92D050;">region</span>, and <span style="color: #00B0F0;">organs</span> information;
-      (c) Train a mask condition controller jointly on the mask-annotated source-domain dataset <span
-        style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and
-      unannotated target-domain dataset <span style="font-style: normal;">𝒟<sub><i>t</i></sub></span>, enabling
-      controllable
-      generation based on both text prompts
-      and masks.
+      (c) Train a mask condition controller jointly on image-text pairs with
+      and without mask annotations, enabling controllable generation based on both text prompts and masks.
     </left>
   </p>
   <hr>
@@ -401,24 +382,16 @@
   </center>
   <p>
     <strong> Quantitative Results (FID) on Generation. </strong>
-    Smaller values indicate better performance.
-    Here, CM., MP., PS., LQ., PR., AM., and ML., denote CHAOS-MRI, MSD-Prostate, PanSeg, LiQA, PROMISE12, AMOS22, and
-    MSD-Liver, respectively.
+    Here, CM., MP., PS., LQ., and PR., denote CHAOS-MRI, MSD-Prostate, PanSeg, LiQA, and PROMISE12, respectively.
   </p>
 
   <center>
-    <p><img class="center" src="./resources/quantitative_results_segmentation.png" width="800px"></p>
+    <p><img class="center" src="./resources/quantitative_results_segmentation.png" width="780px"></p>
   </center>
   <p><strong> Quantitative Results (DSC score) on Segmentation. </strong>
-    Oracle Box denotes the DSC score compared between the perturbed oracle box prompts for SAM2, and the ground truth;
-    <span style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and <span
-      style="font-style: normal;">𝒟<sub><i>t</i></sub></span>
-    denote training with real and manually annotated source-domain and target-domain data respectively.
-    Results are organized by three different cross-modality simulations, where the best results under nnUNet and UMamba
-    are <strong>bolded</strong> respectively, while the second best are <span
-      style="text-decoration: underline;">underlined</span>.
-  </p>
-
+    Here, Dsdenotes training with manually annotated source-domain data. 
+    Results with the best and second best results are <strong>bolded</strong> and <span
+    style="text-decoration: underline;">underlined</span>, respectively.
   <h3>
     <center>
       <strong> Qualitative Results </strong>
@@ -428,23 +401,21 @@
   <p> <img class="center" src="./resources/qualitative_results_generation.png" width="800px"> </p>
   <p><strong> Qualitative Results of Controllable Generation. </strong>
     We present images from the source domain <span style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and the
-    target
-    domain <span style="font-style: normal;">𝒟<sub><i>t</i></sub></span> for reference.
-    Here, <span style="color: #FF0000;">prostate</span>, <span style="color: #FF0000;">liver</span>, <span
-      style="color: #92D050;">right kidney</span>, <span style="color: #00B0F0;">left kidney</span> and <span
-      style="color: #7030A0;">spleen</span> are contoured with different colors.
+    target domain <span style="font-style: normal;">𝒟<sub><i>t</i></sub></span> for reference.
+    Here, <span style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, 
+    <span style="color: #00B0F0;">left kidney</span>, <span style="color: #FFFF00;">spleen</span>, <span style="color: #FF0000;">prostate</span>,
+    and <span style="color: #FF0000;">pancreas</span>, are contoured with different colors.
   </p>
-
 
   <p><img class="center" src="./resources/qualitative_results_segmentation.png" width="800px"></p>
   <p><strong>Qualitative Results of Segmentation towards Unannotated Modalities.</strong>
-    We present reference images from the source-domain training set <span
-      style="font-style: normal;">𝒟<sub><i>s</i></sub></span>, images from the target-domain test set <span
-      style="font-style: normal;">𝒟<sub><i>t</i></sub></span>, and corresponding predictions and ground truth.
-    We visualize <span style="color: #FF0000;">prostate</span> on the middle row, and <span
-      style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, <span
-      style="color: #00B0F0;">left kidney</span> and <span style="color: #FFFF00;">spleen</span> on the upper and lower
-    row with different colors.
+    Significant imaging differences between source-domain (<span style="font-style: normal;">𝒟<sub><i>s</i></sub></span>) 
+    and target-domain (<span style="font-style: normal;">𝒟<sub><i>t</i></sub></span>) make segmentation on 
+    target domains (<span style="font-style: normal;">𝒟<sub><i>t</i></sub></span>) extremely challenging. 
+    We visualize <span style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, <span
+    style="color: #00B0F0;">left kidney</span>, and <span style="color: #FFFF00;">spleen</span> in the first two rows, 
+    <span style="color: #FF0000;">prostate</span> in the third row, 
+    and <span style="color: #FF0000;">pancreas</span> in the fourth row with distinct colors.
   </p>
 
   <hr>
@@ -456,20 +427,15 @@
   <p><img class="center" src="./resources/data_statistics_1.png" width="800px"></p>
 
   <p>
-    <strong> Data Statistics of <i>Radiopaedia</i>. </strong>
+    <strong> Data Statistics of <i>Radiopaedia-MRI</i>. </strong>
     (a) Distribution of slice counts across various modalities in <i>Radiopaedia-MRI</i>;
-    (b) Proportional distribution of slices across different regions in <i>Radiopaedia-CT</i> and
-    <i>Radiopaedia-MRI</i>.
+    (b) Proportional distribution of slices across different regions in <i>Radiopaedia-MRI</i>.
   </p>
 
   <p><img class="center" src="./resources/data_statistics_2.png" width="800px"></p>
   <p>
-    <strong> Details of Segmentation-annotated Datasets in MedGen-1M. </strong>
-    Here, #Vol. represents the number of 3D Volumes, #Slc. denotes the number of 2D slices, and #Slc. w/mask
-    indicates the number of 2D slices with mask annotations.
-    *: AMOS22CT also contains images and mask annotations for the following organs: <i>Gallbladder</i>,
-    <i>Esophagus</i>, <i>Stomach</i>, <i>Aorta</i>, <i>Inferior Vena Cava</i>, <i>Pancreas</i>, <i>Duodenum</i>,
-    <i>Urinary Bladder</i>, and <i>Adrenal Gland</i>.
+    <strong> Details of Segmentation-annotated Datasets in MRGen-DB. </strong>
+    Here, # Vol. represents the number of 3D Volumes, # Slc. denotes the number of 2D slices, and # Slc. w/ mask indicates the number of 2D slices with mask annotations.
   </p>
 
   <hr>
@@ -480,23 +446,21 @@
 
   <p><img class="center" src="./resources/more_qualitative_results_generation.png" width="800px"></p>
   <p><strong> More Qualitative Results of Controllable Generation. </strong>
-    We present images from the source domain <span style="font-style: normal;">𝒟<sub><i>s</i></sub></span> and the
-    target domain <span style="font-style: normal;">𝒟<sub><i>t</i></sub></span> for reference.
-    Here, specific organs are contoured with distinct colors: <span style="color: #FF0000;">prostate</span> in
+    We present images from source domains (<span style="font-style: normal;">𝒟<sub><i>s</i></sub></span>) 
+    and target domains (<span style="font-style: normal;">𝒟<sub><i>t</i></sub></span>) for reference.
+    Here, specific organs are contoured with colors: <span style="color: #FF0000;">prostate</span> in
     MSD-Prostate and PROMISE12 datasets, and <span style="color: #FF0000;">pancreas</span> in PanSeg dataset, and <span
-      style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, <span
-      style="color: #00B0F0;">left kidney</span> and <span style="color: #FFFF00;">spleen</span> in other datasets.
+      style="color: #FF0000;">liver</span> in LiQA and CHAOS-MRI datasets.
   </p>
 
   <p><img class="center" src="./resources/more_qualitative_results_segmentation.png" width="800px"></p>
   <p><strong> More Qualitative Results on Segmentation towards Unannotated Modalities. </strong>
-    We present reference images from the source-domain training set <span
-      style="font-style: normal;">𝒟<sub><i>s</i></sub></span>, images from the target-domain test set <span
-      style="font-style: normal;">𝒟<sub><i>t</i></sub></span>, and corresponding predictions and ground truth.
-    Here, specific organs are highlighted with different colors: <span style="color: #FF0000;">prostate</span> in
+    Significant imaging differences between source-domain (<span style="font-style: normal;">𝒟<sub><i>s</i></sub></span>), 
+    and target-domain (<span style="font-style: normal;">𝒟<sub><i>t</i></sub></span>), 
+    make segmentation on target domains (<span style="font-style: normal;">𝒟<sub><i>t</i></sub></span>) extremely challenging.
+    Here, specific organs are highlighted with colors: <span style="color: #FF0000;">prostate</span> in
     MSD-Prostate and PROMISE12 datasets, and <span style="color: #FF0000;">pancreas</span> in PanSeg dataset, and <span
-      style="color: #FF0000;">liver</span>, <span style="color: #92D050;">right kidney</span>, <span
-      style="color: #00B0F0;">left kidney</span> and <span style="color: #FFFF00;">spleen</span> in other datasets.
+      style="color: #FF0000;">liver</span> in LiQA and CHAOS-MRI datasets.
   </p>
 
   <br>
