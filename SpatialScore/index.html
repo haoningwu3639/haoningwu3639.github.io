@@ -1,0 +1,375 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <style type="text/css">
+    
+    body {
+      font-family: "Times New Roman", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 200;
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+    }
+
+    h1, h2{
+      font-weight: 400;
+      margin-top: 1.0em;
+      margin-bottom: 1.0em;
+    }
+
+    h3{
+      font-weight: 400;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 1.4;
+    }
+
+    code {
+      font-size: 0.8rem;
+      margin: 0 0.2rem;
+      padding: 0.5rem 0.8rem;
+      white-space: nowrap;
+      background: #efefef;
+      border: 1px solid #d3d3d3;
+      color: #000000;
+      border-radius: 3px;
+    }
+
+    pre>code {
+      display: block;
+      white-space: pre;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+    }
+
+    pre.prettyprint>code {
+      border: none;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .image {
+      flex-basis: 40%
+    }
+
+    .text {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .disclaimerbox {
+      background-color: #eee;
+      border: 1px solid #eeeeee;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      padding: 20px;
+    }
+
+    video.header-vid {
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+    }
+
+    img.header-img {
+      height: 140px;
+      border: 1px solid black;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+    }
+
+    img.rounded {
+      border: 0px solid #eeeeee;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+
+    }
+
+    a:link,
+    a:visited {
+      color: #1367a7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #208799;
+    }
+
+    td.dl-link {
+      height: 160px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .abstract-container {
+      background-color: #f8f9fa;
+      padding: 0.5em;
+      border-radius: 5px;
+      margin: 0.5em 0;
+    }
+
+  </style>
+
+<link rel="icon" href="./resources/icon.png">
+  <title>SpatialScore</title>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
+  <center>
+    <span style="font-size:36px; color:#5C5DBD; font-family: Varela Round,sans-serif; font-weight: 700; line-height: 65px;">SpatialScore</span>
+    <br>
+    <span style="font-size:28px">Towards Unified Evaluation for Multimodal Spatial Understanding</span>
+    <br>
+    <br>
+  </center>
+
+  <table align="center" width="840px">
+    <tbody>
+      <tr>
+        <td align="center" width="125px">
+          <center> <span style="font-size:20px"><a href="https://haoningwu3639.github.io/">Haoning Wu</a><sup>1,2*</sup></span> </center>
+        </td>
+        <td align="center" width="120px">
+          <center> <span style="font-size:20px"><a href="https://github.com/1106280506Hx/">Xiao Huang</a><sup>1,3*</sup></span> </center>
+        </td>
+        <td align="center" width="120px">
+          <center> <span style="font-size:20px"><a href="https://github.com/YHChen0511/">Yaohui Chen</a><sup>1</sup></span> </center>
+        </td>
+        <td align="center" width="100px">
+          <center> <span style="font-size:20px"><a href="https://annzhanglion.github.io/">Ya Zhang</a><sup>1,2</sup></span> </center>
+        </td>
+        <td align="center" width="155px">
+          <center> <span style="font-size:20px"><a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang</a><sup>1,2 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span> </center>
+        </td>
+        <td align="center" width="135px">
+          <center> <span style="font-size:20px"><a href="https://weidixie.github.io/">Weidi Xie</a><sup>1,2 <img class="round" style="width:20px" src="./resources/corresponding_fig.png"></sup></span> </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <br>
+
+  <table align="center" width="800px">
+    <tbody>
+      <tr>
+        <td align="center" width="800px">
+          <center> <span style="font-size:18px"><sup>1</sup>School of Artificial Intelligence, Shanghai Jiao Tong University</span> </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" width="400px">
+    <tbody>
+      <tr>
+        <td align="center" width="150px">
+          <center> <span style="font-size:18px"><sup>2</sup>Shanghai AI Laboratory</span> </center>
+        </td>
+
+        <td align="center" width="150px">
+          <center> <span style="font-size:18px"><sup>3</sup>Tianjin University</span> </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <table align="center" width="800px">
+    <tbody>
+      <tr>
+        <td align="center" width="800px">
+          <center> <strong><span style="font-size:32px">Under Review</span></strong> </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <table align="center" width="800px">
+    <tbody>
+      <tr>
+        <td align="center" width="200px">
+          <center> <span style="font-size:20px">Code <a href="https://github.com/haoningwu3639/SpatialScore/"> [GitHub]</a> </span> </center>
+        </td>
+
+        <td align="center" width="200px">
+          <center> <span style="font-size:20px"> Paper <a href="https://arxiv.org/"> [arXiv]</a> </span> </center>
+        </td>
+
+        <td align="center" width="200px">
+          <center> <span style="font-size:20px"> Data <a href="https://huggingface.co/datasets/haoningwu/SpatialScore"> [HuggingFace]</a> </span> </center>
+        </td>
+
+        <td align="center" width="200px">
+          <center> <span style="font-size:20px"> Cite <a href="./resources/bibtex.txt"> [BibTeX]</a> </span> </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <br>
+
+  <hr>
+  
+  <br>
+
+  <center> <img src="./resources/teaser.png" alt="alt text" style="width: 100%; object-fit: cover; max-width:100%;"></a> </center>
+  <p style="text-align:justify; text-justify:inter-ideograph;">
+    <left>
+      <strong style="font-weight: 900"> Overview. </strong>
+      (a) <strong>SpatialScore</strong> thoroughly assesses spatial reasoning abilities of current models via question-answering (judgment, multi-choice, and open-ended QA);
+      (b) Performance of representative models on our proposed <strong>VGBench</strong> and <strong>SpatialScore</strong>;
+    </left>
+  </p>
+
+  <center> <h2> <strong> Abstract </strong> </h2> </center>
+  <div class="abstract-container">
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+        <left>
+          Multimodal large language models (MLLMs) have achieved impressive success in question-answering tasks, yet their capabilities for spatial understanding are less explored. 
+          This paper investigates a critical question:
+          <i> do existing MLLMs possess 3D spatial perception and understanding abilities? </i>
+          Concretely, we make the following contributions in this paper:
+          (i) we introduce <strong>VGBench</strong>, a benchmark specifically designed to assess MLLMs for visual geometry perception, <i>e.g.</i>, camera pose and motion estimation;
+          (ii) we propose <strong>SpatialScore</strong>, the most comprehensive and diverse multimodal spatial understanding benchmark to date, integrating VGBench with relevant data from the other 11 existing datasets.
+          This benchmark comprises 28K samples across various spatial understanding tasks, modalities, and QA formats, along with a carefully curated challenging subset, <strong>SpatialScore-Hard</strong>;
+          (iii) we develop <strong>SpatialAgent</strong>, a novel multi-agent system incorporating 9 specialized tools for spatial understanding, supporting both <i>Plan-Execute</i> and <i>ReAct</i> reasoning paradigms;
+          (iv) we conduct extensive evaluations to reveal persistent challenges in spatial reasoning while demonstrating the effectiveness of SpatialAgent. 
+          We believe SpatialScore will offer valuable insights and serve as a rigorous benchmark for the next evolution of MLLMs. 
+        </left>
+      </p>
+  </div>
+
+  <br>
+  <hr>
+
+  <center> <h2> <strong> Data Construction & Statistics </strong> </h2> </center>
+  <center> <img class="center" src="./resources/dataset.png" width="800px"></p> </center>
+
+  <p style="text-align:justify; text-justify:inter-ideograph;">
+    <left>
+      <strong style="font-weight: 900"> Dataset Construction and Statistics. </strong>
+      (a) The data construction pipeline for VGBench, SpatialScore, and SpatialScore-Hard;
+      (b) Representative examples from distinct categories in SpatialScore;
+      (c) Data distribution statistics across VGBench, SpatialScore, and SpatialScore-Hard.
+    </left>
+  </p>
+
+  <br>
+
+  <center> <img class="center" src="./resources/SpatialScore_statistics.png" width="800px"> </center>
+  <p style="text-align:justify; text-justify:inter-ideograph;">
+    <center> <strong style="font-weight: 900; font-size: 18px"> Data sources and task category statistics visualization of SpatialScore. </strong> </center>
+  </p>
+
+  <br>
+
+  <center> <img class="center" src="./resources/VGBench_statistics.png" width="800px"> </center>
+  <p style="text-align:justify; text-justify:inter-ideograph;">
+    <center> <strong style="font-weight: 900; font-size: 18px"> Data sources and task category statistics visualization of VGBench. </strong> </center>
+  </p>
+
+  <br>
+  <hr>
+
+  <center> <h2> <strong> SpatialAgent Architecture </strong> </h2> </center>
+  <center> <img class="center" src="./resources/architecture.png" width="800px"> </center>
+  <p>
+    <left>
+      <strong style="font-weight: 900"> Architecture and Workflow of SpatialAgent. </strong>
+      (a) Specialized spatial understanding tools integrated in SpatialAgent;
+      (b) The <i>Plan-Execute</i> paradigm for hierarchical task decomposition and stepwise execution;
+      (c) The <i>ReAct</i> paradigm for iterative interaction and dynamic strategy refinement.
+    </left>
+  </p>
+
+  <br>
+  <hr>
+
+  <center> <h2> <strong> Results </strong> </h2> </center>
+  <h3> <center> <strong> Quantitative Results </strong> </center> </h3>
+  
+  <center> <img class="center" src="./resources/quantitative_results_1.png" width="800px"></p> </center>
+  <p>
+    <left>
+      <strong style="font-weight: 900"> Quantitative Results on SpatialScore. </strong>
+      Here, Count., Obj-Loc., Pos-Rel., Dist., Obj-Prop., and Cam.&IT. refer to Counting, Object Localization, 3D Positional Relation, Depth & Distance, Object Properties, and Camera & Image Transformation, respectively.
+      Results with the best and second best results are <strong>bolded</strong> and <u>underlined</u>, respectively.
+    </left>
+  </p>
+
+  <br>
+  
+  <center> <img class="center" src="./resources/quantitative_results_2.png" width="800px"> </center>
+  <p>
+    <left>
+      <strong style="font-weight: 900"> Quantitative Results on SpatialScore-Hard. </strong>
+      Our SpatialAgent demonstrates substantially greater performance improvements on this carefully curated, challenging subset, highlighting its specialized capabilities for spatial understanding tasks.
+    </left>
+  </p>
+
+  <br>
+  
+  <center> <img class="center" src="./resources/quantitative_results_3.png" width="800px"> </center>
+  <p>
+    <left>
+      <strong style="font-weight: 900"> Quantitative Results on VGBench. </strong>
+      Here, Homo., Pose-Est., 3D-Recon., Tracking, and Obj-Pos. denote Homography Matrix, Pose Estimation, 3D Reconstruction, Point Tracking, and Object Position, respectively.
+      Results with the best and second best results are are <strong>bolded</strong> and <u>underlined</u>.
+    </left>
+  </p>
+
+  <br>
+
+  <h3> <center> <strong> Qualitative Results </strong> </center> </h3>
+  <p> <img class="center" src="./resources/qualitative_results.png" width="800px"> </p>
+  <p>
+    <left>
+      <strong style="font-weight: 900"> Qualitative Results. </strong>
+      We present the comprehensive reasoning process of SpatialAgent against the direct responses of other models.
+      While occasional errors occur due to tool execution or interpretation mistakes, these limitations are expected to diminish as MLLMs continue to advance.
+    </left>
+  </p>
+
+  <br>
+
+  <p> <center> <strong style="font-weight: 900; font-size: 18px">Welcome to check out our paper for more technical details and results!</strong> </center> </p>
+
+  <hr>
+
+  <center> <h2> <strong> Acknowledgements </strong> </h2> </center>
+  <p> Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>. </p>
+
+  <br>
+  <br>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
