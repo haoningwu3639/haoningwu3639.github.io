@@ -1,6 +1,6 @@
 @article{wu2025spatialscore,
     author    = {Wu, Haoning and Huang, Xiao and Chen, Yaohui and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
     title     = {SpatialScore: Towards Unified Evaluation for Multimodal Spatial Understanding},
-    journal   = {arXiv preprint arXiv:2505.xxxx},
+    journal   = {arXiv preprint arXiv:2505.17012},
     year      = {2025},
 }
