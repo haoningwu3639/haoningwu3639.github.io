@@ -1,6 +1,6 @@
-@article{wu2024mrgen,
+@inproceedings{wu2025mrgen,
     author    = {Wu, Haoning and Zhao, Ziheng and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
     title     = {MRGen: Segmentation Data Engine for Underrepresented MRI Modalities},
-    journal   = {arXiv preprint arXiv:2412.04106},
-    year      = {2024},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}
+    year      = {2025},
 }
