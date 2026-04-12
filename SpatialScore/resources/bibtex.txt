@@ -1,6 +1,6 @@
-@article{wu2025spatialscore,
+@inproceedings{wu2025spatialscore,
     author    = {Wu, Haoning and Huang, Xiao and Chen, Yaohui and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
-    title     = {SpatialScore: Towards Unified Evaluation for Multimodal Spatial Understanding},
-    journal   = {arXiv preprint arXiv:2505.17012},
-    year      = {2025},
+    title     = {SpatialScore: Towards Comprehensive Evaluation for Spatial Intelligence},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year    = {2026},
 }
