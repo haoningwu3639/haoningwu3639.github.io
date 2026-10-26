@@ -2,743 +2,1167 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Haoning Wu</title>
 
   <meta name="author" content="Haoning Wu">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Haoning Wu (吴浩宁), PhD candidate at Shanghai Jiao Tong University, working on multi-modal learning, visual generative models and spatial intelligence.">
+  <link rel="canonical" href="https://haoningwu3639.github.io/">
+
+  <!-- Link preview (WeChat / LinkedIn / X / Slack ...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Haoning Wu 「吴浩宁」">
+  <meta property="og:description" content="PhD candidate at SJTU, working on multi-modal learning, visual generative models and spatial intelligence.">
+  <meta property="og:url" content="https://haoningwu3639.github.io/">
+  <meta property="og:image" content="https://haoningwu3639.github.io/images/thumbs/HaoningWu.jpg">
+  <meta name="twitter:card" content="summary">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script>
+    // Paper list view: "selected" (default) or "all", optionally narrowed to one topic.
+    // URLs like ?view=all or ?topic=gen override the default.
+    (function () {
+      var q = location.search, root = document.documentElement;
+      var v = /[?&]view=(all|selected)\b/.exec(q), t = /[?&]topic=(gen|spatial|video|lowlevel|others)\b/.exec(q);
+      root.setAttribute('data-view', t ? 'all' : (v ? v[1] : 'selected'));
+      if (t) root.setAttribute('data-topic', t[1]);
+    })();
+  </script>
   <link rel="icon" href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧐</text></svg>">
 </head>
 
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:1%;width:69%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Haoning Wu 「吴浩宁」</name>
-                  </p>
+<body id="top">
+  <!-- ===================== Top navigation ===================== -->
+  <nav class="topnav" aria-label="Sections">
+    <div class="topnav-inner">
+      <a class="topnav-name" href="#top">Haoning Wu</a>
+      <div class="topnav-links">
+        <a href="#news">News</a>
+        <a href="#preprints">Preprints</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#internship">Internship</a>
+        <a href="#awards">Awards</a>
+        <a href="#service">Service</a>
+        <a href="#misc">Misc</a>
+        <a href="data/HaoningWu_CV.pdf" class="topnav-cv">CV</a>
+      </div>
+    </div>
+  </nav>
 
-                  <p>
-                    I am currently a final-year PhD candidate at <a href="https://sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, fortunately advised by <a href="https://weidixie.github.io/index.html">Prof. Weidi Xie</a> and <a href="https://annzhanglion.github.io/">Prof. Ya Zhang</a>.
-                    Before that, I received my B.S. degree in Information Engineering (<strong>IEEE Pilot Class</strong>) also from <a href="https://sjtu.edu.cn/">SJTU</a> in 2022.</p>
-                    
-                  <p>
-                    I am generally interested in <strong>multi-modal learning</strong>, especially <strong>visual generative models</strong> and <strong>spatial intelligence</strong>.
-                    Recently, my research focus has gradually shifted towards world models and embodied AI.
-                    My long-term vision is to build Artificial General Intelligence (AGI) that surpasses human capabilities in <strong>perception</strong>, <strong>thinking</strong>, and <strong>action</strong>.
-                  </p>
+  <div class="page">
 
-                  <p>
-                    Previously, I have gained internship experience at <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a> and Alibaba (<a href="https://github.com/amap-cvlab">Amap CV Lab</a>). 
-                    And now, I am a <strong>Top Talent</strong> research intern at <a href="https://www.minimax.io/">MiniMax</a> (<a href="https://hailuoai.video/">Hailuo</a>), working on building Omni-modal foundation model.
-                  </p>
+    <!-- ===================== Intro ===================== -->
+    <table class="intro">
+      <tbody>
+        <tr>
+          <td class="intro-text">
+            <h1 class="name">Haoning Wu <span class="cn" lang="zh-CN">「吴浩宁」</span></h1>
+            <p class="tagline">
+              <span>PhD Candidate @ SJTU</span><span class="dot" aria-hidden="true">·</span><span>Top Talent Research Intern @ MiniMax</span>
+            </p>
 
-                  <p style="background-color:#ffffd0">
-                  <font color="red"> Expected to graduate in Summer 2027, I am actively seeking opportunities as a <strong>research intern</strong> or <strong>full-time researcher</strong></font> for visual generative models, Omni-LLMs or embodied AI.
-                  </p>
-                  
-                  <p>
-                    I am always open to discussions and collaborations, feel free to reach out.
-                  </p>
+            <p>
+              I am currently a final-year PhD candidate at <a href="https://sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, fortunately advised by <a href="https://weidixie.github.io/index.html">Prof. Weidi Xie</a> and <a href="https://annzhanglion.github.io/">Prof. Ya Zhang</a>.
+              Before that, I received my B.Eng. degree in Information Engineering (<strong>IEEE Pilot Class</strong>) also from <a href="https://sjtu.edu.cn/">SJTU</a> in 2022.
+            </p>
 
-                  <p>
-                    Email: haoningwu3639 at gmail.com  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  WeChat: haoningwu_ 
-                  </p>
+            <p>
+              I am generally interested in <strong>multi-modal learning</strong>, especially <strong>visual generative models</strong> and <strong>spatial intelligence</strong>.
+              My long-term vision is to build Artificial General Intelligence (AGI) that surpasses human capabilities in <strong>perception</strong>, <strong>thinking</strong>, and <strong>action</strong>.
+            </p>
 
-                  <p style="text-align:center">
-                    <a href="mailto:haoningwu3639@gmail.com">Email</a> &nbsp/&nbsp
-                    <a href="data/HaoningWu_CV.pdf">CV</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?user=ia4M9mMAAAAJ">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://github.com/haoningwu3639/">Github</a> &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/haoningwu0815/">LinkedIn</a> &nbsp/&nbsp
-                    <a href="https://www.xiaohongshu.com/user/profile/5b824e01871ff10001fcead6">RedNote</a> &nbsp/&nbsp
-                    <a href="https://www.zhihu.com/people/wu-hao-zhu-34">Zhihu</a> 
-                  </p>
-                </td>
-                <td style="padding:1%;width:50%;max-width:50%">
-                  <a href="images/HaoningWu.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/HaoningWu.jpg" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <p>
+              Previously, I have gained internship experience at <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a> and Alibaba (<a href="https://github.com/amap-cvlab">Amap CV Lab</a>).
+              And now, I am a <strong>Top Talent</strong> research intern at <a href="https://www.minimax.io/">MiniMax</a> (<a href="https://hailuoai.video/">Hailuo</a>), working on building omni-modal foundation models for <a class="nobr" href="https://github.com/MiniMax-AI/MiniMax-H3">MiniMax-H3</a>.
+            </p>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>News</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px;width:75%;vertical-align:middle">
-                  <ul style="max-width:80%;margin-right:auto;margin-left:0;">
-                    <li> [2026.08] One paper (<a href="https://zhangyu2003.github.io/BasketEvent/">BasketEvent</a>) has been accepted by <a href="https://bmvc2026.bmva.org/">BMVC 2026</a>. </li>
-                    <li> [2026.07] Start internship at <strong><a href="https://www.minimax.io/">MiniMax</a></strong> as a <strong>Top Talent</strong> research intern, Beijing (on-site). </li>
-                    <li> [2026.06] One paper (<strong><a href="https://go2heart.github.io/omnistream/">OmniStream</a></strong>) has been accepted by <strong><a href="https://eccv.ecva.net/Conferences/2026/">ECCV 2026</a></strong>. </li>
-                    <!-- <li> [2026.05] I will attend <strong><a href="https://cvpr.thecvf.com/Conferences/2026">CVPR 2026</a></strong> in person. See you in Denver! </li> -->
-                    <li> [2026.04] One paper (<a href="https://arxiv.org/abs/2605.10523/">SemanticREPA</a>) has been accepted by <a href="https://higen-2025.github.io/">CVPR 2026 HiGen Workshop</a>. </li>
-                    <li> [2026.03] Start internship at <strong>Alibaba (<a href="https://github.com/amap-cvlab">Amap CV Lab</a>)</strong> as a research intern, Beijing (on-site). </li>
-                    <li> [2026.02] Two papers (<strong><a href="https://haoningwu3639.github.io/SpatialScore/">SpatialScore</a></strong> and <strong><a href="https://haolinyang-hlyang.github.io/SoccerMaster/">SoccerMaster</a></strong>) have been accepted by <strong><a href="https://cvpr.thecvf.com/Conferences/2026/">CVPR 2026</a></strong>, and selected as <strong>Highlight</strong> and <strong>Oral</strong> (<strong>Award Candidate</strong>), respectively. </li>
-                    <li> [2025.11] One paper (<strong><a href="https://mengmouxu.github.io/SceneGen/">SceneGen</a></strong>) has been accepted by <strong><a href="https://3dvconf.github.io/2026/">3DV 2026</a></strong>. </li>
-                    <li> [2025.08] Invited <a href="https://www.bilibili.com/video/BV19EeyzmENK/?vd_source=6cce745af23238982ade9525fe577332/">talk</a> about our paper (<strong><a href="https://haoningwu3639.github.io/MRGen/">MRGen</a></strong>) at <strong><a href="https://nice-nlp.github.io/">NICE</a></strong>. Welcome to discuss! </li>
-                    <li> [2025.08] I will attend <strong><a href="https://iccv.thecvf.com/Conferences/2025">ICCV 2025</a></strong> in person. See you in Hawaii! </li>
-                    <li> [2025.07] One paper (<strong><a href="https://jyrao.github.io/SoccerAgent/">SoccerAgent</a></strong>) has been accepted by <strong><a href="https://acmmm2025.org/">ACM Multimedia 2025</a></strong>. </li>
-                    <li> [2025.06] One paper (<strong><a href="https://haoningwu3639.github.io/MRGen/">MRGen</a></strong>) has been accepted by <strong><a href="https://iccv.thecvf.com/Conferences/2025/">ICCV 2025</a></strong>. </li>
-                    <li> [2025.02] One paper (<strong><a href="https://jyrao.github.io/UniSoccer/">UniSoccer</a></strong>) has been accepted by <strong><a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a></strong>. </li>
-                    <li> [2024.11] I am recognized as <strong><a href="https://bmvc2024.org/people/reviewers/">BMVC 2024 Outstanding Reviewer</a></strong>. </li>
-                    <li> [2024.10] One paper (<strong><a href="https://haoningwu3639.github.io/MegaFusion/">MegaFusion</a></strong>) has been accepted by <strong><a href="https://wacv2025.thecvf.com/">WACV 2025</a></strong>. </li>
-                    <li> [2024.09] One paper (<strong><a href="https://haoningwu3639.github.io/MatchTime/">MatchTime</a></strong>) has been accepted by <strong><a href="https://2024.emnlp.org/">EMNLP 2024</a></strong> and selected as <strong>Oral</strong>. </li>
-                    <!-- <li> [2024.06] Codes of <strong><a href="https://github.com/haoningwu3639/SimpleSDM-3">SimpleSDM-3</a></strong> and <a href="https://github.com/haoningwu3639/SimpleSDXL">SimpleSDXL</a> have been made public for helping research about Diffusion. </li> -->
-                    <li> [2024.04] I will attend <strong><a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a></strong> in person. See you in Seattle! </li>
-                    <li> [2024.04] I have passed my PhD Qualification Examination, and I am a PhD candidate now. </li>
-                    <li> [2024.03] Start internship at <strong><a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a></strong> as a research intern, Shanghai (on-site). </li>
-                    <li> [2024.02] One paper (<strong><a href="https://haoningwu3639.github.io/StoryGen_Webpage/">StoryGen</a></strong>) has been accepted by <strong><a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a></strong>. </li>
-                    <!-- <li> [2023.12] Codes of <a href="https://github.com/haoningwu3639/SimpleSDM">SimpleSDM</a> and <a href="https://github.com/haoningwu3639/SimpleSDM-Video">SimpleSDM-Video</a> have been made public for helping research about Diffusion. </li> -->
-                    <li> [2023.10] One paper (<a href="https://dl.acm.org/doi/10.1145/3595916.3626380">NeRF-SDP</a>) has been accepted by <a href="https://www.mmasia2023.org/">ACM Multimedia Asia 2023</a> and selected as <strong>Oral</strong>. </li>
-                    <li> [2023.08] One paper (<strong><a href="https://haoningwu3639.github.io/VFI_Adapter_Webpage/">VFIAdapter</a></strong>) has been accepted by <strong><a href="https://bmvc2023.org/">BMVC 2023</a></strong> and selected as <strong>Oral</strong>. </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <p class="callout">
+              <span class="alert">Expected to graduate in Summer 2027, I am actively seeking opportunities as a <strong>research intern</strong> or <strong>full-time researcher</strong></span> for visual generative models, Omni-LLMs or embodied AI.
+            </p>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Preprints / Tech Reports</heading>
-                  <p>
-                    * denotes equal contribution, and <sup>†</sup> denotes corresponding author.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/ABot-M05.png" alt="StoryGen" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2607.00678">
-                    <papertitle>ABot-M0.5: Unified Mobility-and-Manipulation World Action Model</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://scholar.google.com/citations?user=NH4NtmMAAAAJ">Ronghan Chen</a>, <a href="https://yandanyang.github.io/">Yandan Yang</a>, <a href="https://openreview.net/profile?id=~Zuojin_Tang1">Zuojin Tang</a>, <a href="https://dongjiehuo.github.io/">Dongjie Huo</a>, <a href="https://openreview.net/profile?id=%7ETong_Lin4">Tong Lin</a>, <strong>Haoning Wu</strong>, <i>et al</i>.
-                  <br>
-                  <em>arXiv</em>, 2026. &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://github.com/amap-cvlab/ABot-Manipulation">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2607.00678">arXiv</a>
-                  /
-                  <a href="https://github.com/amap-cvlab/ABot-Manipulation">code</a>
-                  <br>
-                  <p> Technical report of ABot-M0.5, a competitive foundation world action model (WAM).</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <p>
+              I am always open to discussions and collaborations, feel free to reach out.
+            </p>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/KubricCount.png" alt="StoryGen" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://verg-avesta.github.io/KubriCount/">
-                    <papertitle>Count Anything at Any Granularity</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://verg-avesta.github.io/">Chang Liu</a>, <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie</a>
-                  <br>
-                  <em>arXiv</em>, 2026. &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://verg-avesta.github.io/KubriCount/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2605.10887/">arXiv</a>
-                  /
-                  <a href="https://github.com/Verg-Avesta/KubriCount/">code</a>
-                  <br>
-                  <p> In this work, we re-define open-world counting as multi-grained counting, where visual exemplars specify target appearance and fine-grained text specifies the intended semantic granularity across five explicit levels. </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <p class="contact">
+              Email: <button type="button" class="copy-text" data-copy="haoningwu3639@gmail.com" title="Click to copy">haoningwu3639 at gmail.com</button> <span class="sep"></span> WeChat: <button type="button" class="copy-text" data-copy="haoningwu_" title="Click to copy">haoningwu_</button>
+            </p>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/GenTac.png" alt="GenTac" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://jyrao.github.io/GenTac/">
-                    <papertitle>GenTac: Generative Modeling and Forecasting of Soccer Tactics</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://jyrao.github.io">Jiayuan Rao</a>, <a href="https://github.com/Dr-kkk">Tianlin Gui</a>, <strong>Haoning Wu</strong>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang</a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>arXiv</em>, 2026. &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://jyrao.github.io/GenTac/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2604.11786/">arXiv</a>
-                  /
-                  <a href="https://github.com/jyrao/GenTac/">code</a>
-                  <br>
-                  <p> In this work, we present GenTac, a diffusion-based framework that treats open-play soccer as a stochastic, multi-player process, generating plausible future trajectories, tactical events, and controllable counterfactuals.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <p class="links">
+              <a href="mailto:haoningwu3639@gmail.com">Email</a><span class="sep">/</span>
+              <a href="data/HaoningWu_CV.pdf">CV</a><span class="sep">/</span>
+              <a href="https://scholar.google.com/citations?user=ia4M9mMAAAAJ">Google Scholar</a><span class="sep">/</span>
+              <a href="https://github.com/haoningwu3639/">Github</a><span class="sep">/</span>
+              <a href="https://www.linkedin.com/in/haoningwu0815/">LinkedIn</a><span class="sep">/</span>
+              <a href="https://www.xiaohongshu.com/user/profile/5b824e01871ff10001fcead6">RedNote</a><span class="sep">/</span>
+              <a href="https://www.zhihu.com/people/wu-hao-zhu-34">Zhihu</a>
+            </p>
+          </td>
+          <td class="intro-photo">
+            <a href="images/HaoningWu.jpg"><img src="images/thumbs/HaoningWu.jpg" width="640" height="689" alt="Haoning Wu" class="hoverZoomLink"></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Publications</heading>
-                  <p>
-                    * denotes equal contribution, and <sup>†</sup> denotes corresponding author.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/BasketEvent.png" alt="BasketEvent" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://zhangyu2003.github.io/BasketEvent/">
-                    <papertitle>BasketEvent: Understanding Who Did What and When in Basketball Videos</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://github.com/zhangyu2003/">Yu Zhang</a>, <a href="https://jyrao.github.io">Jiayuan Rao</a>, <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>BMVC</em>, 2026. &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://zhangyu2003.github.io/BasketEvent/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2607.21267">arXiv</a>
-                  /
-                  <a href="https://github.com/zhangyu2003/BasketEvent/">code</a>
-                  <br>
-                  <p> Given an input basketball video, our framework answers three player-centric questions: who performs the event, what event occurs, and when the key evidence appears.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <!-- ===================== News ===================== -->
+    <h2 class="section-heading" id="news"><span class="emoji" aria-hidden="true">🔥</span>News</h2>
+    <!-- Only the first 8 items are shown until "Show more" is clicked (the number is set in stylesheet.css, .news-list) -->
+    <ul class="list dated news-list">
+      <li> <span class="news-date">[2026.08]</span> One paper (<a href="#paper-basketevent">BasketEvent</a>) has been accepted by <a href="https://bmvc2026.bmva.org/">BMVC 2026</a>. </li>
+      <li> <span class="news-date">[2026.07]</span> Start internship at <strong><a href="https://www.minimax.io/">MiniMax</a></strong> as a <strong>Top Talent</strong> research intern, Beijing&nbsp;(on-site). </li>
+      <li> <span class="news-date">[2026.06]</span> One paper (<strong><a href="#paper-omnistream">OmniStream</a></strong>) has been accepted by <strong><a href="https://eccv.ecva.net/Conferences/2026/">ECCV 2026</a></strong>. </li>
+      <!-- <li> <span class="news-date">[2026.05]</span> I will attend <strong><a href="https://cvpr.thecvf.com/Conferences/2026">CVPR 2026</a></strong> in person. See you in Denver! </li> -->
+      <li> <span class="news-date">[2026.04]</span> One paper (<a href="#paper-semanticrepa">SemanticREPA</a>) has been accepted by <a href="https://higen-2025.github.io/">CVPR 2026 HiGen Workshop</a>. </li>
+      <li> <span class="news-date">[2026.03]</span> Start internship at <strong>Alibaba (<a href="https://github.com/amap-cvlab">Amap CV Lab</a>)</strong> as a research intern, Beijing&nbsp;(on-site). </li>
+      <li> <span class="news-date">[2026.02]</span> Two papers (<strong><a href="#paper-spatialscore">SpatialScore</a></strong> and <strong><a href="#paper-soccermaster">SoccerMaster</a></strong>) have been accepted by <strong><a href="https://cvpr.thecvf.com/Conferences/2026/">CVPR 2026</a></strong>, and selected as <strong>Highlight</strong> and <strong>Oral</strong> (<strong>Award&nbsp;Candidate</strong>),&nbsp;respectively. </li>
+      <li> <span class="news-date">[2025.11]</span> One paper (<strong><a href="#paper-scenegen">SceneGen</a></strong>) has been accepted by <strong><a href="https://3dvconf.github.io/2026/">3DV 2026</a></strong>. </li>
+      <li> <span class="news-date">[2025.08]</span> Invited <a href="https://www.bilibili.com/video/BV19EeyzmENK/?vd_source=6cce745af23238982ade9525fe577332">talk</a> about our paper (<strong><a href="#paper-mrgen">MRGen</a></strong>) at <strong><a href="https://nice-nlp.github.io/">NICE</a></strong>. Welcome to discuss! </li>
+      <li> <span class="news-date">[2025.08]</span> I will attend <strong><a href="https://iccv.thecvf.com/Conferences/2025">ICCV 2025</a></strong> in person. See you in Hawaii! </li>
+      <li> <span class="news-date">[2025.07]</span> One paper (<strong><a href="#paper-socceragent">SoccerAgent</a></strong>) has been accepted by <strong><a href="https://acmmm2025.org/">ACM Multimedia 2025</a></strong>. </li>
+      <li> <span class="news-date">[2025.06]</span> One paper (<strong><a href="#paper-mrgen">MRGen</a></strong>) has been accepted by <strong><a href="https://iccv.thecvf.com/Conferences/2025/">ICCV 2025</a></strong>. </li>
+      <li> <span class="news-date">[2025.02]</span> One paper (<strong><a href="#paper-unisoccer">UniSoccer</a></strong>) has been accepted by <strong><a href="https://cvpr.thecvf.com/Conferences/2025/">CVPR 2025</a></strong>. </li>
+      <li> <span class="news-date">[2024.11]</span> I am recognized as <strong><a href="https://bmvc2024.org/people/reviewers/">BMVC 2024 Outstanding Reviewer</a></strong>. </li>
+      <li> <span class="news-date">[2024.10]</span> One paper (<strong><a href="#paper-megafusion">MegaFusion</a></strong>) has been accepted by <strong><a href="https://wacv2025.thecvf.com/">WACV 2025</a></strong>. </li>
+      <li> <span class="news-date">[2024.09]</span> One paper (<strong><a href="#paper-matchtime">MatchTime</a></strong>) has been accepted by <strong><a href="https://2024.emnlp.org/">EMNLP 2024</a></strong> and selected as <strong>Oral</strong>. </li>
+      <!-- <li> <span class="news-date">[2024.06]</span> Codes of <strong><a href="https://github.com/haoningwu3639/SimpleSDM-3">SimpleSDM-3</a></strong> and <a href="https://github.com/haoningwu3639/SimpleSDXL">SimpleSDXL</a> have been made public for helping research about Diffusion. </li> -->
+      <li> <span class="news-date">[2024.04]</span> I will attend <strong><a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a></strong> in person. See you in Seattle! </li>
+      <li> <span class="news-date">[2024.04]</span> I have passed my PhD Qualification Examination, and I am a PhD candidate now. </li>
+      <li> <span class="news-date">[2024.04]</span> Start internship at <strong><a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a></strong> as a research intern, Shanghai&nbsp;(on-site). </li>
+      <li> <span class="news-date">[2024.02]</span> One paper (<strong><a href="#paper-storygen">StoryGen</a></strong>) has been accepted by <strong><a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a></strong>. </li>
+      <!-- <li> <span class="news-date">[2023.12]</span> Codes of <a href="https://github.com/haoningwu3639/SimpleSDM">SimpleSDM</a> and <a href="https://github.com/haoningwu3639/SimpleSDM-Video">SimpleSDM-Video</a> have been made public for helping research about Diffusion. </li> -->
+      <li> <span class="news-date">[2023.10]</span> One paper (<a href="#paper-nerfsdp">NeRF-SDP</a>) has been accepted by <a href="https://web.archive.org/web/2023/https://www.mmasia2023.org/">ACM Multimedia Asia 2023</a> and selected as <strong>Oral</strong>. </li>
+      <li> <span class="news-date">[2023.08]</span> One paper (<strong><a href="#paper-vfiadapter">VFIAdapter</a></strong>) has been accepted by <strong><a href="https://bmvc2023.org/">BMVC 2023</a></strong> and selected as <strong>Oral</strong>. </li>
+    </ul>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/OmniStream.png" alt="OmniStream" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://go2heart.github.io/omnistream/">
-                    <papertitle>OmniStream: Mastering Perception, Reconstruction and Action in Continuous Streams</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://go2heart.github.io/">Yibin Yan*</a>, <a href="https://jazzcharles.github.io/">Jilan Xu*</a>, <a href="https://dszdsz.cn/">Shangzhe Di</a>,  <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>ECCV</em>, 2026. &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://go2heart.github.io/omnistream/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2603.12265/">arXiv</a>
-                  /
-                  <a href="https://github.com/Go2Heart/OmniStream/">code</a>
-                  <br>
-                  <p> In this work, we introduce OmniStream, a unified streaming visual backbone that effectively perceives, reconstructs, and acts from diverse visual inputs.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <!-- ===================== Preprints ===================== -->
+    <section class="paper-group">
+    <h2 class="section-heading" id="preprints"><span><span class="emoji" aria-hidden="true">📝</span>Preprints / Tech Reports</span></h2>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#ffffd0;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="SpatialScore/resources/dataset.png" alt="SpatialScore" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://haoningwu3639.github.io/SpatialScore/">
-                    <papertitle>SpatialScore: Towards Comprehensive Evaluation for Spatial Intelligence</papertitle>
-                  </a>
-                  <br>
-                  <strong>Haoning Wu*</strong>, <a href="https://github.com/1106280506Hx/">Xiao Huang*</a>, <a href="https://github.com/YHChen0511/">Yaohui Chen</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>CVPR</em>, 2026. &nbsp; <font color="red"> <strong>(Highlight)</strong></font> &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://haoningwu3639.github.io/SpatialScore/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2505.17012/">arXiv</a>
-                  /
-                  <a href="https://github.com/haoningwu3639/SpatialScore/">code</a>
-                  <br>
-                  <p> In this work, we investigate a critical question: <i> to what extent do existing MLLMs possess spatial intelligence, encompassing both spatial perception and spatial understanding? </i>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/SoccerMaster.png" alt="SoccerMaster" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://haolinyang-hlyang.github.io/SoccerMaster/">
-                    <papertitle>SoccerMaster: A Vision Foundation Model for Soccer Understanding</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://haolinyang-hlyang.github.io/">Haolin Yang</a>, <a href="https://jyrao.github.io">Jiayuan Rao</a>, <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>CVPR</em>, 2026. &nbsp; <font color="red"> <strong>(Oral Presentation | Award Candidate)</strong></font> &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://haolinyang-hlyang.github.io/SoccerMaster/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2512.11016/">arXiv</a>
-                  /
-                  <a href="https://github.com/haolinyang-hlyang/SoccerMaster/">code</a>
-                  <br>
-                  <p> In this work, we present SoccerMaster, the first soccer-specific vision foundation model that unifies diverse understanding tasks within a single framework.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#ffffd0;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/SceneGen.png" alt="SceneGen" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://mengmouxu.github.io/SceneGen/">
-                    <papertitle>SceneGen: Single-Image 3D Scene Generation in One Feedforward Pass</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://github.com/Mengmouxu/">Yanxu Meng*</a>, <strong>Haoning Wu*</strong>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>3DV</em>, 2026. &nbsp; <font color="red"> <strong>(NEW)</strong></font>
-                  <br>
-                  <a href="https://mengmouxu.github.io/SceneGen/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2508.15769/">arXiv</a>
-                  /
-                  <a href="https://github.com/Mengmouxu/SceneGen/">code</a>
-                  <br>
-                  <p> In this work, we propose a feedforward 3D scene generation model that can simultaneously synthesize multiple 3D assets from a single image.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/SoccerAgent.png" alt="SoccerAgent" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://jyrao.github.io/SoccerAgent/">
-                    <papertitle>Multi-Agent System for Comprehensive Soccer Understanding</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://jyrao.github.io">Jiayuan Rao*</a>, <a href="https://github.com/lizifeng1209">Zifeng Li*</a>, <strong>Haoning Wu</strong>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>ACM Multimedia</em>, 2025.
-                  <br>
-                  <a href="https://jyrao.github.io/SoccerAgent/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2505.03735/">arXiv</a>
-                  /
-                  <a href="https://github.com/jyrao/SoccerAgent/">code</a>
-                  <br>
-                  <p> In this work, we present SoccerBench, the largest and most comprehensive soccer-specific benchmark, along with a multi-agent system, SoccerAgent, for soccer understanding.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="MRGen/resources/teaser.png" alt="MRGen" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://haoningwu3639.github.io/MRGen/">
-                    <papertitle>MRGen: Segmentation Data Engine for Underrepresented MRI Modalities</papertitle>
-                  </a>
-                  <br>
-                  <strong>Haoning Wu*</strong>, <a href="https://zhaoziheng.github.io/">Ziheng Zhao*</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>ICCV</em>, 2025.
-                  <br>
-                  <a href="https://haoningwu3639.github.io/MRGen/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2412.04106/">arXiv</a>
-                  /
-                  <a href="https://github.com/haoningwu3639/MRGen/">code</a>
-                  <br>
-                  <p> In this work, we establish a novel paradigm for generative models in medical applications: controllably synthesizing data for underrepresented modalities.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/UniSoccer.png" alt="UniSoccer" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://jyrao.github.io/UniSoccer/">
-                    <papertitle>Towards Universal Soccer Video Understanding</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://jyrao.github.io">Jiayuan Rao*</a>, <strong>Haoning Wu*</strong>, <a href="https://scholar.google.nl/citations?user=0TvdOEcAAAAJ&hl=en/">Hao Jiang</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>CVPR</em>, 2025.
-                  <br>
-                  <a href="https://jyrao.github.io/UniSoccer/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2412.01820/">arXiv</a>
-                  /
-                  <a href="https://github.com/jyrao/UniSoccer/">code</a>
-                  <br>
-                  <p> In this work, we present the first visual-language foundation model tailored for soccer video understanding, which can be applied various downstream tasks.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#ffffd0;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="MegaFusion/resources/teaser.png" alt="MegaFusion" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://haoningwu3639.github.io/MegaFusion/">
-                    <papertitle>MegaFusion: Extend Diffusion Models towards Higher-resolution Image Generation without Further Tuning</papertitle>
-                  </a>
-                  <br>
-                  <strong>Haoning Wu*</strong>, <a href="https://github.com/ShaochengShen">Shaocheng Shen*</a>, <a href="https://qianghu-huber.github.io/qianghuhomepage/">Qiang Hu</a>, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang<sup>†</sup></a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang</a>
-                  <br>
-                  <em>WACV</em>, 2025.
-                  <br>
-                  <a href="https://haoningwu3639.github.io/MegaFusion/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2408.11001/">arXiv</a>
-                  /
-                  <a href="https://github.com/ShaochengShen/MegaFusion/">code</a>
-                  <br>
-                  <p> In this work, we propose a tuning-free strategy to extend the higher-resolution image generation capabilities of existing diffusion models. </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="MatchTime/resources/architecture.png" alt="MatchTime" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://haoningwu3639.github.io/MatchTime/">
-                    <papertitle>MatchTime: Towards Automatic Soccer Game Commentary Generation</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://jyrao.github.io">Jiayuan Rao*</a>, <strong>Haoning Wu*</strong>, <a href="https://verg-avesta.github.io/">Chang Liu</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>EMNLP</em>, 2024. &nbsp; <font color="red"> <strong> (Oral Presentation)</strong></font>
-                  <br>
-                  <a href="https://haoningwu3639.github.io/MatchTime/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2406.18530/">arXiv</a>
-                  /
-                  <a href="https://github.com/jyrao/MatchTime/">code</a>
-                  <br>
-                  <p> In this work, we focus on building an visual-language model for automatic soccer game commentary generation. </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#ffffd0;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="StoryGen_Webpage/resources/teaser.png" alt="StoryGen" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://haoningwu3639.github.io/StoryGen_Webpage/">
-                    <papertitle>Intelligent Grimm - Open-ended Visual Storytelling via Latent Diffusion Models</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://verg-avesta.github.io/">Chang Liu*</a>, <strong>Haoning Wu*</strong>, <a href="https://y-zhong.info/">Yujie Zhong</a>, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
-                  <br>
-                  <em>CVPR</em>, 2024.
-                  <br>
-                  <a href="https://haoningwu3639.github.io/StoryGen_Webpage/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2306.00973/">arXiv</a>
-                  /
-                  <a href="https://github.com/haoningwu3639/StoryGen/">code</a>
-                  <br>
-                  <p> In this work, we focus on the task of generating a series of coherent image sequence based on a given storyline, denoted as open-ended visual storytelling. </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/NeRFSDP.jpg" alt="nerf_sdp" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://dl.acm.org/doi/abs/10.1145/3595916.3626380/">
-                    <papertitle>NeRF-SDP: Efficient Generalizable Neural Radiance Field with Scene Depth Perception</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://wangqiuwen1006.github.io/">Qiuwen Wang</a>, <a href="https://scholar.google.com/citations?user=ZMlpuqsAAAAJ&hl=zh-CN/">Shuai Guo</a>, <strong>Haoning Wu</strong>, <a href="https://medialab.sjtu.edu.cn/author/rong-xie/">Rong Xie</a>, <a href="https://medialab.sjtu.edu.cn/author/li-song/">Li Song<sup>†</sup></a>, <a href="https://ee.sjtu.edu.cn/FacultyDetail.aspx?id=14&infoid=66&flag=66/">Wenjun Zhang</a>
-                  <br>
-                  <em>ACM Multimedia Asia</em>, 2023. &nbsp; <font color="red"> <strong>(Oral Presentation)</strong></font>
-                  <br>
-                  <a href="https://dl.acm.org/doi/abs/10.1145/3595916.3626380/">paper</a>
-                  /
-                  <a href="https://github.com/wangqiuwen1006/NeRF-SDP">code</a>
-                  <br>
-                  <p> In this work, we propose a novel framework, termed as NeRF-SDP, to address the challenge of balancing rendering speed and quality in generalizable NeRF.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="VFI_Adapter_Webpage/resources/teaser.png" alt="vfi_adapter" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://haoningwu3639.github.io/VFI_Adapter_Webpage/">
-                    <papertitle>Boost Video Frame Interpolation via Simple Motion Adaptation</papertitle>
-                  </a>
-                  <br>
-                  <strong>Haoning Wu</strong>, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>
-                  <br>
-                  <em>BMVC</em>, 2023. &nbsp; <font color="red"> <strong>(Oral Presentation)</strong></font>
-                  <br>
-                  <a href="https://haoningwu3639.github.io/VFI_Adapter_Webpage/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2306.13933/">arXiv</a>
-                  /
-                  <a href="https://github.com/haoningwu3639/VFI_Adapter">code</a>
-                  <br>
-                  <p> In this work, we propose a novel optimization-based VFI method that can adapt to unseen motions at test time and boost existing pre-trained models.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/LAR-SR.jpg" alt="lar_sr" width="200">
-                </td>
-                <td style="padding:5px;width:70%;vertical-align:middle">
-                  <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Guo_LAR-SR_A_Local_Autoregressive_Model_for_Image_Super-Resolution_CVPR_2022_paper.html?fbclid=IwAR0id_m5BNV2nYNcohdnF434oEPBMuOK6K6GQ4vQgEpa47BelUKN3HIAmZ4">
-                    <papertitle>LAR-SR: A Local Autoregressive Model for Image Super-Resolution</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://github.com/guobaisong">Baisong Guo*</a>, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang*<sup>†</sup></a>, <strong>Haoning Wu</strong>, <a href="https://mediabrain.sjtu.edu.cn/yuwang/">Yu Wang</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>
-                  <br>
-                  <em>CVPR</em>, 2022.
-                  <br>
-                  <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_LAR-SR_A_Local_Autoregressive_Model_for_Image_Super-Resolution_CVPR_2022_paper.pdf">paper</a>
-                  /
-                  <a href="https://github.com/haoningwu3639/LAR-SR/">code</a>
-                  <br>
-                  <p> In this work, we propose LAR-SR for super-resolution based on a Local AutoRegessive module, achieving superior performance among generative models for SR.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Education</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px;width:75%;vertical-align:middle">
-                  <ul>
-                    <li> PhD Student, <a href="https://sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Sep. 2022 - Present (Jun. 2027, expected) </li>
-                    <li> B.Eng. in Information Engineering (<strong>IEEE Pilot Class</strong>), <a href="https://sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Sep. 2018 - Jun. 2022 </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Internship</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px;width:75%;vertical-align:middle">
-                  <ul>
-                    <li> <strong>Top Talent</strong> Research Intern, <a href=https://www.minimax.io/>MiniMax</a> (<a href="https://hailuoai.video/">Hailuo</a>), Beijing, China, Jul. 2026 - Present </li>
-                    <li> Research Intern, Alibaba (<a href=https://github.com/amap-cvlab/>Amap CV Lab</a>), Beijing, China, Mar. 2026 - Jun. 2026 </li>
-                    <li> Research Intern, <a href=https://www.shlab.org.cn/>Shanghai AI Laboratory</a>, Shanghai, China, Apr. 2024 - Mar. 2026 </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Awards</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <!-- <td style="padding:5px;width:28%;vertical-align:middle">
-                  <img src="images/SJTU_logo.png" style="width:80%;max-width:200px">
-                </td> -->
-                <td style="padding:0px;width:75%;vertical-align:middle">
-                  <ul>
-                    <li> [2026] <a href="https://cvpr.thecvf.com/virtual/2026/poster/38950">CVPR 2026 Award Candidate</a> </li> 
-                    <li> [2024] <a href="https://bmvc2024.org/people/reviewers/">BMVC 2024 Outstanding Reviewer</a> </li> 
-                    <li> [2021] <strong>China National Scholarship</strong> (for Undergraduates) </li>
-                    <li> [2021] School Scholarship B Prize </li>
-                    <li> [2020] School Scholarship C Prize </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                  <heading>Reviewer Service</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px;width:75%;vertical-align:middle">
-                  <ul>  
-                    <li> Computer Vision and Pattern Recognition (<strong>CVPR</strong> <a href="https://cvpr.thecvf.com/Conferences/2023/">2023</a>, <a href="https://cvpr.thecvf.com/Conferences/2024/">2024</a>, <a href="https://cvpr.thecvf.com/Conferences/2025/">2025</a>, <a href="https://cvpr.thecvf.com/Conferences/2026/">2026</a>) </li>
-                    <li> International Conference on Computer Vision (<strong>ICCV</strong> <a href="https://iccv2023.thecvf.com/">2023</a>, <a href="https://iccv2025.thecvf.com/">2025</a>) </li>
-                    <li> European Conference on Computer Vision (<strong>ECCV</strong> <a href="https://eccv.ecva.net/Conferences/2024/">2024</a>, <a href="https://eccv.ecva.net/Conferences/2026/">2026</a>) </li>
-                    <li> ACM Multimedia (<strong>ACM MM</strong> <a href="https://2024.acmmm.org/">2024</a>, <a href="https://2025.acmmm.org/">2025</a>, <a href="https://2026.acmmm.org/">2026</a>) </li>
-                    <li> British Machine Vision Conference (<strong>BMVC</strong> <a href="https://bmvc2024.org/">2024</a>, <a href="https://bmvc2025.org/">2025</a>) (Outstanding Reviewer in <a href="https://bmvc2024.org/people/reviewers/">2024</a>) </li>
-                    <li> AAAI Conference on Artificial Intelligence (<strong>AAAI</strong> <a href="https://aaai.org/conference/aaai/aaai-25/">2025</a>, <a href="https://aaai.org/conference/aaai/aaai-26/">2026</a>, <a href="https://aaai.org/conference/aaai/aaai-27/">2027</a>)
-                    <li> Conference on Neural Information Processing Systems (<strong>NeurIPS</strong> <a href="https://neurips.cc/Conferences/2025">2025</a>) </li>
-                    <!-- <li> ACL - Student Research Workshop (<strong>ACL-SRW</strong> <a href="https://2025.aclweb.org/calls/student_research_workshop/">2025</a>) </li> -->
-                    <!-- <li> MICCAI - MLLMs in Clinical Practice Workshop (<strong>MICCAI-MLLMCP</strong> <a href="https://clinicalmllms.github.io/">2025</a>) </li> -->
-                    <li> Winter Conference on Applications of Computer Vision (<strong>WACV</strong> <a href="https://wacv.thecvf.com/Conferences/2026/">2026</a>) </li>
-                    <li> International Conference on 3D Vision (<strong>3DV</strong> <a href="https://3dvconf.github.io/2026/">2026</a>) </li>
-                    <li> IEEE Transactions on Visualization and Computer Graphics (<strong>TVCG</strong>) </li>
-                    <li> IEEE Transactions on Multimedia (<strong>TMM</strong>) </li>
-                    
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-
-          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=5ayBqtHVZxq64yIbqL91zvhcK44KOAMiyFcLXB3F2nc&cl=ffffff&w=a"></script>
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <p style="text-align:left;font-size:small;"> Updated in Sep. 2026
-                  </p>
-                  <p style="text-align:right;font-size:small;">
-                    Thanks <a href="https://jonbarron.info/"> Jon Barron</a> for this amazing website template</a>.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <!--
+      Paper template (copy & edit).
+        - class="paper highlight"  -> yellow background
+        - data-selected            -> also shown in the "Selected" view
+        - data-topics              -> any of: gen spatial video lowlevel others (space-separated); used by "Topics:"
+                                      and shown as small tags after the venue
+        - (NEW) disappears automatically 12 months after data-since (YYYY-MM)
+        - Papers are grouped by year: put the row inside the matching <tbody class="year-group">,
+          or start a new one with <tr class="year-row"><td colspan="2"><span>YEAR</span></td></tr>
+        - The single "Selected / All" switch and the "Topics:" row (under Publications) move by themselves
+          to whichever paper section is shown first.
+      <tr class="paper" id="paper-NAME" data-topics="gen" data-selected>
+        <td class="paper-img"><a href="PROJECT_URL"><img src="images/thumbs/NAME.jpg" alt="NAME" loading="lazy"></a></td>
+        <td class="paper-text">
+          <a href="PROJECT_URL"><papertitle>TITLE</papertitle></a>
+          <br> AUTHORS
+          <br> <span class="venue"><em>VENUE</em>, YEAR.</span> <span class="tag new" data-since="2026-10">(NEW)</span>
+          <br> <a href="PROJECT_URL">project page</a> / <a href="ARXIV_URL">arXiv</a> / <a href="CODE_URL">code</a> <span class="bib-sep">/</span>
+          <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+          <p class="desc">ONE-SENTENCE SUMMARY</p>
+          <div class="bibtex" hidden>
+            <button type="button" class="bib-copy">copy</button>
+            <pre>@inproceedings{...}</pre>
+          </div>
         </td>
       </tr>
-    </tbody>
-  </table>
+    -->
+
+    <table class="papers" role="presentation">
+      <tbody class="year-group">
+        <tr class="year-row"><td colspan="2"><span>2026</span></td></tr>
+
+        <tr class="paper" id="paper-stwam" data-topics="spatial">
+          <td class="paper-img">
+            <a href="https://thu-wangmx.github.io/st-wam/"><img src="images/thumbs/STWAM.jpg" width="600" height="571" alt="ST-WAM" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://thu-wangmx.github.io/st-wam/"><papertitle>ST-WAM: Semantic-Temporal World Action Model for Robust Manipulation under Visual Distribution Shifts</papertitle></a>
+            <br>
+            <a href="https://thu-wangmx.github.io/">Mingxin Wang</a>, Bin Hu, Bin Qian, Kaitao Jiang, <strong>Haoning Wu</strong>, <i>et&nbsp;al</i>.
+            <br>
+            <span class="venue"><em>arXiv</em>, 2026.</span> <span class="tag new" data-since="2026-07">(NEW)</span>
+            <br>
+            <a href="https://thu-wangmx.github.io/st-wam/">project page</a> /
+            <a href="https://arxiv.org/abs/2607.28993">arXiv</a> /
+            <a href="https://github.com/Thu-WangMX/ST-WAM-Semantic-Temporal-World-Action-Model">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we propose ST-WAM, a world action model that uses DINOv3 features as a shared semantic space for future prediction and history retrieval, making robot manipulation more robust under visual distribution shifts.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@article{wang2026stwam,
+  title={ST-WAM: Semantic-Temporal World Action Model for Robust Manipulation under Visual Distribution Shifts},
+  author={Wang, Mingxin and Hu, Bin and Qian, Bin and Jiang, Kaitao and Wu, Haoning and Yan, Feng and Jing, Bowen and Hao, Ruiyang and Wang, Enyi and Niu, Kangning and Yang, Yandan and Xu, Mu and Wang, Yan and Liu, Houde and Li, Tianlun},
+  journal={arXiv preprint arXiv:2607.28993},
+  year={2026}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-abot" data-topics="spatial">
+          <td class="paper-img">
+            <a href="https://amap-cvlab.github.io/ABot-Manipulation/"><img src="images/thumbs/ABot-M05.jpg" width="600" height="443" alt="ABot-M0.5" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://amap-cvlab.github.io/ABot-Manipulation/"><papertitle>ABot-M0.5: Unified Mobility-and-Manipulation World Action Model</papertitle></a>
+            <br>
+            <a href="https://scholar.google.com/citations?user=NH4NtmMAAAAJ">Ronghan Chen</a>, <a href="https://yandanyang.github.io/">Yandan Yang</a>, <a href="https://openreview.net/profile?id=~Zuojin_Tang1">Zuojin Tang</a>, <a href="https://dongjiehuo.github.io/">Dongjie Huo</a>, <a href="https://openreview.net/profile?id=%7ETong_Lin4">Tong Lin</a>, <strong>Haoning Wu</strong>, <i>et&nbsp;al</i>.
+            <br>
+            <span class="venue"><em>arXiv</em>, 2026.</span> <span class="tag new" data-since="2026-07">(NEW)</span>
+            <br>
+            <a href="https://amap-cvlab.github.io/ABot-Manipulation/">project page</a> /
+            <a href="https://arxiv.org/abs/2607.00678">arXiv</a> /
+            <a href="https://github.com/amap-cvlab/ABot-Manipulation">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">Technical report of ABot-M0.5, a competitive foundation world action model (WAM).</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@article{chen2026abotm05,
+  title={ABot-M0.5: Unified Mobility-and-Manipulation World Action Model},
+  author={Chen, Ronghan and Yang, Yandan and Tang, Zuojin and Huo, Dongjie and Lin, Tong and Wu, Haoning and Liu, Haoyun and Chen, Yuzhi and Zheng, Lulu and Yuan, Botai and Li, Tianlun and Wang, Mingxin and Qi, Dekang and Hu, Bin and Mei, Wei and Xuan, Yuze and Yang, Haolong and Zhu, Yanqing and Xu, Mu and Ma, Zhiheng and Chang, Xinyuan},
+  journal={arXiv preprint arXiv:2607.00678},
+  year={2026}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-kubricount" data-topics="others">
+          <td class="paper-img">
+            <a href="https://verg-avesta.github.io/KubriCount/"><img src="images/thumbs/KubricCount.png" width="600" height="313" alt="KubriCount" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://verg-avesta.github.io/KubriCount/"><papertitle>Count Anything at Any Granularity</papertitle></a>
+            <br>
+            <a href="https://verg-avesta.github.io/">Chang Liu</a>, <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie</a>
+            <br>
+            <span class="venue"><em>arXiv</em>, 2026.</span> <span class="tag new" data-since="2026-05">(NEW)</span>
+            <br>
+            <a href="https://verg-avesta.github.io/KubriCount/">project page</a> /
+            <a href="https://arxiv.org/abs/2605.10887/">arXiv</a> /
+            <a href="https://github.com/Verg-Avesta/KubriCount/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we re-define open-world counting as multi-grained counting, where visual exemplars specify target appearance and fine-grained text specifies the intended semantic granularity across five explicit levels.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@article{liu2026count,
+  title={Count Anything at Any Granularity},
+  author={Liu, Chang and Wu, Haoning and Xie, Weidi},
+  journal={arXiv preprint arXiv:2605.10887},
+  year={2026}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-gentac" data-topics="others">
+          <td class="paper-img">
+            <a href="https://jyrao.github.io/GenTac/"><img src="images/thumbs/GenTac.jpg" width="600" height="264" alt="GenTac" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://jyrao.github.io/GenTac/"><papertitle>GenTac: Generative Modeling and Forecasting of Soccer Tactics</papertitle></a>
+            <br>
+            <a href="https://jyrao.github.io">Jiayuan Rao</a>, Tianlin Gui, <strong>Haoning Wu</strong>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang</a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>arXiv</em>, 2026.</span> <span class="tag new" data-since="2026-04">(NEW)</span>
+            <br>
+            <a href="https://jyrao.github.io/GenTac/">project page</a> /
+            <a href="https://arxiv.org/abs/2604.11786/">arXiv</a> /
+            <a href="https://github.com/jyrao/GenTac/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we present GenTac, a diffusion-based framework that treats open-play soccer as a stochastic, multi-player process, generating plausible future trajectories, tactical events, and controllable counterfactuals.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@article{rao2026gentac,
+  title={GenTac: Generative Modeling and Forecasting of Soccer Tactics},
+  author={Rao, Jiayuan and Gui, Tianlin and Wu, Haoning and Wang, Yanfeng and Xie, Weidi},
+  journal={arXiv preprint arXiv:2604.11786},
+  year={2026}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    </section>
+
+    <!-- ===================== Publications ===================== -->
+    <section class="paper-group">
+    <h2 class="section-heading" id="publications"><span><span class="emoji" aria-hidden="true">📑</span>Publications</span><span class="view-toggle" role="group" aria-label="Show papers"><button type="button" data-view="selected" aria-pressed="false">Selected</button><button type="button" data-view="all" aria-pressed="false">All</button></span></h2>
+    <!-- One set of controls for both paper sections; the words in <span class="long"> are dropped on screens up to 860px wide (phones, iPads in portrait) and in the per-paper tags -->
+    <div class="paper-controls">
+      <div class="topic-filter" role="group" aria-label="Filter papers by topic">
+        <span class="topic-label">Topics:</span>
+        <span class="topic-buttons">
+          <button type="button" data-topic="gen" aria-pressed="false">Visual Generation</button>
+          <button type="button" data-topic="spatial" aria-pressed="false">Spatial<span class="long"> Intelligence</span> &amp; Embodied AI</button>
+          <button type="button" data-topic="video" aria-pressed="false"><span class="long">Multi-modal </span>Video Understanding</button>
+          <button type="button" data-topic="lowlevel" aria-pressed="false">Low-level<span class="long-sm"> Vision</span></button>
+          <button type="button" data-topic="others" aria-pressed="false">Others</button>
+        </span>
+      </div>
+      <!-- Where to find more, right under the switches. The wording follows the current view
+           ("Selected" / one topic -> offer the full list; "All" or no JavaScript -> only Google Scholar). -->
+      <p class="paper-more">
+        <span class="more-filtered">Showing <span class="more-what">selected papers</span>. <button type="button" class="more-all">Show all<span class="more-count"></span></button> or see</span>
+        <span class="more-full">For the complete list, see</span>
+        <a href="https://scholar.google.com/citations?user=ia4M9mMAAAAJ">Google&nbsp;Scholar</a><span class="more-filtered"> for the complete list</span>.
+      </p>
+      <p class="section-note">* denotes equal contribution, and <sup>†</sup> denotes corresponding author.</p>
+    </div>
+
+    <table class="papers" role="presentation">
+      <tbody class="year-group">
+        <tr class="year-row"><td colspan="2"><span>2026</span></td></tr>
+
+        <tr class="paper" id="paper-basketevent" data-topics="video">
+          <td class="paper-img">
+            <a href="https://zhangyu2003.github.io/BasketEvent/"><img src="images/thumbs/BasketEvent.jpg" width="600" height="234" alt="BasketEvent" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://zhangyu2003.github.io/BasketEvent/"><papertitle>BasketEvent: Understanding Who Did What and When in Basketball Videos</papertitle></a>
+            <br>
+            <a href="https://github.com/zhangyu2003/">Yu Zhang</a>, <a href="https://jyrao.github.io">Jiayuan Rao</a>, <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>BMVC</em>, 2026.</span> <span class="tag new" data-since="2026-08">(NEW)</span>
+            <br>
+            <a href="https://zhangyu2003.github.io/BasketEvent/">project page</a> /
+            <a href="https://arxiv.org/abs/2607.21267">arXiv</a> /
+            <a href="https://github.com/zhangyu2003/BasketEvent/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">Given an input basketball video, our framework answers three player-centric questions: who performs the event, what event occurs, and when the key evidence appears.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@article{zhang2026basketevent,
+  title={BasketEvent: Understanding Who Did What and When in Basketball Videos},
+  author={Zhang, Yu and Rao, Jiayuan and Wu, Haoning and Xie, Weidi},
+  journal={arXiv preprint arXiv:2607.21267},
+  year={2026}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-omnistream" data-topics="spatial video">
+          <td class="paper-img">
+            <a href="https://go2heart.github.io/omnistream/"><img src="images/thumbs/OmniStream.jpg" width="600" height="237" alt="OmniStream" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://go2heart.github.io/omnistream/"><papertitle>OmniStream: Mastering Perception, Reconstruction and Action in Continuous Streams</papertitle></a>
+            <br>
+            <a href="https://go2heart.github.io/">Yibin Yan*</a>, <a href="https://jazzcharles.github.io/">Jilan Xu*</a>, <a href="https://dszdsz.cn/">Shangzhe Di</a>, <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>ECCV</em>, 2026.</span> <span class="tag new" data-since="2026-06">(NEW)</span>
+            <br>
+            <a href="https://go2heart.github.io/omnistream/">project page</a> /
+            <a href="https://arxiv.org/abs/2603.12265/">arXiv</a> /
+            <a href="https://github.com/Go2Heart/OmniStream/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we introduce OmniStream, a unified streaming visual backbone that effectively perceives, reconstructs, and acts from diverse visual inputs.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{yan2026omnistream,
+  title={OmniStream: Mastering Perception, Reconstruction and Action in Continuous Streams},
+  author={Yan, Yibin and Xu, Jilan and Di, Shangzhe and Wu, Haoning and Xie, Weidi},
+  booktitle={European Conference on Computer Vision},
+  pages={53--74},
+  year={2026},
+  organization={Springer}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper highlight" id="paper-spatialscore" data-topics="spatial video" data-selected>
+          <td class="paper-img">
+            <a href="https://haoningwu3639.github.io/SpatialScore/"><img src="images/thumbs/SpatialScore.jpg" width="600" height="198" alt="SpatialScore" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://haoningwu3639.github.io/SpatialScore/"><papertitle>SpatialScore: Towards Comprehensive Evaluation for Spatial Intelligence</papertitle></a>
+            <br>
+            <strong>Haoning Wu*</strong>, <a href="https://github.com/1106280506Hx/">Xiao Huang*</a>, <a href="https://github.com/YHChen0511/">Yaohui Chen</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>CVPR</em>, 2026.</span> <span class="tag">(Highlight)</span> <span class="tag new" data-since="2026-02">(NEW)</span>
+            <br>
+            <a href="https://haoningwu3639.github.io/SpatialScore/">project page</a> /
+            <a href="https://arxiv.org/abs/2505.17012/">arXiv</a> /
+            <a href="https://github.com/haoningwu3639/SpatialScore/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we investigate a critical question: <i>to what extent do existing MLLMs possess spatial intelligence, encompassing both spatial perception and spatial understanding?</i></p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{wu2025spatialscore,
+  author    = {Wu, Haoning and Huang, Xiao and Chen, Yaohui and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
+  title     = {SpatialScore: Towards Comprehensive Evaluation for Spatial Intelligence},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year    = {2026},
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-soccermaster" data-topics="video" data-selected>
+          <td class="paper-img">
+            <a href="https://haolinyang-hlyang.github.io/SoccerMaster/"><img src="images/thumbs/SoccerMaster.jpg" width="600" height="322" alt="SoccerMaster" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://haolinyang-hlyang.github.io/SoccerMaster/"><papertitle>SoccerMaster: A Vision Foundation Model for Soccer Understanding</papertitle></a>
+            <br>
+            <a href="https://haolinyang-hlyang.github.io/">Haolin Yang</a>, <a href="https://jyrao.github.io">Jiayuan Rao</a>, <strong>Haoning Wu</strong>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>CVPR</em>, 2026.</span> <span class="tag">(Oral Presentation | Award Candidate)</span> <span class="tag new" data-since="2026-02">(NEW)</span>
+            <br>
+            <a href="https://haolinyang-hlyang.github.io/SoccerMaster/">project page</a> /
+            <a href="https://arxiv.org/abs/2512.11016/">arXiv</a> /
+            <a href="https://github.com/haolinyang-hlyang/SoccerMaster/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we present SoccerMaster, the first soccer-specific vision foundation model that unifies diverse understanding tasks within a single framework.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@InProceedings{Yang_2026_CVPR,
+  author    = {Yang, Haolin and Rao, Jiayuan and Wu, Haoning and Xie, Weidi},
+  title     = {SoccerMaster: A Vision Foundation Model for Soccer Understanding},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2026},
+  pages     = {21549-21560}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-semanticrepa" data-topics="gen">
+          <td class="paper-img">
+            <a href="https://arxiv.org/abs/2605.10523"><img src="images/thumbs/SemanticREPA.jpg" width="600" height="297" alt="SemanticREPA" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://arxiv.org/abs/2605.10523"><papertitle>Improving Human Image Animation via Semantic Representation Alignment</papertitle></a>
+            <br>
+            <a href="https://verg-avesta.github.io/">Chang Liu</a>, <a href="https://mengtingchen.github.io/">Mengting Chen</a>, Yixuan Huang, <strong>Haoning Wu</strong>, <a href="https://voide1220.github.io/">Chen Ju</a>, <a href="https://sites.google.com/view/xiao-shuai/home">Shuai Xiao</a>, Jinsong Lan, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang</a>
+            <br>
+            <span class="venue"><em>CVPR HiGen Workshop</em>, 2026.</span> <span class="tag new" data-since="2026-05">(NEW)</span>
+            <br>
+            <a href="https://openaccess.thecvf.com/content/CVPR2026W/HiGen/html/Liu_Improving_Human_Image_Animation_via_Semantic_Representation_Alignment_CVPRW_2026_paper.html">paper</a> /
+            <a href="https://arxiv.org/abs/2605.10523">arXiv</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we propose SemanticREPA, which uses human-specific semantic representations (video depth and face identity features) as supervision through representation alignment rather than as extra conditions, yielding more coherent body structures and better identity preservation in human image animation.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@InProceedings{Liu_2026_CVPR,
+  author    = {Liu, Chang and Chen, Mengting and Huang, Yixuan and Wu, Haoning and Ju, Chen and Xiao, Shuai and Lan, Jinsong and Wang, Yanfeng},
+  title     = {Improving Human Image Animation via Semantic Representation Alignment},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month     = {June},
+  year      = {2026},
+  pages     = {5704-5714}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper highlight" id="paper-scenegen" data-topics="gen spatial" data-selected>
+          <td class="paper-img">
+            <a href="https://mengmouxu.github.io/SceneGen/"><img src="images/thumbs/SceneGen.jpg" width="600" height="336" alt="SceneGen" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://mengmouxu.github.io/SceneGen/"><papertitle>SceneGen: Single-Image 3D Scene Generation in One Feedforward Pass</papertitle></a>
+            <br>
+            <a href="https://github.com/Mengmouxu/">Yanxu Meng*</a>, <strong>Haoning Wu*</strong>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>3DV</em>, 2026.</span> <span class="tag new" data-since="2025-11">(NEW)</span>
+            <br>
+            <a href="https://mengmouxu.github.io/SceneGen/">project page</a> /
+            <a href="https://arxiv.org/abs/2508.15769/">arXiv</a> /
+            <a href="https://github.com/Mengmouxu/SceneGen/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we propose a feedforward 3D scene generation model that can simultaneously synthesize multiple 3D assets from a single image.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{meng2026scenegen,
+  author    = {Meng, Yanxu and Wu, Haoning and Zhang, Ya and Xie, Weidi},
+  title     = {SceneGen: Single-Image 3D Scene Generation in One Feedforward Pass},
+  booktitle   = {International Conference on 3D Vision 2026},
+  year      = {2026},
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+      <tbody class="year-group">
+        <tr class="year-row"><td colspan="2"><span>2025</span></td></tr>
+
+        <tr class="paper" id="paper-socceragent" data-topics="video">
+          <td class="paper-img">
+            <a href="https://jyrao.github.io/SoccerAgent/"><img src="images/thumbs/SoccerAgent.jpg" width="600" height="345" alt="SoccerAgent" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://jyrao.github.io/SoccerAgent/"><papertitle>Multi-Agent System for Comprehensive Soccer Understanding</papertitle></a>
+            <br>
+            <a href="https://jyrao.github.io">Jiayuan Rao*</a>, <a href="https://github.com/lizifeng1209">Zifeng Li*</a>, <strong>Haoning Wu</strong>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>ACM Multimedia</em>, 2025.</span>
+            <br>
+            <a href="https://jyrao.github.io/SoccerAgent/">project page</a> /
+            <a href="https://arxiv.org/abs/2505.03735/">arXiv</a> /
+            <a href="https://github.com/jyrao/SoccerAgent/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we present SoccerBench, the largest and most comprehensive soccer-specific benchmark, along with a multi-agent system, SoccerAgent, for soccer understanding.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{rao2025soccceragent,
+  title = {Multi-Agent System for Comprehensive Soccer Understanding},
+  author = {Rao, Jiayuan and Li, Zifeng and Wu, Haoning and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
+  booktitle = {ACM Multimedia 2025},
+  year = {2025}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-mrgen" data-topics="gen" data-selected>
+          <td class="paper-img">
+            <a href="https://haoningwu3639.github.io/MRGen/"><img src="images/thumbs/MRGen.jpg" width="600" height="255" alt="MRGen" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://haoningwu3639.github.io/MRGen/"><papertitle>MRGen: Segmentation Data Engine for Underrepresented MRI Modalities</papertitle></a>
+            <br>
+            <strong>Haoning Wu*</strong>, <a href="https://zhaoziheng.github.io/">Ziheng Zhao*</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>ICCV</em>, 2025.</span>
+            <br>
+            <a href="https://haoningwu3639.github.io/MRGen/">project page</a> /
+            <a href="https://arxiv.org/abs/2412.04106/">arXiv</a> /
+            <a href="https://github.com/haoningwu3639/MRGen/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we establish a novel paradigm for generative models in medical applications: controllably synthesizing data for underrepresented modalities.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{wu2025mrgen,
+  author    = {Wu, Haoning and Zhao, Ziheng and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
+  title     = {MRGen: Segmentation Data Engine for Underrepresented MRI Modalities},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2025},
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-unisoccer" data-topics="video">
+          <td class="paper-img">
+            <a href="https://jyrao.github.io/UniSoccer/"><img src="images/thumbs/UniSoccer.png" width="600" height="273" alt="UniSoccer" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://jyrao.github.io/UniSoccer/"><papertitle>Towards Universal Soccer Video&nbsp;Understanding</papertitle></a>
+            <br>
+            <a href="https://jyrao.github.io">Jiayuan Rao*</a>, <strong>Haoning Wu*</strong>, <a href="https://scholar.google.nl/citations?user=0TvdOEcAAAAJ&amp;hl=en">Hao Jiang</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>CVPR</em>, 2025.</span>
+            <br>
+            <a href="https://jyrao.github.io/UniSoccer/">project page</a> /
+            <a href="https://arxiv.org/abs/2412.01820/">arXiv</a> /
+            <a href="https://github.com/jyrao/UniSoccer/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we present the first visual-language foundation model tailored for soccer video understanding, which can be applied to various downstream tasks.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{rao2024unisoccer,
+  title   = {Towards Universal Soccer Video Understanding},
+  author  = {Rao, Jiayuan and Wu, Haoning and Jiang, Hao and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year    = {2025},
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper highlight" id="paper-megafusion" data-topics="gen lowlevel" data-selected>
+          <td class="paper-img">
+            <a href="https://haoningwu3639.github.io/MegaFusion/"><img src="images/thumbs/MegaFusion.jpg" width="600" height="245" alt="MegaFusion" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://haoningwu3639.github.io/MegaFusion/"><papertitle>MegaFusion: Extend Diffusion Models towards Higher-resolution Image Generation without Further Tuning</papertitle></a>
+            <br>
+            <strong>Haoning Wu*</strong>, <a href="https://github.com/ShaochengShen">Shaocheng Shen*</a>, <a href="https://qianghu-huber.github.io/qianghuhomepage/">Qiang Hu</a>, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang<sup>†</sup></a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang</a>
+            <br>
+            <span class="venue"><em>WACV</em>, 2025.</span>
+            <br>
+            <a href="https://haoningwu3639.github.io/MegaFusion/">project page</a> /
+            <a href="https://arxiv.org/abs/2408.11001/">arXiv</a> /
+            <a href="https://github.com/ShaochengShen/MegaFusion/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we propose a tuning-free strategy to extend the higher-resolution image generation capabilities of existing diffusion models.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@InProceedings{wu2024megafusion,
+  author    = {Wu, Haoning and Shen, Shaocheng and Hu, Qiang and Zhang, Xiaoyun and Zhang, Ya and Wang, Yanfeng},
+  title     = {MegaFusion: Extend Diffusion Models towards Higher-resolution Image Generation without Further Tuning},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year      = {2025},
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+      <tbody class="year-group">
+        <tr class="year-row"><td colspan="2"><span>2024</span></td></tr>
+
+        <tr class="paper" id="paper-matchtime" data-topics="video">
+          <td class="paper-img">
+            <a href="https://haoningwu3639.github.io/MatchTime/"><img src="images/thumbs/MatchTime.png" width="600" height="222" alt="MatchTime" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://haoningwu3639.github.io/MatchTime/"><papertitle>MatchTime: Towards Automatic Soccer Game Commentary Generation</papertitle></a>
+            <br>
+            <a href="https://jyrao.github.io">Jiayuan Rao*</a>, <strong>Haoning Wu*</strong>, <a href="https://verg-avesta.github.io/">Chang Liu</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>EMNLP</em>, 2024.</span> <span class="tag">(Oral Presentation)</span>
+            <br>
+            <a href="https://haoningwu3639.github.io/MatchTime/">project page</a> /
+            <a href="https://arxiv.org/abs/2406.18530/">arXiv</a> /
+            <a href="https://github.com/jyrao/MatchTime/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we focus on building a visual-language model for automatic soccer game commentary generation.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{rao2024matchtimeautomaticsoccergame,
+  title     = {MatchTime: Towards Automatic Soccer Game Commentary Generation},
+  author    = {Rao, Jiayuan and Wu, Haoning and Liu, Chang and Wang, Yanfeng and Xie, Weidi},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2024}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper highlight" id="paper-storygen" data-topics="gen" data-selected>
+          <td class="paper-img">
+            <a href="https://haoningwu3639.github.io/StoryGen_Webpage/"><img src="images/thumbs/StoryGen.png" width="600" height="241" alt="StoryGen" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://haoningwu3639.github.io/StoryGen_Webpage/"><papertitle>Intelligent Grimm - Open-ended Visual Storytelling via Latent Diffusion Models</papertitle></a>
+            <br>
+            <a href="https://verg-avesta.github.io/">Chang Liu*</a>, <strong>Haoning Wu*</strong>, <a href="https://y-zhong.info/">Yujie Zhong</a>, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>CVPR</em>, 2024.</span>
+            <br>
+            <a href="https://haoningwu3639.github.io/StoryGen_Webpage/">project page</a> /
+            <a href="https://arxiv.org/abs/2306.00973/">arXiv</a> /
+            <a href="https://github.com/haoningwu3639/StoryGen/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we focus on the task of generating a coherent image sequence based on a given storyline, denoted as open-ended visual storytelling.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@InProceedings{Liu_2024_CVPR,
+  author    = {Liu, Chang and Wu, Haoning and Zhong, Yujie and Zhang, Xiaoyun and Wang, Yanfeng and Xie, Weidi},
+  title     = {Intelligent Grimm - Open-ended Visual Storytelling via Latent Diffusion Models},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2024},
+  pages     = {6190-6200}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+      <tbody class="year-group">
+        <tr class="year-row"><td colspan="2"><span>2023</span></td></tr>
+
+        <tr class="paper" id="paper-nerfsdp" data-topics="lowlevel">
+          <td class="paper-img">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3595916.3626380/"><img src="images/thumbs/NeRFSDP.jpg" width="600" height="162" alt="NeRF-SDP" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3595916.3626380/"><papertitle>NeRF-SDP: Efficient Generalizable Neural Radiance Field with Scene Depth Perception</papertitle></a>
+            <br>
+            <a href="https://wangqiuwen1006.github.io/">Qiuwen Wang</a>, <a href="https://scholar.google.com/citations?user=ZMlpuqsAAAAJ&amp;hl=zh-CN">Shuai Guo</a>, <strong>Haoning Wu</strong>, <a href="https://medialab.sjtu.edu.cn/author/rong-xie/">Rong Xie</a>, <a href="https://medialab.sjtu.edu.cn/author/li-song/">Li Song<sup>†</sup></a>, <a href="https://medialab.sjtu.edu.cn/author/wenjun-zhang/">Wenjun Zhang</a>
+            <br>
+            <span class="venue"><em>ACM Multimedia Asia</em>, 2023.</span> <span class="tag">(Oral Presentation)</span>
+            <br>
+            <a href="https://dl.acm.org/doi/abs/10.1145/3595916.3626380/">paper</a> /
+            <a href="https://github.com/wangqiuwen1006/NeRF-SDP">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we propose a novel framework, termed as NeRF-SDP, to address the challenge of balancing rendering speed and quality in generalizable NeRF.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{Wang_2023,
+  title     = {NeRF-SDP: Efficient Generalizable Neural Radiance Field with Scene Depth Perception},
+  author    = {Wang, Qiuwen and Guo, Shuai and Wu, Haoning and Xie, Rong and Song, Li and Zhang, Wenjun},
+  booktitle = {ACM Multimedia Asia 2023},
+  series    = {MMAsia '23},
+  publisher = {ACM},
+  pages     = {1--7},
+  year      = {2023},
+  month     = dec,
+  doi       = {10.1145/3595916.3626380}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="paper" id="paper-vfiadapter" data-topics="gen lowlevel">
+          <td class="paper-img">
+            <a href="https://haoningwu3639.github.io/VFI_Adapter_Webpage/"><img src="images/thumbs/VFIAdapter.jpg" width="600" height="325" alt="VFIAdapter" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://haoningwu3639.github.io/VFI_Adapter_Webpage/"><papertitle>Boost Video Frame Interpolation via Motion Adaptation</papertitle></a>
+            <br>
+            <strong>Haoning Wu</strong>, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang<sup>†</sup></a>, <a href="https://weidixie.github.io/">Weidi Xie</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>BMVC</em>, 2023.</span> <span class="tag">(Oral Presentation)</span>
+            <br>
+            <a href="https://haoningwu3639.github.io/VFI_Adapter_Webpage/">project page</a> /
+            <a href="https://arxiv.org/abs/2306.13933/">arXiv</a> /
+            <a href="https://github.com/haoningwu3639/VFI_Adapter">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we propose a novel optimization-based VFI method that can adapt to unseen motions at test time and boost existing pre-trained models.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@inproceedings{Wu_2023_BMVC,
+  author    = {Haoning Wu and Xiaoyun Zhang and Weidi Xie and Ya Zhang and Yan-Feng Wang},
+  title     = {Boost Video Frame Interpolation via Motion Adaptation},
+  booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023, Aberdeen, UK, November 20-24, 2023},
+  publisher = {BMVA},
+  year      = {2023},
+  url       = {https://papers.bmvc2023.org/0179.pdf}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+      <tbody class="year-group">
+        <tr class="year-row"><td colspan="2"><span>2022</span></td></tr>
+
+        <tr class="paper" id="paper-larsr" data-topics="gen lowlevel">
+          <td class="paper-img">
+            <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Guo_LAR-SR_A_Local_Autoregressive_Model_for_Image_Super-Resolution_CVPR_2022_paper.html"><img src="images/thumbs/LAR-SR.jpg" width="600" height="322" alt="LAR-SR" loading="lazy" decoding="async"></a>
+          </td>
+          <td class="paper-text">
+            <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Guo_LAR-SR_A_Local_Autoregressive_Model_for_Image_Super-Resolution_CVPR_2022_paper.html"><papertitle>LAR-SR: A Local Autoregressive Model for Image&nbsp;Super-Resolution</papertitle></a>
+            <br>
+            Baisong Guo*, <a href="https://mediabrain.sjtu.edu.cn/xiaoyun-zhang/">Xiaoyun Zhang*<sup>†</sup></a>, <strong>Haoning Wu</strong>, <a href="https://mediabrain.sjtu.edu.cn/yuwang/">Yu Wang</a>, <a href="https://annzhanglion.github.io/">Ya Zhang</a>, <a href="https://cmic.sjtu.edu.cn/wangyanfeng/">Yanfeng Wang<sup>†</sup></a>
+            <br>
+            <span class="venue"><em>CVPR</em>, 2022.</span>
+            <br>
+            <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_LAR-SR_A_Local_Autoregressive_Model_for_Image_Super-Resolution_CVPR_2022_paper.pdf">paper</a> /
+            <a href="https://github.com/haoningwu3639/LAR-SR/">code</a> <span class="bib-sep">/</span>
+            <button type="button" class="bib-btn" aria-expanded="false">bibtex</button>
+            <p class="desc">In this work, we propose LAR-SR for super-resolution based on a Local AutoRegressive module, achieving superior performance among generative models for SR.</p>
+            <div class="bibtex" hidden>
+              <button type="button" class="bib-copy">copy</button>
+              <pre>@InProceedings{Guo_2022_CVPR,
+  author    = {Guo, Baisong and Zhang, Xiaoyun and Wu, Haoning and Wang, Yu and Zhang, Ya and Wang, Yan-Feng},
+  title     = {LAR-SR: A Local Autoregressive Model for Image Super-Resolution},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2022},
+  pages     = {1909-1918}
+}</pre>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    </section>
+
+    <!-- ===================== Education ===================== -->
+    <h2 class="section-heading" id="education"><span class="emoji" aria-hidden="true">🎓</span>Education</h2>
+    <ul class="list">
+      <li> PhD Student, <a href="https://sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Sep. 2022 - Present (Jun. 2027, expected) </li>
+      <li> B.Eng. in Information Engineering (<strong>IEEE Pilot Class</strong>), <a href="https://sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Sep. 2018 - Jun. 2022 </li>
+    </ul>
+
+    <!-- ===================== Internship ===================== -->
+    <h2 class="section-heading" id="internship"><span class="emoji" aria-hidden="true">💼</span>Internship</h2>
+    <ul class="list">
+      <li> <strong>Top Talent</strong> Research Intern, <a href="https://www.minimax.io/">MiniMax</a> (<a href="https://hailuoai.video/">Hailuo</a>), Beijing, China, Jul. 2026 - Present </li>
+      <li> Research Intern, Alibaba (<a href="https://github.com/amap-cvlab/">Amap CV Lab</a>), Beijing, China, Mar. 2026 - Jun. 2026 </li>
+      <li> Research Intern, <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a>, Shanghai, China, Apr. 2024 - Mar. 2026 </li>
+    </ul>
+
+    <!-- ===================== Awards ===================== -->
+    <h2 class="section-heading" id="awards"><span class="emoji" aria-hidden="true">🏆</span>Awards</h2>
+    <ul class="list dated">
+      <li> <span class="news-date">[2026]</span> <a href="https://cvpr.thecvf.com/virtual/2026/poster/38950">CVPR 2026 Award Candidate</a> </li>
+      <li> <span class="news-date">[2024]</span> <a href="https://bmvc2024.org/people/reviewers/">BMVC 2024 Outstanding Reviewer</a> </li>
+      <li> <span class="news-date">[2021]</span> <strong>China National Scholarship</strong> (for&nbsp;Undergraduates) </li>
+      <li> <span class="news-date">[2021]</span> School Scholarship B Prize </li>
+      <li> <span class="news-date">[2020]</span> School Scholarship C Prize </li>
+    </ul>
+
+    <!-- ===================== Reviewer Service ===================== -->
+    <h2 class="section-heading" id="service"><span class="emoji" aria-hidden="true">🔍</span>Reviewer Service</h2>
+    <ul class="list">
+      <li> Computer Vision and Pattern Recognition (<strong>CVPR</strong> <a href="https://cvpr.thecvf.com/Conferences/2023/">2023</a>, <a href="https://cvpr.thecvf.com/Conferences/2024/">2024</a>, <a href="https://cvpr.thecvf.com/Conferences/2025/">2025</a>, <a href="https://cvpr.thecvf.com/Conferences/2026/">2026</a>) </li>
+      <li> International Conference on Computer Vision (<strong>ICCV</strong> <a href="https://iccv2023.thecvf.com/">2023</a>, <a href="https://iccv.thecvf.com/Conferences/2025">2025</a>) </li>
+      <li> European Conference on Computer Vision (<strong>ECCV</strong> <a href="https://eccv.ecva.net/Conferences/2024/">2024</a>, <a href="https://eccv.ecva.net/Conferences/2026/">2026</a>) </li>
+      <li> ACM Multimedia (<strong>ACM MM</strong> <a href="https://2024.acmmm.org/">2024</a>, <a href="https://2025.acmmm.org/">2025</a>, <a href="https://2026.acmmm.org/">2026</a>) </li>
+      <li> British Machine Vision Conference (<strong>BMVC</strong> <a href="https://bmvc2024.org/">2024</a>, <a href="https://bmvc2025.bmva.org/">2025</a>) (Outstanding Reviewer in <a href="https://bmvc2024.org/people/reviewers/">2024</a>) </li>
+      <li> AAAI Conference on Artificial Intelligence (<strong>AAAI</strong> <a href="https://aaai.org/conference/aaai/aaai-25/">2025</a>, <a href="https://aaai.org/conference/aaai/aaai-26/">2026</a>, <a href="https://aaai.org/conference/aaai/aaai-27/">2027</a>) </li>
+      <li> Conference on Neural Information Processing Systems (<strong>NeurIPS</strong> <a href="https://neurips.cc/Conferences/2025">2025</a>) </li>
+      <!-- <li> ACL - Student Research Workshop (<strong>ACL-SRW</strong> <a href="https://2025.aclweb.org/calls/student_research_workshop/">2025</a>) </li> -->
+      <!-- <li> MICCAI - MLLMs in Clinical Practice Workshop (<strong>MICCAI-MLLMCP</strong> <a href="https://clinicalmllms.github.io/">2025</a>) </li> -->
+      <li> Winter Conference on Applications of Computer Vision (<strong>WACV</strong> <a href="https://wacv.thecvf.com/Conferences/2026/">2026</a>) </li>
+      <li> International Conference on 3D Vision (<strong>3DV</strong> <a href="https://3dvconf.github.io/2026/">2026</a>) </li>
+      <li> IEEE Transactions on Visualization and Computer Graphics (<strong>TVCG</strong>) </li>
+      <li> IEEE Transactions on Multimedia (<strong>TMM</strong>) </li>
+    </ul>
+
+    <!-- ===================== Misc ===================== -->
+    <!-- Notes and thoughts: one page per note in thoughts/ (copy thoughts/_template.html), newest first. -->
+    <h2 class="section-heading" id="misc"><span class="emoji" aria-hidden="true">💭</span>Misc</h2>
+    <p class="section-note">Occasional notes on research and life, kept as they were written at the time.</p>
+    <ul class="list dated">
+      <!-- TODO: placeholder note, replace it with your own before publishing -->
+      <li> <span class="news-date">[2026.10]</span> <a href="thoughts/2026-10-hello.html">Hello, world: why I keep these notes</a> </li>
+    </ul>
+
+    <a href="#top" class="to-top" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var links = Array.prototype.slice.call(document.querySelectorAll('.topnav-links a[href^="#"]'));
+        var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+        var toTop = document.querySelector('.to-top');
+        var nav = document.querySelector('.topnav');
+        var intro = document.querySelector('.intro');
+        var inner = document.querySelector('.topnav-inner');
+        function each(sel, fn) { Array.prototype.forEach.call(document.querySelectorAll(sel), fn); }
+        function shown(el) { return !!el && el.getClientRects().length > 0; }
+
+        // ---------- Top bar: highlight the current section, back-to-top button ----------
+        var lastCurrent = -2;
+        function updateOverflow() {
+          nav.classList.toggle('overflowing', inner.scrollWidth > inner.clientWidth + 1);
+          nav.classList.toggle('at-start', inner.scrollLeft <= 2);
+          nav.classList.toggle('at-end', inner.scrollLeft + inner.clientWidth >= inner.scrollWidth - 2);
+        }
+        inner.addEventListener('scroll', updateOverflow, { passive: true });
+        window.addEventListener('resize', updateOverflow);
+        updateOverflow();
+        var pinned = -1;  // section chosen by clicking the top bar, kept until the user scrolls manually
+        function update() {
+          var current = -1;
+          sections.forEach(function (sec, i) { if (shown(sec) && sec.getBoundingClientRect().top < 90) current = i; });
+          // At the very bottom of the page, the last (short) sections can never reach the top.
+          if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) current = sections.length - 1;
+          if (pinned >= 0) current = pinned;
+          links.forEach(function (a, i) { a.classList.toggle('active', i === current); });
+          if (current !== lastCurrent) {
+            lastCurrent = current;
+            // On narrow screens the bar scrolls sideways: keep the active link in view.
+            if (current >= 0 && inner.scrollWidth > inner.clientWidth) {
+              var r = links[current].getBoundingClientRect(), box = inner.getBoundingClientRect();
+              inner.scrollTo({ left: inner.scrollLeft + r.left - box.left - (box.width - r.width) / 2, behavior: 'smooth' });
+            }
+          }
+          toTop.classList.toggle('show', window.scrollY > 600);
+          nav.classList.toggle('scrolled', intro.getBoundingClientRect().bottom < 60);
+        }
+        links.forEach(function (a, i) {
+          a.addEventListener('click', function () { pinned = i; update(); });
+        });
+        ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
+          window.addEventListener(ev, function () { pinned = -1; }, { passive: true });
+        });
+        toTop.addEventListener('click', function () { pinned = -1; });
+        // Back/forward (or any other hash change): keep the highlight only for a top-bar section.
+        window.addEventListener('hashchange', function () {
+          pinned = -1;
+          links.forEach(function (a, i) { if (a.getAttribute('href') === location.hash) pinned = i; });
+          update();
+        });
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+
+        // ---------- Papers: "Selected" / "All" / one topic ----------
+        // The default view is set in <head>; papers with data-selected are shown in "Selected",
+        // and picking a topic lists every paper whose data-topics contains it.
+        var groups = Array.prototype.slice.call(document.querySelectorAll('.paper-group'));
+        var toggle = document.querySelector('.view-toggle');
+        var controls = document.querySelector('.paper-controls');
+        function isVisible(p, view, topic) {
+          if (topic) return (' ' + (p.getAttribute('data-topics') || '') + ' ').indexOf(' ' + topic + ' ') >= 0;
+          return view === 'all' || p.hasAttribute('data-selected');
+        }
+        // The one switch + "Topics:" row sit under the heading of the first section that is shown.
+        function placeControls() {
+          var first = groups.filter(function (g) { return !g.classList.contains('is-empty'); })[0];
+          var heading = first && first.querySelector('.section-heading');
+          if (!heading || toggle.parentNode === heading) return;
+          var focused = document.activeElement;
+          heading.appendChild(toggle);
+          heading.parentNode.insertBefore(controls, heading.nextSibling);
+          // Moving an element drops its focus; give it back so keyboard users keep their place.
+          if (focused && focused !== document.activeElement && (toggle.contains(focused) || controls.contains(focused))) {
+            focused.focus({ preventScroll: true });
+          }
+        }
+        function applyView() {
+          var view = root.getAttribute('data-view') === 'all' ? 'all' : 'selected';
+          var topic = root.getAttribute('data-topic') || '';
+          function hasPapers(el) {
+            return Array.prototype.some.call(el.querySelectorAll('.paper'), function (p) { return isVisible(p, view, topic); });
+          }
+          // Hide a whole section / year when nothing in it matches.
+          each('.paper-group, .year-group', function (el) { el.classList.toggle('is-empty', !hasPapers(el)); });
+          each('.view-toggle button', function (b) { b.setAttribute('aria-pressed', String(!topic && b.getAttribute('data-view') === view)); });
+          each('.topic-filter button, .topic-tag', function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-topic') === topic)); });
+          if (moreWhat) moreWhat.textContent = !topic ? 'selected papers' : topic === 'others' ? 'other papers' : 'papers on ' + topicTitles[topic];
+          placeControls();
+        }
+        function keepInPlace(el, before) {
+          root.style.scrollBehavior = 'auto';
+          window.scrollBy(0, el.getBoundingClientRect().top - before);
+          root.style.scrollBehavior = '';
+        }
+        // "anchor" is the clicked control: it stays at the same place on screen, so the page doesn't jump.
+        function setView(view, topic, anchor) {
+          var before = anchor ? anchor.getBoundingClientRect().top : 0;
+          root.setAttribute('data-view', view);
+          if (topic) root.setAttribute('data-topic', topic); else root.removeAttribute('data-topic');
+          applyView();
+          if (anchor && shown(anchor)) keepInPlace(anchor, before);
+          update();
+        }
+        function pickTopic(b) {
+          // Clicking the active topic again goes back to the full list.
+          var t = b.getAttribute('data-topic');
+          setView('all', root.getAttribute('data-topic') === t ? '' : t, b);
+        }
+        each('.view-toggle button', function (b) {
+          b.addEventListener('click', function () { setView(b.getAttribute('data-view'), '', b); });
+        });
+        each('.topic-filter button', function (b) {
+          b.addEventListener('click', function () { pickTopic(b); });
+        });
+
+        // Small topic tags after each paper's venue, made from data-topics
+        // (same names as in "Topics:", minus the words in <span class="long">).
+        var topicNames = {}, topicTitles = {};
+        each('.topic-filter button', function (b) {
+          var short = b.cloneNode(true);
+          Array.prototype.forEach.call(short.querySelectorAll('.long'), function (s) { s.parentNode.removeChild(s); });
+          topicNames[b.getAttribute('data-topic')] = short.textContent.trim();
+          topicTitles[b.getAttribute('data-topic')] = b.textContent.trim();
+        });
+        each('.paper[data-topics]', function (p) {
+          var venue = p.querySelector('.venue');
+          if (!venue) return;
+          var box = document.createElement('span');
+          box.className = 'paper-topics';
+          p.getAttribute('data-topics').split(/\s+/).forEach(function (t) {
+            if (!topicNames[t]) return;
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'topic-tag';
+            b.setAttribute('data-topic', t);
+            b.title = 'List all papers on ' + topicTitles[t];
+            b.textContent = topicNames[t];
+            b.addEventListener('click', function () { pickTopic(b); });
+            box.appendChild(b);
+          });
+          if (!box.firstChild) return;
+          // At the end of the venue line, after (Oral) / (NEW).
+          var last = venue;
+          while (last.nextSibling && last.nextSibling.nodeName !== 'BR') last = last.nextSibling;
+          last.parentNode.insertBefore(box, last.nextSibling);
+          box.parentNode.insertBefore(document.createTextNode(' '), box);
+        });
+
+        // The line under the switches ("Showing selected papers. Show all N or see Google Scholar ...");
+        // which half of it shows is decided by CSS from data-view / data-topic.
+        var moreWhat = document.querySelector('.more-what'), moreAll = document.querySelector('.more-all');
+        var moreCount = document.querySelector('.more-count');
+        if (moreCount) moreCount.textContent = '\u00a0' + document.querySelectorAll('.paper').length;
+        if (moreAll) moreAll.addEventListener('click', function () {
+          setView('all', '');
+          // Start reading the full list from its top, where the switch is, and keep keyboard focus nearby.
+          var first = groups.filter(function (g) { return !g.classList.contains('is-empty'); })[0];
+          if (first) first.querySelector('.section-heading').scrollIntoView({ block: 'start' });
+          var allBtn = toggle.querySelector('[data-view="all"]');
+          if (allBtn) allBtn.focus({ preventScroll: true });
+        });
+        applyView();
+
+        // ---------- News: the latest few, "Show more" for the rest ----------
+        var news = document.querySelector('.news-list');
+        var newsHidden = news ? Array.prototype.filter.call(news.children, function (li) { return !shown(li); }).length : 0;
+        if (newsHidden) {
+          var more = document.createElement('button');
+          more.type = 'button';
+          more.className = 'news-more';
+          var setMoreLabel = function () {
+            var open = news.classList.contains('expanded');
+            more.textContent = open ? 'Show less' : 'Show ' + newsHidden + ' more';
+            more.setAttribute('aria-expanded', String(open));
+          };
+          more.addEventListener('click', function () {
+            var before = more.getBoundingClientRect().top;
+            news.classList.toggle('expanded');
+            setMoreLabel();
+            // Folding up from far below: keep the button where it was, so the reader isn't thrown elsewhere.
+            if (!news.classList.contains('expanded')) keepInPlace(more, before);
+            update();
+          });
+          setMoreLabel();
+          news.parentNode.insertBefore(more, news.nextSibling);
+        }
+
+        // ---------- Tagline under the name: one line with a "·", or two lines without it ----------
+        var tagline = document.querySelector('.tagline');
+        function fitTagline() {
+          if (!tagline) return;
+          tagline.classList.remove('stacked');
+          tagline.classList.add('measure');  // forced onto one line: does it fit?
+          var need = Array.prototype.reduce.call(tagline.children, function (w, c) { return w + c.getBoundingClientRect().width; }, 0);
+          tagline.classList.remove('measure');
+          tagline.classList.toggle('stacked', need > tagline.clientWidth - 1);
+        }
+        fitTagline();
+        window.addEventListener('resize', fitTagline);
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitTagline);
+
+        // ---------- In-page links (News -> paper, top bar): reveal hidden papers, flash the target ----------
+        function flash(target) {
+          if (!target.classList.contains('paper')) return;
+          target.classList.remove('flash');
+          void target.offsetWidth;  // restart the animation
+          target.classList.add('flash');
+        }
+        var clickedHash = '', clickedAt = 0;
+        document.addEventListener('click', function (e) {
+          var a = e.target.closest && e.target.closest('a[href^="#"]');
+          if (!a) return;
+          var target = document.getElementById(a.getAttribute('href').slice(1));
+          if (!target) return;
+          clickedHash = a.getAttribute('href'); clickedAt = Date.now();
+          if (!shown(target)) setView('all', '');
+          flash(target);
+        });
+        // Opening a link such as index.html#paper-larsr, or going back/forward to one:
+        // if the paper is hidden by the current view, show the full list and go there.
+        // On first load the scripts above have already moved things around after the browser
+        // jumped to the anchor, so jump again (unless this is a reload that restores the old position).
+        // On back/forward the browser restores the old scroll position, which is off the mark
+        // if Selected/All was switched in between: then go to the anchor itself.
+        var navEntry = window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+        var freshLoad = !navEntry || navEntry.type === 'navigate';
+        function revealHash(e) {
+          var id = '';
+          try { id = decodeURIComponent(location.hash.slice(1)); } catch (err) { return; }
+          var target = id && document.getElementById(id);
+          if (!target) return;
+          var fromClick = !!e && clickedHash === location.hash && Date.now() - clickedAt < 1500;
+          clickedHash = '';
+          var hidden = !shown(target);
+          if (hidden) setView('all', '');
+          var r = target.getBoundingClientRect();
+          var offScreen = r.top > window.innerHeight || r.bottom < 0;
+          if (hidden || (!e && freshLoad) || (e && !fromClick && offScreen)) {
+            root.style.scrollBehavior = 'auto';
+            target.scrollIntoView({ block: 'start' });
+            root.style.scrollBehavior = '';
+          }
+          if (hidden || !e) flash(target);
+        }
+        window.addEventListener('hashchange', revealHash);
+        revealHash();
+
+        // ---------- Copy to clipboard (BibTeX, email, WeChat) ----------
+        function copyText(text, done) {
+          function fallback() {
+            var ta = document.createElement('textarea');
+            ta.value = text; ta.setAttribute('readonly', '');
+            ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+            document.body.appendChild(ta); ta.select();
+            var ok = false; try { ok = document.execCommand('copy'); } catch (err) {}
+            document.body.removeChild(ta); return ok;
+          }
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(fallback()); });
+          } else { done(fallback()); }
+        }
+        each('.bib-btn', function (btn) {
+          var box = btn.parentNode.querySelector('.bibtex');
+          btn.addEventListener('click', function () {
+            box.hidden = !box.hidden;
+            btn.setAttribute('aria-expanded', String(!box.hidden));
+          });
+        });
+        each('.bib-copy', function (b) {
+          b.addEventListener('click', function () {
+            copyText(b.nextElementSibling.textContent, function (ok) {
+              if (!ok) {
+                // Copying is blocked: select the entry so it can be copied by hand.
+                var range = document.createRange(), sel = window.getSelection();
+                range.selectNodeContents(b.nextElementSibling); sel.removeAllRanges(); sel.addRange(range);
+              }
+              b.textContent = ok ? 'copied!' : 'press ⌘/Ctrl+C';
+              clearTimeout(b._t); b._t = setTimeout(function () { b.textContent = 'copy'; }, 1500);
+            });
+          });
+        });
+        each('.copy-text', function (b) {
+          b.addEventListener('click', function () {
+            copyText(b.getAttribute('data-copy'), function (ok) {
+              if (!ok) return;
+              var note = b.nextElementSibling && b.nextElementSibling.classList.contains('copied-note') ? b.nextElementSibling : null;
+              if (!note) { note = document.createElement('span'); note.className = 'copied-note'; note.setAttribute('role', 'status'); b.parentNode.insertBefore(note, b.nextSibling); }
+              note.textContent = 'copied';
+              clearTimeout(b._t); b._t = setTimeout(function () { note.parentNode && note.parentNode.removeChild(note); }, 1500);
+            });
+          });
+        });
+
+        // ---------- (NEW) tags expire 12 months after data-since="YYYY-MM" ----------
+        var now = new Date(), nowMonths = now.getFullYear() * 12 + now.getMonth();
+        each('.tag.new[data-since]', function (t) {
+          var p = t.getAttribute('data-since').split('-');
+          if (nowMonths - (+p[0] * 12 + (+p[1] - 1)) >= 12) t.hidden = true;
+        });
+
+        update();
+      })();
+    </script>
+
+    <!-- ===================== Footer ===================== -->
+    <!--
+      Visitor map: the ClustrMaps script was removed because clustrmaps.com is gone (since mid-2026 the domain is parked
+      and now resolves to 127.0.0.1), so it could never load. Old snippet, for reference:
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=5ayBqtHVZxq64yIbqL91zvhcK44KOAMiyFcLXB3F2nc&amp;cl=ffffff&amp;w=a"></script>
+      To bring a map back (e.g. https://mapmyvisitors.com, free), sign up, then paste its snippet here like this.
+      Use "https://" rather than "//", otherwise it does not load when index.html is opened as a local file:
+        <div class="visitor-map">
+          <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=YOUR_ID&amp;cl=ffffff&amp;w=a"></script>
+        </div>
+    -->
+
+    <div class="footer">
+      <span>Updated in <span id="updated">Sep. 2026</span></span>
+      <span>Thanks <a href="https://jonbarron.info/">Jon Barron</a> for this amazing website template.</span>
+    </div>
+    <script>
+      // "Updated in ..." follows the page's last-modified time; the text above is the fallback.
+      (function () {
+        var el = document.getElementById('updated'), d = new Date(document.lastModified);
+        if (!el || isNaN(d) || Math.abs(Date.now() - d) < 60000) return;
+        var m = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
+        el.textContent = m[d.getMonth()] + ' ' + d.getFullYear();
+      })();
+    </script>
+
+  </div>
+
 </body>
 
 </html>

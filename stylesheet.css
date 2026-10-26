@@ -3,7 +3,8 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Italic'), local('Lato-Italic'), url(fonts/lato-italic-400-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -11,7 +12,8 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Italic'), local('Lato-Italic'), url(fonts/lato-italic-400-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin-ext */
@@ -19,7 +21,8 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(fonts/lato-italic-700-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -27,7 +30,8 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(fonts/lato-italic-700-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin-ext */
@@ -35,7 +39,8 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/lato-400-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -43,7 +48,8 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/lato-400-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin-ext */
@@ -51,7 +57,8 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(fonts/lato-700-latin-ext.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -59,19 +66,35 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(fonts/lato-700-latin.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-a {
-  color: #1772d0;
-  text-decoration: none;
+/* ---------- Base ---------- */
+
+:root {
+  --page-width: 1040px;
+  --link: #1772d0;
+  --link-hover: #f09228;
+  --text: #222;
+  --muted: #6e6e6e;
+  --line: #ececec;
+  --highlight: #ffffd0;
+  --nav-height: 48px;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 12px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background: #fff;
 }
 
 body,
@@ -79,16 +102,39 @@ td,
 th,
 tr,
 p,
-a {
+a,
+li {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+}
+
+a:focus,
+a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+/* Keyboard focus ring (mouse clicks don't show it) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 3px;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-weight: 700;
 }
 
+/* Legacy custom tags from the original template (kept for compatibility) */
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
@@ -96,14 +142,772 @@ heading {
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
+  font-size: 16px;
+  font-weight: 700;
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
+
+/* ---------- Top navigation ---------- */
+
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, .94);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: var(--page-width);
+  height: var(--nav-height);
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.topnav-name {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+}
+
+.topnav.scrolled .topnav-name,
+.topnav-name:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.topnav-links {
+  display: flex;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.topnav-links a {
+  padding: 4px 9px;
+  border-radius: 4px;
+  color: #555;
+  font-size: 14px;
+}
+
+.topnav-links a:hover {
+  color: var(--link-hover);
+}
+
+.topnav-links a.active {
+  color: var(--link);
+  background: #f6f9fd;
+}
+
+.topnav-links a.topnav-cv {
+  margin-left: 4px;
+  color: var(--link);
+  font-weight: 700;
+}
+
+.topnav-links a.topnav-cv:hover {
+  color: var(--link-hover);
+}
+
+/* ---------- Layout ---------- */
+
+.page {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 28px 20px 36px;
+  box-sizing: border-box;
+}
+
+/* ---------- Intro ---------- */
+
+.intro {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.intro-text {
+  width: 68%;
+  padding: 0 36px 0 5px;
+  vertical-align: middle;
+}
+
+.intro-photo {
+  width: 32%;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
+.intro-photo img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin-left: auto;
+  border-radius: 8px;
+}
+
+.name {
+  margin: 0 0 14px;
+  text-align: center;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: .3px;
+}
+
+.name .cn {
+  color: #555;
+  white-space: nowrap;  /* never split the Chinese name */
+}
+
+/* One-line "who am I" under the name, parts joined by a "·".
+   When it doesn't fit, the script stacks the parts on two lines and drops the dot (.stacked). */
+.tagline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -6px 0 14px;
+  color: #555;
+}
+
+.tagline > span {
+  white-space: nowrap;
+}
+
+.tagline .dot {
+  padding: 0 .6em;
+  color: #aaa;
+}
+
+.tagline.measure {
+  flex-wrap: nowrap;
+}
+
+.tagline.stacked {
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline.stacked .dot {
+  display: none;
+}
+
+/* Small emoji in front of headings */
+.emoji {
+  margin-right: .4em;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+  font-size: .86em;
+  font-style: normal;
+}
+
+/* Avoid a single word left alone on the last line (Chrome / Safari; others ignore it) */
+.intro-text p,
+.list li,
+.section-note,
+.paper-more,
+.paper-text {
+  text-wrap: pretty;
+}
+
+.callout {
+  padding: 8px 12px;
+  background-color: var(--highlight);
+  border-left: 3px solid #f0c040;
+  border-radius: 4px;
+}
+
+.callout .alert {
+  color: #d00;
+}
+
+.contact {
+  margin-bottom: 6px;
+}
+
+.contact .sep {
+  display: inline-block;
+  width: 2.2em;
+}
+
+/* Email / WeChat: plain text that copies itself on click */
+.copy-text {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-bottom: 1px dashed #bbb;
+  cursor: pointer;
+  transition: color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+/* (hover colours for the buttons are in "Hover" near the end, so they don't stick after a tap on phones / iPads) */
+
+/* Small "copied" bubble just above the end of the copied text; it takes no space, so nothing shifts */
+.copied-note {
+  position: absolute;
+  z-index: 5;
+  padding: 1px 7px;
+  color: #fff;
+  background: rgba(0, 0, 0, .72);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translate(-100%, -110%);
+}
+
+.links {
+  text-align: center;
+}
+
+/* Links wrap into rows of similar length (no "Zhihu" left alone on a second row) */
+.intro-text p.links {
+  text-wrap: balance;
+}
+
+.links a,
+.nobr {
+  white-space: nowrap;  /* e.g. never split "MiniMax-H3" at the hyphen */
+}
+
+.links .sep {
+  color: #bbb;
+  margin: 0 .45em;
+}
+
+/* ---------- Sections ---------- */
+
+.section-heading {
+  margin: 34px 0 12px;
+  padding: 0 5px 6px;
+  border-bottom: 1px solid var(--line);
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.section-note {
+  margin: 0 0 6px;
+  padding: 0 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Paper sections: "Selected / All" switch at the right end of the heading */
+.paper-group .section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+}
+
+/* On a narrow phone a long title wraps onto two even lines, and the switch stays on its right */
+.paper-group .section-heading > span:first-child {
+  text-wrap: balance;
+}
+
+.view-toggle {
+  display: inline-flex;
+  flex-shrink: 0;
+  margin: -3px 0 -3px auto;
+  padding: 2px;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
+}
+
+.view-toggle button {
+  margin: 0;
+  padding: 3px 12px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #555;
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.view-toggle button[aria-pressed="true"] {
+  color: var(--link);
+  background: #f6f9fd;
+}
+
+/* One "Topics:" row (+ the "* equal contribution" note) under the first paper heading that is shown.
+   When the topics wrap (phones), the second row lines up under the first topic, not under "Topics:". */
+.topic-filter {
+  display: flex;
+  align-items: baseline;
+  margin: -2px 0 8px;
+  padding: 0 5px;
+}
+
+.topic-label {
+  flex-shrink: 0;
+  margin-right: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.topic-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.topic-filter button {
+  margin: 0;
+  padding: 2px 10px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #555;
+  background: none;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.topic-filter button[aria-pressed="true"] {
+  color: var(--link);
+  background: #f6f9fd;
+  border-color: #c9daf2;
+}
+
+/* Small topic tags after each paper's venue (added by the script from data-topics); click = filter */
+.topic-tag {
+  display: inline-block;
+  margin: 0 0 0 4px;
+  padding: 0 7px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--muted);
+  white-space: nowrap;
+  vertical-align: 1px;
+  background: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.topic-tag[aria-pressed="true"] {
+  color: var(--link);
+  background: #f6f9fd;
+  border-color: #c9daf2;
+}
+
+html[data-view="selected"] .paper:not([data-selected]),
+html[data-topic="gen"] .paper:not([data-topics~="gen"]),
+html[data-topic="spatial"] .paper:not([data-topics~="spatial"]),
+html[data-topic="video"] .paper:not([data-topics~="video"]),
+html[data-topic="lowlevel"] .paper:not([data-topics~="lowlevel"]),
+html[data-topic="others"] .paper:not([data-topics~="others"]),
+.paper-group.is-empty,
+.year-group.is-empty {
+  display: none;
+}
+
+/* Same for the first paint, before the script has marked empty sections / years */
+html[data-view="selected"] .paper-group:not(:has(.paper[data-selected])),
+html[data-view="selected"] .year-group:not(:has(.paper[data-selected])),
+html[data-topic="gen"] :is(.paper-group, .year-group):not(:has(.paper[data-topics~="gen"])),
+html[data-topic="spatial"] :is(.paper-group, .year-group):not(:has(.paper[data-topics~="spatial"])),
+html[data-topic="video"] :is(.paper-group, .year-group):not(:has(.paper[data-topics~="video"])),
+html[data-topic="lowlevel"] :is(.paper-group, .year-group):not(:has(.paper[data-topics~="lowlevel"])),
+html[data-topic="others"] :is(.paper-group, .year-group):not(:has(.paper[data-topics~="others"])) {
+  display: none;
+}
+
+/* Without JavaScript every paper is listed and the switches are not needed */
+html:not([data-view]) .view-toggle,
+html:not([data-view]) .topic-filter,
+html:not([data-view]) .bib-sep,
+html:not([data-view]) .bib-btn {
+  display: none;
+}
+
+/* One line under the switches: "Show all" / Google Scholar */
+.paper-more {
+  margin: 0 0 2px;
+  padding: 0 5px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.more-all {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: var(--link);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: color .15s ease-in-out;
+}
+
+/* Filtered ("Selected" or one topic): offer the full list. Full list (or no JavaScript): only Google Scholar. */
+html:not([data-view]) .more-filtered,
+html[data-view="all"]:not([data-topic]) .more-filtered,
+html[data-view="selected"] .more-full,
+html[data-topic] .more-full {
+  display: none;
+}
+
+.list {
+  margin: 0;
+  padding-left: 28px;
+}
+
+.list li {
+  margin: 4px 0;
+}
+
+/* News: only the first 8 items until "Show N more" is clicked (change n+9 to show more or fewer).
+   Without JavaScript (no data-view on <html>) everything is listed. */
+html[data-view] .news-list:not(.expanded) > li:nth-child(n+9) {
+  display: none;
+}
+
+.news-more {
+  margin: 2px 0 0 5px;
+  padding: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--link);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: color .15s ease-in-out;
+}
+
+.news-more::after {
+  content: ' \25BE';  /* small down triangle */
+}
+
+.news-more[aria-expanded="true"]::after {
+  content: ' \25B4';  /* small up triangle */
+}
+
+/* Dated lists (News / Awards): date in a fixed left column, text aligned after it */
+.list.dated {
+  padding-left: 5px;
+  list-style: none;
+}
+
+.list.dated li {
+  position: relative;
+  padding-left: 82px;
+}
+
+.news-date {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.list.dated .news-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* ---------- Papers ---------- */
+
+.papers {
+  width: 100%;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+}
+
+.paper > td {
+  vertical-align: middle;
+}
+
+/* Year divider: "2026 - - - - -" */
+.year-row > td {
+  padding: 8px 5px 0;
+}
+
+.year-row span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.year-row span::after {
+  content: '';
+  flex: 1;
+  border-top: 1px dashed #e3e3e3;
+}
+
+.paper-img {
+  width: 26%;
+  padding: 12px 20px 12px 10px;
+  text-align: center;
+}
+
+.paper-img img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+  transition: opacity .15s ease-in-out;
+}
+
+.paper-img a:hover img {
+  opacity: .85;
+}
+
+.paper-text {
+  width: 74%;
+  padding: 12px 12px 12px 0;
+}
+
+.paper-text .desc {
+  margin: 6px 0 0;
+  color: #444;
+}
+
+.paper.highlight > td {
+  background-color: var(--highlight);
+}
+
+.paper > td:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.paper > td:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+/* Briefly flash a paper when it is reached from a link in News */
+.paper.flash > td {
+  animation: paper-flash 2.4s ease-out;
+}
+
+@keyframes paper-flash {
+  0%, 35% {
+    background-color: #fff0a0;
+  }
+}
+
+/* "bibtex" toggle looks like the other links in the row */
+.bib-btn {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: var(--link);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: color .15s ease-in-out;
+}
+
+.bib-btn[aria-expanded="true"] {
+  color: var(--link-hover);
+}
+
+.bibtex {
+  position: relative;
+  margin: 8px 0 2px;
+}
+
+.bibtex[hidden] {
+  display: none;
+}
+
+.bibtex pre {
+  margin: 0;
+  padding: 10px 70px 10px 12px;
+  background: rgba(0, 0, 0, .035);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 4px;
+  color: #333;
+  font-family: Menlo, Consolas, 'Liberation Mono', monospace;
+  font-size: 12.5px;
+  line-height: 1.55;
+  /* wrap long lines instead of widening the table */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.bib-copy {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 2px 9px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #555;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.tag {
+  color: #d00;
+  font-weight: 700;
+  margin-left: .4em;
+}
+
+/* ---------- Footer ---------- */
+
+.visitor-map {
+  margin: 32px auto 0;
+  text-align: center;
+}
+
+.visitor-map + .footer {
+  margin-top: 18px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin-top: 44px;
+  padding: 10px 5px 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.footer,
+.footer a {
+  font-size: 13px;
+}
+
+/* ---------- Back to top ---------- */
+
+.to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  color: #666;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease-in-out, visibility .2s;
+}
+
+.to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.to-top svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Notes (thoughts/*.html) ---------- */
+
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px 40px;
+  box-sizing: border-box;
+}
+
+.post-back {
+  font-size: 14px;
+}
+
+.post-title {
+  margin: 22px 0 4px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.post-meta {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.post-body p,
+.post-body li {
+  font-size: 16px;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.post-body h2 {
+  margin: 30px 0 8px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.post-body blockquote {
+  margin: 18px 0;
+  padding: 2px 16px;
+  color: #555;
+  border-left: 3px solid var(--line);
+}
+
+.post-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 18px auto;
+  border-radius: 6px;
+}
+
+.post-footer {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ---------- Old helpers from the original template ---------- */
 
 .one {
   width: 160px;
@@ -127,5 +931,265 @@ name {
 }
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: var(--highlight);
+}
+
+/* ---------- Hover (mouse / trackpad only: on phones and iPads a tap would leave it "stuck") ---------- */
+
+@media (hover: hover) {
+  .copy-text:hover {
+    color: var(--link-hover);
+    border-bottom-color: var(--link-hover);
+  }
+
+  /* (a switch that is already on keeps its blue look) */
+  .view-toggle button:not([aria-pressed="true"]):hover,
+  .bib-btn:hover,
+  .more-all:hover,
+  .news-more:hover {
+    color: var(--link-hover);
+  }
+
+  .topic-filter button:not([aria-pressed="true"]):hover,
+  .topic-tag:not([aria-pressed="true"]):hover,
+  .bib-copy:hover,
+  .to-top:hover {
+    color: var(--link-hover);
+    border-color: var(--link-hover);
+  }
+}
+
+/* ---------- Less motion when the system asks for it ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 860px) {
+  .topnav-name {
+    display: none;
+  }
+
+  .topnav-inner {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  /* Fade the edge(s) that still hide links, as a hint that the bar scrolls sideways */
+  .topnav.overflowing .topnav-inner {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 36px, #000 calc(100% - 56px), transparent);
+    mask-image: linear-gradient(to right, transparent, #000 36px, #000 calc(100% - 56px), transparent);
+  }
+
+  .topnav.overflowing.at-start .topnav-inner {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 56px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 56px), transparent);
+  }
+
+  .topnav.overflowing.at-end .topnav-inner {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 36px);
+    mask-image: linear-gradient(to right, transparent, #000 36px);
+  }
+
+  .topnav-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* a little tighter, so the whole bar still fits on tablets (it scrolls sideways only on phones) */
+  .topnav-links a {
+    padding: 4px 8px;
+  }
+
+  .intro-text {
+    padding-right: 20px;
+  }
+
+  /* Shorter topic names (as in the per-paper tags), so "Topics:" stays on one line on iPads */
+  .topic-filter .long {
+    display: none;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px 12px 24px;
+  }
+
+  .topnav-inner {
+    padding: 0 8px;
+  }
+
+  .topnav-links a {
+    padding: 4px 7px;
+  }
+
+  .intro > tbody > tr,
+  .papers > tbody > tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .papers,
+  .papers > tbody {
+    display: block;
+  }
+
+  .papers > tbody > tr {
+    margin: 0 0 22px;
+  }
+
+  .papers > tbody > tr.year-row {
+    margin-bottom: 4px;
+  }
+
+  .intro-text,
+  .intro-photo,
+  .paper-img,
+  .paper-text {
+    display: block;
+    width: auto;
+    padding: 6px 8px;
+  }
+
+  .intro-photo {
+    order: -1;
+  }
+
+  .intro-photo img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: min(28px, 7.8vw);  /* name stays on one line, down to 320px-wide phones */
+  }
+
+  .paper-group .section-heading {
+    column-gap: 8px;
+  }
+
+  .view-toggle button {
+    padding: 3px 9px;
+  }
+
+  .links a {
+    display: inline-block;
+    margin: 1px 6px;
+  }
+
+  .links .sep {
+    display: none;
+  }
+
+  .contact .sep {
+    display: block;
+    width: auto;
+    height: 0;
+  }
+
+  .paper-img img {
+    max-width: 100%;
+  }
+
+  .paper > td:first-child {
+    border-radius: 6px 6px 0 0;
+  }
+
+  .paper > td:last-child {
+    border-radius: 0 0 6px 6px;
+  }
+
+  .paper.highlight > td:first-child {
+    padding: 12px 12px 6px;
+  }
+
+  .paper.highlight > td:last-child {
+    padding: 6px 12px 12px;
+  }
+
+  .bibtex pre {
+    padding-right: 12px;
+    padding-top: 34px;
+  }
+
+  .list.dated li {
+    padding-left: 0;
+  }
+
+  .list.dated .news-date {
+    position: static;
+    margin-right: .3em;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .to-top {
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+/* ---------- Phones: slightly slimmer topic buttons, so "Topics:" takes two lines ---------- */
+
+@media (max-width: 480px) {
+  .topic-filter button {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* "Low-level Vision" -> "Low-level", so "Others" does not end up alone on a third row */
+  .topic-filter .long-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .topic-filter button {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+/* Very small phones (320px): the topics flow on from "Topics:" instead (three rows instead of four) */
+@media (max-width: 359px) {
+  .topic-filter {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .topic-label {
+    margin-right: 2px;
+  }
+
+  .topic-buttons {
+    display: contents;
+  }
+}
+
+/* ---------- Touch screens: slightly taller switches, easier to hit (kept last so it wins over the size rules above) ---------- */
+
+@media (pointer: coarse) {
+  .view-toggle button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .topic-filter button {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .topic-filter,
+  .topic-buttons {
+    row-gap: 7px;
+  }
 }

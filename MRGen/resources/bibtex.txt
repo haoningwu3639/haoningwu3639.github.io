@@ -1,6 +1,6 @@
 @inproceedings{wu2025mrgen,
     author    = {Wu, Haoning and Zhao, Ziheng and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
     title     = {MRGen: Segmentation Data Engine for Underrepresented MRI Modalities},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
     year      = {2025},
 }
